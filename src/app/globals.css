@@ -1,26 +1,151 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #1E444C;
   --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-chrcy: var(--font-chrcy);
+  --font-manrope: 'Manrope', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+} */
+
+
+
+body {
+  /* background: var(--background);
+  color: var(--foreground); */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: var(--font-manrope);
+}
+
+/* Prose utility */
+@layer utilities {
+  .prose {
+    @apply text-left text-black dark:text-white;
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    @apply text-secondary dark:text-primary font-medium;
+  }
+
+  .prose p {
+    @apply mt-0 text-base/5.5 text-black dark:text-white;
+  }
+
+  .prose h4 {
+    @apply mt-0 mb-4 font-medium lg:text-lg dark:text-white;
+  }
+
+  .prose h3 {
+    @apply mt-8 mb-4 text-xl font-medium lg:text-2xl/7.75;
+  }
+
+  .prose h2 {
+    @apply mt-8 mb-4 text-2xl font-medium lg:text-[32px]/11;
+  }
+
+  .prose ul > li {
+    @apply mt-0 mb-0 ps-0 text-base/5.5 font-normal text-black marker:text-sm/5.5 marker:text-black dark:text-white dark:marker:text-white;
+  }
+
+  .prose a {
+    @apply text-secondary dark:text-primary inline-block no-underline transition hover:underline;
+  }
+
+  .prose ol > li {
+    @apply my-0 ps-0 text-black marker:text-base/5.5 marker:text-black marker:uppercase dark:text-white dark:marker:text-white;
+  }
+
+  .prose blockquote {
+    @apply bg-secondary/5 my-8 border-l-2 border-black/10 p-6 leading-6.5 font-normal dark:border-black/10 dark:bg-white/20;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Components */
+@layer components {
+  .container {
+    @apply mx-auto w-full px-4;
+  }
+
+  .nav-links {
+    @apply relative inline-flex py-1.5 text-base/5.5 text-nowrap duration-300 outline-none xl:py-9.5;
+  }
+
+  /* Pseudo-element styles for .nav-links */
+  .nav-links::before {
+    @apply absolute inset-x-0 bottom-0 h-0.5 w-0 rounded-full bg-primary duration-300;
+    content: "";
+  }
+
+  .dark .nav-links::before {
+    @apply bg-primary;
+  }
+
+  .nav-links:hover::before,
+  .nav-links.active::before {
+    @apply w-full;
+  }
+
+  .nav-links.active {
+    @apply font-medium;
+  }
+
+  .btn {
+    @apply hover:[&>span]:bg-secondary/90 dark:hover:[&>span]:bg-primary/90 inline-flex items-center justify-center rounded-full bg-black text-center text-base/5.5 font-medium whitespace-nowrap text-white transition dark:bg-white/10 hover:[&_svg]:mx-2 hover:[&_svg]:size-6 sm:hover:[&_svg]:size-8;
+  }
+
+  .btn svg {
+    @apply fill-tertiary text-tertiary mx-0 size-0 duration-500 [&>_path]:text-white;
+  }
+
+  .btn span {
+    @apply bg-secondary dark:bg-primary inline-flex h-full grow items-center justify-center rounded-full px-3.5 py-2.5 transition sm:px-6 sm:py-3;
+  }
+
+  .btn-primary {
+    @apply bg-secondary dark:bg-primary dark:hover:bg-secondary hover:bg-primary inline-flex items-center justify-center gap-2 rounded-full px-6 py-2.5 text-center text-base/5.5 font-semibold whitespace-nowrap text-white transition lg:py-3;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-2.5 text-center text-base/5.5 font-semibold whitespace-nowrap text-black ring-1 ring-black transition ring-inset hover:bg-gray-100 lg:py-3 dark:bg-gray-100 dark:hover:bg-white;
+  }
+
+  .footer-links {
+    @apply dark:hover:text-primary hover:text-secondary transition;
+  }
+
+.form-input,
+.form-textarea {
+  @apply w-full resize-none rounded-full border-0 bg-[#F7F4EE] px-4 py-3 
+         text-base text-black placeholder:text-gray
+         ring-1 ring-black/10 ring-inset outline-none
+         focus:ring-1 focus:ring-black/20 focus:ring-inset
+         
+}
+
+  .form-textarea {
+    @apply rounded-3xl;
+  }
+
+  button {
+    @apply cursor-pointer outline-none;
+  }
+}
+
+.text-outline {
+  -webkit-text-stroke: 2px #1E444C; /* stroke width + color */
+  color: transparent; /* makes the fill invisible */
 }
