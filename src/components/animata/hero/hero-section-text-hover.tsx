@@ -69,7 +69,7 @@ const HeroSectionTextHover: React.FC<HeroCardProps> = ({ className }) => {
   return (
     <div
       className={cn(
-        "relative flex items-center justify-center w-full ",
+        "relative flex items-center justify-center w-full bg-primary",
         className
       )}
     >

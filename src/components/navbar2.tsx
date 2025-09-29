@@ -23,7 +23,7 @@ export function Navbar2() {
 
   return (
     <nav className="sticky top-0 left-0 right-0 z-50">
-      <div className="flex flex-wrap justify-center items-center mx-auto p-4 transition-all duration-700 ease-out backdrop-blur-xl w-full bg-primary text-accent shadow-sm bg-opacity-75"
+      <div className="flex flex-wrap justify-center items-center mx-auto p-4 transition-all duration-700 ease-out backdrop-blur-xl w-full bg-primary text-accent shadow-sm "
       >
         {/* Logo */}
         {/* <Link
@@ -141,7 +141,7 @@ export function Navbar2() {
           id="mega-menu-full-cta-dropdown"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className="absolute left-0 w-full transition-all duration-700 ease-out backdrop-blur-xl shadow-md border-y z-50 rounded-b-3xl bg-white bg-opacity-25"
+          className="absolute left-0 w-full transition-all duration-700 ease-out backdrop-blur-xl shadow-md z-50 bg-primary text-accent"
         >
           <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-sm  dark: md:grid-cols-3 md:px-6">
             {/* Column 1 */}

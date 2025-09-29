@@ -105,7 +105,7 @@ export function Header() {
               className="text-foreground"
               direction="up"
               duration="600ms"
-              letterClassName="font-chrcy font-medium text-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-tight"
+              letterClassName="font-chrcy font-medium text-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl"
               mode="word"
               text="A dose of health"
             />
