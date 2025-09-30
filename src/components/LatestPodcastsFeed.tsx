@@ -114,7 +114,7 @@ function PodcastCard({ podcast }: { podcast: Podcast }) {
             </button>
 
             {menuOpen && (
-              <div className="bg-gray-light text-gray absolute right-0 z-40 w-30 space-y-4 rounded-lg px-2 py-4 font-medium shadow-lg">
+              <div className="bg-gray-light text-gray absolute right-0 z-40 w-40 space-y-4 rounded-lg px-2 py-4 font-medium shadow-lg">
                 <button className="flex w-full items-center gap-2 transition hover:opacity-70">
                   <Mic className="w-4 h-4" />
                   <span>View Host</span>
@@ -150,7 +150,7 @@ function PodcastCard({ podcast }: { podcast: Podcast }) {
 
 // Automatically maps YouTubeVideo[] to Podcast[]
 export function LatestPodcastsFeed({ videos }: { videos: YouTubeVideo[] }) {
-  
+
   // Format publishedAt to "MMM dd, yyyy"
   const formatDate = (dateString: string) => {
     const d = new Date(dateString);
@@ -161,7 +161,25 @@ export function LatestPodcastsFeed({ videos }: { videos: YouTubeVideo[] }) {
     });
   };
 
-  const podcasts: Podcast[] = videos.map((v, index) => ({
+//   const podcasts: Podcast[] = videos.map((v, index) => {
+//   // regex: split at first special character (-, |, :, etc.)
+//   const cleanTitle = v.title.split(/[-|:–?]/)[0].trim();
+
+//   return {
+//     ...v,
+//     type: "Video",
+//     title: cleanTitle, // truncated title
+//     episode: `Episode ${index + 1}`,
+//     date: formatDate(v.publishedAt),
+//     description:
+//       v.description
+//         .split(" ")
+//         .slice(0, 10)
+//         .join(" ") + (v.description.split(" ").length > 10 ? "…" : ""),
+//   };
+// });
+
+const podcasts: Podcast[] = videos.map((v, index) => ({
     ...v,
     type: "Video",
     episode: `Episode ${index + 1}`,
@@ -184,8 +202,8 @@ export function LatestPodcastsFeed({ videos }: { videos: YouTubeVideo[] }) {
 
           {/* Section header */}
           <div className="mb-10 space-y-2.5 text-center lg:mb-20 lg:space-y-6">
-            <h2 className="relative inline text-3xl/10 font-medium lg:text-5xl/14 xl:text-[64px]/22">
-              <span className="absolute -top-2 -left-10 w-12 animate-pulse lg:-left-13 lg:w-auto">
+            <h2 className="relative inline text-3xl leading-10 font-medium lg:text-5xl lg:leading-14 xl:text-[64px] xl:leading-[22px]">
+              <span className="absolute -top-2 -left-10 w-12 animate-pulse lg:-left-[3.25rem] lg:w-auto">
                 <img
                   src="images/shape1.svg"
                   alt="shape"
@@ -197,9 +215,9 @@ export function LatestPodcastsFeed({ videos }: { videos: YouTubeVideo[] }) {
                   className="hidden h-full w-full object-contain"
                 />
               </span>
-              Fresh from the {" "}
-              <span className="text-primary relative inline-block pb-1.5">
-                <span className="absolute right-8 bottom-0 left-0 h-3.5">
+              Latest from the {" "}
+              <span className="text-tertiary relative inline-block pb-1.5">
+                {/* <span className="absolute right-8 bottom-0 left-0 h-3.5">
                   <img
                     src="images/text-underline2.svg"
                     alt="underline"
@@ -210,7 +228,7 @@ export function LatestPodcastsFeed({ videos }: { videos: YouTubeVideo[] }) {
                     alt="underline dark"
                     className="hidden h-full w-full object-contain"
                   />
-                </span>
+                </span> */}
                 Channel
               </span>{" "}
               

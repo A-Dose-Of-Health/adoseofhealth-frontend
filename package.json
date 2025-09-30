@@ -10,6 +10,7 @@
     "check-deps": "npm ls --depth=0"
   },
   "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
     "@tailwindcss/typography": "^0.5.16",
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.2",

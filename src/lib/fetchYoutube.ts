@@ -25,6 +25,34 @@ function parseISO8601Duration(isoDuration: string): string {
   return `${minutes}:${pad(seconds)}`;
 }
 
+// Define types for YouTube API responses (narrow instead of any)
+interface PlaylistItem {
+  contentDetails: {
+    videoId: string;
+    videoPublishedAt: string;
+  };
+  snippet: {
+    title: string;
+    description: string;
+    thumbnails: {
+      maxres?: { url: string };
+      high?: { url: string };
+      medium?: { url: string };
+      default?: { url: string };
+    };
+  };
+}
+
+interface VideoDetail {
+  id: string;
+  contentDetails: {
+    duration: string;
+  };
+  statistics: {
+    viewCount?: string;
+  };
+}
+
 /**
  * Fetch ONLY long-form videos (no Shorts) for a channel.
  * Can optionally sort by popularity.
@@ -54,8 +82,9 @@ export async function fetchYouTubeVideos(
   }
 
   const playlistData = await playlistRes.json();
-  const videoIds = (playlistData.items || []).map((item: any) => item.contentDetails.videoId);
+  const playlistItems: PlaylistItem[] = playlistData.items || [];
 
+  const videoIds = playlistItems.map((item) => item.contentDetails.videoId);
   if (videoIds.length === 0) return [];
 
   // Step 2: Fetch contentDetails + statistics (duration + viewCount)
@@ -71,21 +100,24 @@ export async function fetchYouTubeVideos(
   }
 
   const videosData = await videosRes.json();
+  const videoDetails: VideoDetail[] = videosData.items || [];
+
   const durationsMap: Record<string, string> = {};
   const viewCountMap: Record<string, number> = {};
 
-  for (const item of videosData.items) {
+  for (const item of videoDetails) {
     durationsMap[item.id] = parseISO8601Duration(item.contentDetails.duration);
     viewCountMap[item.id] = parseInt(item.statistics.viewCount || "0", 10);
   }
 
   // Step 3: Map final YouTubeVideo array
-  let videos: (YouTubeVideo & { viewCount: number })[] = (playlistData.items || []).map((item: any) => {
+  const videos = playlistItems.map((item) => {
     const thumb =
       item.snippet.thumbnails.maxres?.url ||
       item.snippet.thumbnails.high?.url ||
       item.snippet.thumbnails.medium?.url ||
-      item.snippet.thumbnails.default?.url;
+      item.snippet.thumbnails.default?.url ||
+      "";
 
     return {
       id: item.contentDetails.videoId,

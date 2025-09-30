@@ -3,7 +3,6 @@ import { ContactUs } from "@/components/contactus";
 import { ContentWrapper } from "@/components/ContentWrapper";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
-import { HeroSubText } from "@/components/herosubtext";
 import { LatestPodcastsFeed } from "@/components/LatestPodcastsFeed";
 import { Navbar } from "@/components/navbar";
 import { Navbar2 } from "@/components/navbar2";
@@ -22,15 +21,15 @@ export default async function Home() {
   const articles = await fetchLancetFeed();
 
   const channelId = "UC84QO01Prami9FvG1dnbphA"; // example: Google Developers channel
-  const videos = await fetchYouTubeVideos(channelId, 9, 'recent');
+  const videos = await fetchYouTubeVideos(channelId, 6, 'recent');
 
   return (
     <>
-          <HeroSectionTextHover />
+          {/* <HeroSectionTextHover />
 
-          <Navbar2/>
+          <Navbar2/> */}
 
-      {/* <Header /> */}
+      <Header />
       <ContentWrapper>
         <Hero />
 
@@ -73,7 +72,6 @@ export default async function Home() {
       </ContentWrapper>
 
       {/* <Navbar /> */}
-      {/* <HeroSubText/> */}
       {/* <TheEssentials /> */}
 
       

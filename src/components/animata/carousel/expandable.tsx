@@ -42,6 +42,8 @@ const List = ({ item, className, index, activeItem, ...props }: ImageProps) => {
             className="items-start justify-start text-xl sm:text-2xl md:text-6xl"
             text={item.title}
             direction="up"
+            mode="word"
+
           />
         </div>
       )}
@@ -53,17 +55,17 @@ const items = [
   {
     image:
       "https://images.unsplash.com/photo-1541753236788-b0ac1fc5009d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
-    title: "Mountains",
+    title: "General Medicine",
   },
   {
     image:
       "https://images.unsplash.com/photo-1718027808460-7069cf0ca9ae?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
-    title: "Great Wall of China",
+    title: "Pediatrics",
   },
   {
     image:
       "https://images.unsplash.com/photo-1584968173934-bc0b588eb806?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
-    title: "Texture & Patterns",
+    title: "Cardiology",
   },
 ];
 

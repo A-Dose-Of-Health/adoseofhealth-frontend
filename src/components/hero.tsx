@@ -42,7 +42,7 @@ export function Hero() {
           <div className="space-y-4 md:space-y-6">
             <h1 className=" text-2xl leading-10 font-medium sm:text-5xl sm:leading-[4rem] xl:text-6xl xl:leading-[5rem] 2xl:text-7xl 2xl:leading-[6rem]">
               Lorem ipsum is a {" "}
-              <span className="text-primary dark:text-tertiary relative inline-bloc">
+              <span className="text-primary dark:text-tertiary relative inline-block">
                 {/* <span className="absolute -right-2 bottom-0 text-primary">
                   <img
                     src="images/text-underline.svg"
