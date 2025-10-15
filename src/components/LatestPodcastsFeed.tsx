@@ -44,11 +44,11 @@ function PodcastCard({ podcast }: { podcast: Podcast }) {
     <div className="group bg-gray-light relative rounded-2xl p-3 duration-300 sm:p-4 lg:rounded-3xl xl:rounded-4xl xl:p-6">
       {/* New Text Animation */}
       {isNew && (
-        <div className="absolute -top-10 -right-12 hidden animate-[bounce_4s_infinite] sm:block text-tertiary">
+        <div className="absolute -top-10 -left-8 hidden animate-[bounce_4s_infinite] sm:block text-tertiary">
           <img
             src="images/new-text.svg"
             alt="new-text"
-            className="object-contain "
+            className="object-contain -rotate-45"
           />
         </div>
       )}
