@@ -37,30 +37,29 @@ function PodcastCard({ podcast }: { podcast: Podcast }) {
       <span className="absolute inset-0 rounded-2xl border border-black duration-300 group-hover:-bottom-2 group-hover:border-b-8 lg:rounded-3xl xl:rounded-4xl"></span>
 
       {/* Podcast image */}
-      <div className="relative z-[1] mb-4 h-60 overflow-hidden rounded-2xl lg:mb-6 xl:rounded-3xl">
-        <a
-          href={`/episode/${podcast.id}`}
-          className="absolute inset-0 z-[1] transition hover:bg-white/10"
-        />
-        <img
-          src={podcast.thumbnail}
-          alt={podcast.title}
-          className="h-full w-full object-cover"
-        />
-        <button
-          type="button"
-          className="bg-tertiary absolute top-3 right-3 z-[5] grid size-8 place-content-center rounded-full text-white transition hover:rotate-90"
-          title="Add Playlist"
-        >
-          <Plus className="w-5 h-5 fill-white" />
-        </button>
-        {podcast.host && (
-          <div className="absolute right-0 bottom-0 flex min-w-42 items-center justify-center gap-2 rounded-t-2xl bg-white/70 p-2 text-sm font-semibold backdrop-blur-[15px] sm:p-3 lg:rounded-t-3xl lg:text-base 2xl:min-w-57">
-            <Mic className="w-4 h-4" />
-            <span>By {podcast.host}</span>
-          </div>
-        )}
-      </div>
+      <div className="relative z-[1] mb-4 aspect-video overflow-hidden rounded-2xl lg:mb-6 xl:rounded-3xl">
+  <a
+    href={`/episode/${podcast.id}`}
+    className="absolute inset-0 z-[1] transition hover:bg-white/10"
+  />
+  <img
+    src={podcast.thumbnail}
+    alt={podcast.title}
+    className="h-full w-full object-cover"
+  />
+  {/* New Badge Section */}
+  {/* <div
+    className=" absolute top-3 right-3 z-[5] grid size-8 place-content-center transition hover:rotate-90"
+  >
+    <span className="inline-flex items-center rounded-md bg-tertiary/90 px-2 py-1 text-xs font-medium text-white inset-ring inset-ring-green-400/20">New</span>
+  </div> */}
+  {podcast.host && (
+    <div className="absolute right-0 bottom-0 flex min-w-42 items-center justify-center gap-2 rounded-t-2xl bg-white/70 p-2 text-sm font-semibold backdrop-blur-[15px] sm:p-3 lg:rounded-t-3xl lg:text-base 2xl:min-w-57">
+      <Mic className="w-4 h-4" />
+      <span>By {podcast.host}</span>
+    </div>
+  )}
+</div>
 
       {/* Card details */}
       <div className="relative flex justify-between gap-4 xl:gap-8">

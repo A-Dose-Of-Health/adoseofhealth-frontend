@@ -21,8 +21,8 @@ export function ContactUs() {
 
   return (
     <>
-      <div className="relative overflow-hidden p-4 mx-auto">
-        <div className="bg-[#1E444C] rounded-3xl h-full w-full py-12 lg:py-20 ">
+      <div className="relative overflow-hidden p-4 mx-auto ">
+        <div className="bg-[#1E444C] rounded-3xl h-full w-full py-12 lg:py-60 ">
           {/* Top radial blob */}
         <span className="absolute top-0 -right-[300px] -z-10 w-[600px] h-[600px] rounded-full bg-gradient-radial from-secondary/20 to-transparent blur-[100px]" />
 
@@ -31,29 +31,22 @@ export function ContactUs() {
           <span className="absolute -bottom-[400px] -left-[240px] -z-10 w-[600px] h-[600px] rounded-full bg-gradient-radial from-[#F96D6E]/20 to-transparent blur-[100px]" />
 
           {/* Image */}
-          <div className="relative h-80 w-full overflow-hidden rounded-2xl sm:h-[400px] lg:h-auto lg:max-w-[700px] lg:rounded-3xl xl:rounded-[2rem]">
-            <img
-              alt="contact-hero"
-              loading="lazy"
-              width={669}
-              height={801}
-              className="h-full w-full object-cover"
-              src="images/contact.jpg"
-            />
+          <div className="relative h-80 w-full overflow-hidden rounded-2xl sm:h-[400px] lg:h-auto lg:w-[1800px] lg:rounded-3xl xl:rounded-[2rem]">
+      <img
+        alt="contact-hero"
+        loading="lazy"
+        width={669}
+        height={801}
+        className="h-full w-full object-cover"
+        src="/images/contact.jpg"
+      />
 
-            {/* Overlay glass effect */}
-            <div className="absolute inset-x-8 bottom-16 flex h-28 flex-col items-center justify-center gap-3 bg-[url('/images/contact-glass-effect.png')] bg-cover bg-center bg-no-repeat p-4 sm:inset-x-14 sm:h-24 sm:flex-row sm:gap-6 lg:bottom-[58px] lg:h-[140px] xl:inset-x-20">
-              <p className="text-lg font-medium text-white lg:text-2xl">
-                Follow us
-              </p>
-              <div className="flex gap-2.5 sm:gap-4">
-                {/* social links unchanged... */}
-              </div>
-            </div>
-          </div>
+      {/* Overlay glass effect */}
+      
+    </div>
 
           {/* Form container */}
-          <div className="relative -mt-10 w-full max-w-[635px] rounded-2xl border border-black bg-white p-3 shadow-[0_16px_32px_-12px_rgba(88,92,95,0.06)] sm:mx-5 lg:mt-0 lg:mr-0 lg:-ml-10 lg:rounded-3xl xl:rounded-[2rem] ">
+          <div className="relative -mt-10 w-full max-w-[635px] rounded-2xl border border-black bg-white p-3 shadow-[0_16px_32px_-12px_rgba(88,92,95,0.06)] sm:mx-5 lg:mr-0 lg:-ml-10 lg:rounded-3xl xl:rounded-[2rem] ">
             <form className="flex flex-col">
               <Cal
                 namespace="30min"
