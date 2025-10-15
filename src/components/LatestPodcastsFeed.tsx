@@ -32,34 +32,56 @@ function PodcastCard({ podcast }: { podcast: Podcast }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showPlaybar, setShowPlaybar] = useState(false);
 
+  const isNew = (() => {
+    if (!podcast.date && !podcast.publishedAt) return false;
+    const publishedDate = new Date(podcast.publishedAt || podcast.date || "");
+    const diffDays =
+      (Date.now() - publishedDate.getTime()) / (1000 * 60 * 60 * 24);
+    return diffDays <= 7; // ✅ within the past week
+  })();
+
   return (
     <div className="group bg-gray-light relative rounded-2xl p-3 duration-300 sm:p-4 lg:rounded-3xl xl:rounded-4xl xl:p-6">
+      {/* New Text Animation */}
+      {isNew && (
+        <div className="absolute -top-10 -right-12 hidden animate-[bounce_4s_infinite] sm:block text-tertiary">
+          <img
+            src="images/new-text.svg"
+            alt="new-text"
+            className="object-contain "
+          />
+        </div>
+      )}
+
       <span className="absolute inset-0 rounded-2xl border border-black duration-300 group-hover:-bottom-2 group-hover:border-b-8 lg:rounded-3xl xl:rounded-4xl"></span>
 
       {/* Podcast image */}
       <div className="relative z-[1] mb-4 aspect-video overflow-hidden rounded-2xl lg:mb-6 xl:rounded-3xl">
-  <a
-    href={`/episode/${podcast.id}`}
-    className="absolute inset-0 z-[1] transition hover:bg-white/10"
-  />
-  <img
-    src={podcast.thumbnail}
-    alt={podcast.title}
-    className="h-full w-full object-cover"
-  />
-  {/* New Badge Section */}
-  {/* <div
-    className=" absolute top-3 right-3 z-[5] grid size-8 place-content-center transition hover:rotate-90"
-  >
-    <span className="inline-flex items-center rounded-md bg-tertiary/90 px-2 py-1 text-xs font-medium text-white inset-ring inset-ring-green-400/20">New</span>
-  </div> */}
-  {podcast.host && (
-    <div className="absolute right-0 bottom-0 flex min-w-42 items-center justify-center gap-2 rounded-t-2xl bg-white/70 p-2 text-sm font-semibold backdrop-blur-[15px] sm:p-3 lg:rounded-t-3xl lg:text-base 2xl:min-w-57">
-      <Mic className="w-4 h-4" />
-      <span>By {podcast.host}</span>
-    </div>
-  )}
-</div>
+        <a
+          href={`/episode/${podcast.id}`}
+          className="absolute inset-0 z-[1] transition hover:bg-white/10"
+        />
+        <img
+          src={podcast.thumbnail}
+          alt={podcast.title}
+          className="h-full w-full object-cover"
+        />
+        {/* New Badge Section */}
+        {isNew && (
+          <div className=" absolute top-3 right-3 z-[5] grid size-8 place-content-center transition hover:rotate-90">
+            <span className="inline-flex items-center rounded-md bg-tertiary/90 px-2 py-1 text-xs font-medium text-white inset-ring inset-ring-green-400/20">
+              New
+            </span>
+          </div>
+        )}
+
+        {podcast.host && (
+          <div className="absolute right-0 bottom-0 flex min-w-42 items-center justify-center gap-2 rounded-t-2xl bg-white/70 p-2 text-sm font-semibold backdrop-blur-[15px] sm:p-3 lg:rounded-t-3xl lg:text-base 2xl:min-w-57">
+            <Mic className="w-4 h-4" />
+            <span>By {podcast.host}</span>
+          </div>
+        )}
+      </div>
 
       {/* Card details */}
       <div className="relative flex justify-between gap-4 xl:gap-8">
@@ -149,7 +171,6 @@ function PodcastCard({ podcast }: { podcast: Podcast }) {
 
 // Automatically maps YouTubeVideo[] to Podcast[]
 export function LatestPodcastsFeed({ videos }: { videos: YouTubeVideo[] }) {
-
   // Format publishedAt to "MMM dd, yyyy"
   const formatDate = (dateString: string) => {
     const d = new Date(dateString);
@@ -160,33 +181,32 @@ export function LatestPodcastsFeed({ videos }: { videos: YouTubeVideo[] }) {
     });
   };
 
-//   const podcasts: Podcast[] = videos.map((v, index) => {
-//   // regex: split at first special character (-, |, :, etc.)
-//   const cleanTitle = v.title.split(/[-|:–?]/)[0].trim();
+  //   const podcasts: Podcast[] = videos.map((v, index) => {
+  //   // regex: split at first special character (-, |, :, etc.)
+  //   const cleanTitle = v.title.split(/[-|:–?]/)[0].trim();
 
-//   return {
-//     ...v,
-//     type: "Video",
-//     title: cleanTitle, // truncated title
-//     episode: `Episode ${index + 1}`,
-//     date: formatDate(v.publishedAt),
-//     description:
-//       v.description
-//         .split(" ")
-//         .slice(0, 10)
-//         .join(" ") + (v.description.split(" ").length > 10 ? "…" : ""),
-//   };
-// });
+  //   return {
+  //     ...v,
+  //     type: "Video",
+  //     title: cleanTitle, // truncated title
+  //     episode: `Episode ${index + 1}`,
+  //     date: formatDate(v.publishedAt),
+  //     description:
+  //       v.description
+  //         .split(" ")
+  //         .slice(0, 10)
+  //         .join(" ") + (v.description.split(" ").length > 10 ? "…" : ""),
+  //   };
+  // });
 
-const podcasts: Podcast[] = videos.map((v, index) => ({
+  const podcasts: Podcast[] = videos.map((v, index) => ({
     ...v,
     type: "Video",
     episode: `Episode ${index + 1}`,
     date: formatDate(v.publishedAt),
-    description: v.description
-    .split(" ")
-    .slice(0, 10)
-    .join(" ") + (v.description.split(" ").length > 10 ? "…" : ""),
+    description:
+      v.description.split(" ").slice(0, 10).join(" ") +
+      (v.description.split(" ").length > 10 ? "…" : ""),
   }));
 
   return (
@@ -214,7 +234,7 @@ const podcasts: Podcast[] = videos.map((v, index) => ({
                   className="hidden h-full w-full object-contain"
                 />
               </span>
-              Latest from the {" "}
+              Latest from the{" "}
               <span className="text-tertiary relative inline-block pb-1.5">
                 {/* <span className="absolute right-8 bottom-0 left-0 h-3.5">
                   <img
@@ -230,7 +250,6 @@ const podcasts: Podcast[] = videos.map((v, index) => ({
                 </span> */}
                 Channel
               </span>{" "}
-              
             </h2>
 
             <p className="mx-auto mt-4 w-full max-w-142 text-lg/6">
