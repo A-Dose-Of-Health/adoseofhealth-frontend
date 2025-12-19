@@ -29,7 +29,6 @@ export default async function Home() {
 
           <Navbar2/> */}
 
-      <Header />
       <ContentWrapper>
         <Hero />
 

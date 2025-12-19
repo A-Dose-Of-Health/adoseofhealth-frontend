@@ -62,23 +62,23 @@ export function Header() {
 
           {/* Nav Links */}
           <ul className="flex flex-col gap-2.5 p-5 xl:flex-row xl:items-center xl:gap-8 xl:p-0">
-            {[
-              "Home",
-              "Categories",
-              "Playlist",
-              "Hosts",
-              "About",
-              "Contact",
-            ].map((item, idx) => (
-              <li key={idx}>
-                <Link
-                  href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                  className="nav-links"
-                >
-                  {item}
-                </Link>
-              </li>
-            ))}
+            {["Home", "Health Library", "Media Hub", "About Us"].map(
+              (item, idx) => {
+                let href = "/";
+                if (item === "Home") href = "/";
+                else if (item === "Media Hub")
+                  href = "/media-hub"; // special case
+                else href = `/${item.toLowerCase().replace(/\s+/g, "-")}`;
+
+                return (
+                  <li key={idx}>
+                    <Link href={href} className="nav-links">
+                      {item}
+                    </Link>
+                  </li>
+                );
+              }
+            )}
             <li className="sm:hidden">
               <Link
                 href="/sign-in"

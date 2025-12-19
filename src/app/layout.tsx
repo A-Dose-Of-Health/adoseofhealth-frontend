@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { chrcy } from "@/lib/fonts";
+import { Header } from "@/components/header";
 
 
 const geistSans = Geist({
@@ -29,6 +30,8 @@ export default function RootLayout({
       <body
         className={`bg-gray-light font-manrope flex min-h-screen flex-col text-base/5.5 font-normal text-black ${geistSans.variable} ${geistMono.variable} ${chrcy.variable} antialiased`}
       >
+              <Header />
+        
         {children}
       </body>
     </html>
