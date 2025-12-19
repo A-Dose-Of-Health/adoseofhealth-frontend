@@ -123,12 +123,10 @@ export default function RecentPodcastsOverview({ episodes, earliestEpisode }: Pr
                 {/* Hover border frame */}
                 <span
                   className="
-      pointer-events-none absolute inset-0 z-30
+       absolute inset-0 z-30
       rounded-2xl xl:rounded-4xl
       border border-black/80
-      transition-transform duration-300
-      group-hover:translate-y-2
-      group-hover:border-b-8
+      
     "
                 />
 
@@ -149,7 +147,9 @@ export default function RecentPodcastsOverview({ episodes, earliestEpisode }: Pr
                       )}
 
                   {/* Readability overlay */}
-                  <div className="absolute inset-0 bg-black/25 dark:bg-black/40 " />
+                  <div className="absolute inset-0 bg-transparent
+    bg-gradient-to-r from-blue-light/30 to-white/20
+     " />
                 </div>
 
                 {/* Foreground content */}
@@ -169,16 +169,9 @@ export default function RecentPodcastsOverview({ episodes, earliestEpisode }: Pr
                       <span>Episode 09</span>
                     </div>
 
-                    <button
-                      className="
-          grid size-8 place-content-center
-          rounded-full bg-tertiary text-white
-          transition group-hover:scale-105
-          dark:bg-gray-100 dark:text-black
-        "
-                    >
-                      +
-                    </button>
+                    <span className="flex items-center gap-1">
+                            ⏱ 45 min
+                          </span>
                   </div>
 
                   {/* Main content */}
@@ -193,9 +186,8 @@ export default function RecentPodcastsOverview({ episodes, earliestEpisode }: Pr
                   {earliestEpisode.title}
                 </Link>
 
-                    <p className="text-white/90">
-                      A candid chat with viral creators about burnout, branding,
-                      and staying real online.
+                    <p className="text-white/90 line-clamp-3">
+                      {earliestEpisode.description}
                     </p>
                   </div>
 
