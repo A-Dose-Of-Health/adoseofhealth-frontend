@@ -1,13 +1,15 @@
 import EpisodePage from "@/components/[slug]/SingleAudioPodcastPage";
 
-interface Props {
-  params: {
-    slug: string;
-  };
-}
-
 export const revalidate = 3600; // ISR, refresh hourly
 
-export default function SingleEpisodePage({ params }: Props) {
-  return <EpisodePage params={params} />;
+interface PageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+}
+
+export default async function SingleEpisodePage({ params }: PageProps) {
+  const { slug } = await params;
+
+  return <EpisodePage params={{ slug }} />;
 }
