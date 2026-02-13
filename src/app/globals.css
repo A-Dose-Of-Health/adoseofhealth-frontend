@@ -54,7 +54,7 @@ body {
   }
 
   .prose h2 {
-    @apply mt-8 mb-4 text-2xl font-medium lg:text-[32px]/11;
+    @apply mt-8 mb-4 text-2xl font-medium lg:text-h2;
   }
 
   .prose ul > li {
@@ -70,7 +70,7 @@ body {
   }
 
   .prose blockquote {
-    @apply bg-secondary/5 my-8 border-l-2 border-black/10 p-6 leading-6.5 font-normal dark:border-black/10 dark:bg-white/20;
+    @apply bg-secondary/5 my-8 border-l-2 border-black/10 p-6 leading-7.75 font-normal dark:border-black/10 dark:bg-white/20;
   }
 }
 

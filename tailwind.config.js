@@ -9,6 +9,7 @@ module.exports = {
       // custom shapes / spacing / glass style tokens
       lineHeight: {
         5.5: "1.375rem", // = 22px
+  7.75: "1.9375rem", // = 31px, adjust as desired
       },
       spacing: {
         9.5: "38px",
@@ -16,6 +17,7 @@ module.exports = {
       },
       fontSize: {
         base: ["1rem", { lineHeight: "1.375rem" }], // if you want `text-base/5.5`
+        h2: ['32px', '44px'],
       },
       colors: {
         transparent: "transparent",
