@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function HealthLibraryPage() {
   const sections = [
-    { slug: "womens-health", title: "Women's Health" },
+    // { slug: "womens-health", title: "Women's Health" },
     { slug: "mental-health", title: "Mental Health" },
     { slug: "chronic-conditions", title: "Chronic Conditions" },
   ];
