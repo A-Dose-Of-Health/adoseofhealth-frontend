@@ -29,8 +29,8 @@ export type TocItem = {
 };
 
 export type HealthArticleIndexItem = {
-  filePath: string;  // absolute (or project-relative) path stored in index
-  route: string;     // /health-library/... path
+  filePath: string;
+  route: string;
   frontmatter: HealthArticleFrontmatter;
-  toc: TocItem[];
+  toc: ReadonlyArray<TocItem>;
 };
