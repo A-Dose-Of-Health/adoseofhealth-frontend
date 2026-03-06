@@ -1,57 +1,81 @@
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/health-library/Breadcrumbs";
 import { ArticleCard } from "@/components/health-library/ArticleCard";
-import { getArticlesBySubtopic, getHealthLibraryIndex } from "@/content/health-library/loaders";
+import {
+  getArticlesBySubtopic,
+  getHealthLibraryIndex,
+} from "@/content/health-library/loaders";
 
-type Params = { topic: string; subtopic: string };
+type Params = {
+  topic: string;
+  subtopic: string;
+};
+
+type PageProps = {
+  params: Promise<Params>;
+};
 
 export function generateStaticParams() {
   const idx = getHealthLibraryIndex();
   const params: Params[] = [];
+
   for (const t of idx.topics) {
     for (const s of idx.subtopicsByTopic[t.slug] ?? []) {
       params.push({ topic: t.slug, subtopic: s.slug });
     }
   }
+
   return params;
 }
 
-export function generateMetadata({ params }: { params: Params }) {
+export async function generateMetadata({ params }: PageProps) {
+  const { topic, subtopic } = await params;
+
   const idx = getHealthLibraryIndex();
-  const topic = idx.topics.find((t) => t.slug === params.topic);
-  if (!topic) return {};
+  const topicItem = idx.topics.find((t) => t.slug === topic);
+
+  if (!topicItem) {
+    return {};
+  }
+
   return {
-    title: `${params.subtopic.replace(/-/g, " ")} | ${topic.title} | Health Library`,
-    description: `Browse resources under ${topic.title} → ${params.subtopic.replace(/-/g, " ")}.`,
+    title: `${subtopic.replace(/-/g, " ")} | ${topicItem.title} | Health Library`,
+    description: `Browse resources under ${topicItem.title} → ${subtopic.replace(/-/g, " ")}.`,
   };
 }
 
-export default function SubtopicPage({ params }: { params: Params }) {
+export default async function SubtopicPage({ params }: PageProps) {
+  const { topic, subtopic } = await params;
+
   const idx = getHealthLibraryIndex();
-  const topic = idx.topics.find((t) => t.slug === params.topic);
-  if (!topic) notFound();
+  const topicItem = idx.topics.find((t) => t.slug === topic);
+  if (!topicItem) notFound();
 
-  const subtopic = (idx.subtopicsByTopic[topic.slug] ?? []).find(
-    (s) => s.slug === params.subtopic,
+  const subtopicItem = (idx.subtopicsByTopic[topicItem.slug] ?? []).find(
+    (s) => s.slug === subtopic,
   );
-  if (!subtopic) notFound();
+  if (!subtopicItem) notFound();
 
-  const articles = getArticlesBySubtopic(params.topic, params.subtopic);
+  const articles = getArticlesBySubtopic(topic, subtopic);
 
   return (
     <main className="p-6">
       <Breadcrumbs
         items={[
           { label: "Health Library", href: "/health-library" },
-          { label: topic.title, href: `/health-library/${topic.slug}` },
-          { label: subtopic.title, href: `/health-library/${topic.slug}/${subtopic.slug}` },
+          { label: topicItem.title, href: `/health-library/${topicItem.slug}` },
+          {
+            label: subtopicItem.title,
+            href: `/health-library/${topicItem.slug}/${subtopicItem.slug}`,
+          },
         ]}
       />
 
       <header className="mt-4 max-w-3xl">
-        <h1 className="text-3xl font-bold">{subtopic.title}</h1>
+        <h1 className="text-3xl font-bold">{subtopicItem.title}</h1>
         <p className="mt-2 text-gray-600">
-          {subtopic.articleCount} resource{subtopic.articleCount === 1 ? "" : "s"}
+          {subtopicItem.articleCount} resource
+          {subtopicItem.articleCount === 1 ? "" : "s"}
         </p>
       </header>
 

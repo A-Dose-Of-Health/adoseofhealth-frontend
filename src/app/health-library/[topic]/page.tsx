@@ -3,43 +3,57 @@ import { Breadcrumbs } from "@/components/health-library/Breadcrumbs";
 import { SubtopicCard } from "@/components/health-library/SubtopicCard";
 import { getHealthLibraryIndex } from "@/content/health-library/loaders";
 
-type Params = { topic: string };
+type Params = {
+  topic: string;
+};
+
+type PageProps = {
+  params: Promise<Params>;
+};
 
 export function generateStaticParams() {
   const idx = getHealthLibraryIndex();
   return idx.topics.map((t) => ({ topic: t.slug }));
 }
 
-export function generateMetadata({ params }: { params: Params }) {
+export async function generateMetadata({ params }: PageProps) {
+  const { topic } = await params;
+
   const idx = getHealthLibraryIndex();
-  const topic = idx.topics.find((t) => t.slug === params.topic);
-  if (!topic) return {};
+  const topicItem = idx.topics.find((t) => t.slug === topic);
+
+  if (!topicItem) {
+    return {};
+  }
+
   return {
-    title: `${topic.title} | Health Library`,
-    description: topic.description,
+    title: `${topicItem.title} | Health Library`,
+    description: topicItem.description,
   };
 }
 
-export default function TopicPage({ params }: { params: Params }) {
-  const idx = getHealthLibraryIndex();
-  const topic = idx.topics.find((t) => t.slug === params.topic);
-  if (!topic) notFound();
+export default async function TopicPage({ params }: PageProps) {
+  const { topic } = await params;
 
-  const subtopics = idx.subtopicsByTopic[topic.slug] ?? [];
+  const idx = getHealthLibraryIndex();
+  const topicItem = idx.topics.find((t) => t.slug === topic);
+  if (!topicItem) notFound();
+
+  const subtopics = idx.subtopicsByTopic[topicItem.slug] ?? [];
 
   return (
     <main className="p-6">
       <Breadcrumbs
         items={[
           { label: "Health Library", href: "/health-library" },
-          { label: topic.title, href: `/health-library/${topic.slug}` },
+          { label: topicItem.title, href: `/health-library/${topicItem.slug}` },
         ]}
       />
 
       <header className="mt-4 max-w-3xl">
-        <h1 className="text-3xl font-bold">{topic.title}</h1>
-        {topic.description ? (
-          <p className="mt-2 text-gray-600">{topic.description}</p>
+        <h1 className="text-3xl font-bold">{topicItem.title}</h1>
+        {topicItem.description ? (
+          <p className="mt-2 text-gray-600">{topicItem.description}</p>
         ) : null}
       </header>
 
@@ -49,7 +63,7 @@ export default function TopicPage({ params }: { params: Params }) {
           {subtopics.map((s) => (
             <SubtopicCard
               key={s.slug}
-              topic={topic.slug}
+              topic={topicItem.slug}
               slug={s.slug}
               title={s.title}
               articleCount={s.articleCount}

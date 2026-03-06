@@ -8,10 +8,19 @@ import {
   loadMdxArticle,
 } from "@/content/health-library/loaders";
 
-type Params = { topic: string; subtopic: string; article: string };
+type Params = {
+  topic: string;
+  subtopic: string;
+  article: string;
+};
+
+type PageProps = {
+  params: Promise<Params>;
+};
 
 export function generateStaticParams() {
   const idx = getHealthLibraryIndex();
+
   return idx.articles.map((a) => ({
     topic: a.frontmatter.topic,
     subtopic: a.frontmatter.subtopic,
@@ -19,36 +28,44 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: Params }) {
-  const item = getArticleBySlugs(params.topic, params.subtopic, params.article);
-  if (!item) return {};
+export async function generateMetadata({ params }: PageProps) {
+  const { topic, subtopic, article } = await params;
+
+  const item = getArticleBySlugs(topic, subtopic, article);
+
+  if (!item) {
+    return {};
+  }
+
   return {
     title: `${item.frontmatter.title} | Health Library`,
     description: item.frontmatter.summary,
   };
 }
 
-export default async function ArticlePage({ params }: { params: Params }) {
-  const item = getArticleBySlugs(params.topic, params.subtopic, params.article);
+export default async function ArticlePage({ params }: PageProps) {
+  const { topic, subtopic, article } = await params;
+
+  const item = getArticleBySlugs(topic, subtopic, article);
   if (!item) notFound();
 
   const compiled = await loadMdxArticle(item.filePath);
 
   const idx = getHealthLibraryIndex();
   const topicTitle =
-    idx.topics.find((t) => t.slug === params.topic)?.title ?? params.topic;
+    idx.topics.find((t) => t.slug === topic)?.title ?? topic;
 
   const subtopicTitle =
-    (idx.subtopicsByTopic[params.topic] ?? []).find((s) => s.slug === params.subtopic)
-      ?.title ?? params.subtopic;
+    (idx.subtopicsByTopic[topic] ?? []).find((s) => s.slug === subtopic)?.title ??
+    subtopic;
 
   return (
     <main className="p-6">
       <Breadcrumbs
         items={[
           { label: "Health Library", href: "/health-library" },
-          { label: topicTitle, href: `/health-library/${params.topic}` },
-          { label: subtopicTitle, href: `/health-library/${params.topic}/${params.subtopic}` },
+          { label: topicTitle, href: `/health-library/${topic}` },
+          { label: subtopicTitle, href: `/health-library/${topic}/${subtopic}` },
           { label: item.frontmatter.title, href: item.route },
         ]}
       />
@@ -63,7 +80,7 @@ export default async function ArticlePage({ params }: { params: Params }) {
       </header>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[280px_1fr]">
-        <TableOfContents items={item.toc} />
+        <TableOfContents items={[...item.toc]} />
         <MdxArticle>{compiled.content}</MdxArticle>
       </div>
     </main>
