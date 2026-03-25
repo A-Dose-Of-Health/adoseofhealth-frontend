@@ -6,8 +6,7 @@
     "icon": "heart",
     "order": 1,
     "sections": [
-      { "title": "Reproductive Health", "subtopics": ["pregnancy"] },
-      { "title": "Other", "subtopics": [] }
+      { "title": "Body & Anatomy", "subtopics": ["Body & Anatomy"] }
     ]
   },
   {

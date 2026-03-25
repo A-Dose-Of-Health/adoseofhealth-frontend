@@ -12,19 +12,15 @@ export const HEALTH_LIBRARY_INDEX = {
       "order": 1,
       "sections": [
         {
-          "title": "Reproductive Health",
+          "title": "Body & Anatomy",
           "subtopics": [
-            "pregnancy"
+            "Body & Anatomy"
           ]
-        },
-        {
-          "title": "Other",
-          "subtopics": []
         }
       ],
       "counts": {
-        "subtopics": 1,
-        "articles": 1
+        "subtopics": 2,
+        "articles": 2
       }
     },
     {
@@ -57,6 +53,11 @@ export const HEALTH_LIBRARY_INDEX = {
     ],
     "womens-health": [
       {
+        "slug": "body-anatomy",
+        "title": "Body Anatomy",
+        "articleCount": 1
+      },
+      {
         "slug": "pregnancy",
         "title": "Pregnancy",
         "articleCount": 1
@@ -83,6 +84,112 @@ export const HEALTH_LIBRARY_INDEX = {
         ]
       },
       "toc": []
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\body-anatomy.mdx",
+      "route": "/health-library/womens-health/body-anatomy/body-anatomy",
+      "frontmatter": {
+        "title": "Body & Anatomy",
+        "summary": "Body & Anatomy",
+        "topic": "womens-health",
+        "subtopic": "body-anatomy",
+        "slug": "body-anatomy",
+        "updatedAt": "2026-03-05",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "the-vulva-external-anatomy",
+          "text": "The Vulva — External Anatomy",
+          "level": 2
+        },
+        {
+          "id": "mons-pubis",
+          "text": "Mons Pubis",
+          "level": 3
+        },
+        {
+          "id": "labia-majora-outer-lips",
+          "text": "Labia Majora (Outer Lips)",
+          "level": 3
+        },
+        {
+          "id": "labia-minora-inner-lips",
+          "text": "Labia Minora (Inner Lips)",
+          "level": 3
+        },
+        {
+          "id": "clitoris-the-full-structure",
+          "text": "Clitoris — The Full Structure",
+          "level": 3
+        },
+        {
+          "id": "urethral-opening-meatus",
+          "text": "Urethral Opening (Meatus)",
+          "level": 3
+        },
+        {
+          "id": "vaginal-opening-hymen",
+          "text": "Vaginal Opening & Hymen",
+          "level": 3
+        },
+        {
+          "id": "bartholins-glands",
+          "text": "Bartholin's Glands",
+          "level": 3
+        },
+        {
+          "id": "skenes-glands-paraurethral",
+          "text": "Skene's Glands (Paraurethral)",
+          "level": 3
+        },
+        {
+          "id": "vulva-hygiene-daily-dos-donts",
+          "text": "Vulva Hygiene: Daily Do's & Don'ts",
+          "level": 2
+        },
+        {
+          "id": "-do",
+          "text": "✅ Do",
+          "level": 3
+        },
+        {
+          "id": "-never",
+          "text": "🚫 Never",
+          "level": 3
+        },
+        {
+          "id": "common-vulvar-conditions",
+          "text": "Common Vulvar Conditions",
+          "level": 2
+        },
+        {
+          "id": "the-vagina-internal-canal",
+          "text": "The Vagina — Internal Canal",
+          "level": 2
+        },
+        {
+          "id": "the-three-layers-of-the-vaginal-wall",
+          "text": "The Three Layers of the Vaginal Wall",
+          "level": 3
+        },
+        {
+          "id": "vaginal-infections-the-three-main-types",
+          "text": "Vaginal Infections — The Three Main Types",
+          "level": 2
+        },
+        {
+          "id": "kenya-myth-busting-vaginal-health",
+          "text": "Kenya Myth-Busting: Vaginal Health",
+          "level": 2
+        }
+      ]
     },
     {
       "filePath": "src\\content\\health-library\\womens-health\\pregnancy\\prenatal-care.mdx",

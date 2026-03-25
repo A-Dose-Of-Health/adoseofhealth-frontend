@@ -32,7 +32,7 @@ body {
 /* Prose utility */
 @layer utilities {
   .prose {
-    @apply text-left text-black dark:text-white;
+    @apply text-left text-black ;
   }
 
   .prose h1,
@@ -42,11 +42,11 @@ body {
   }
 
   .prose p {
-    @apply mt-0 text-base/5.5 text-black dark:text-white;
+    @apply mt-0 text-base/5.5 text-black ;
   }
 
   .prose h4 {
-    @apply mt-0 mb-4 font-medium lg:text-lg dark:text-white;
+    @apply mt-0 mb-4 font-medium lg:text-lg ;
   }
 
   .prose h3 {
@@ -58,7 +58,7 @@ body {
   }
 
   .prose ul > li {
-    @apply mt-0 mb-0 ps-0 text-base/5.5 font-normal text-black marker:text-sm/5.5 marker:text-black dark:text-white dark:marker:text-white;
+    @apply mt-0 mb-0 ps-0 text-base/5.5 font-normal text-black marker:text-sm/5.5 marker:text-black  dark:marker:text-white;
   }
 
   .prose a {
@@ -66,7 +66,7 @@ body {
   }
 
   .prose ol > li {
-    @apply my-0 ps-0 text-black marker:text-base/5.5 marker:text-black marker:uppercase dark:text-white dark:marker:text-white;
+    @apply my-0 ps-0 text-black marker:text-base/5.5 marker:text-black marker:uppercase  dark:marker:text-white;
   }
 
   .prose blockquote {

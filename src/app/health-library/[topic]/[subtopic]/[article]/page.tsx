@@ -81,7 +81,7 @@ export default async function ArticlePage({ params }: PageProps) {
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[280px_1fr]">
         <TableOfContents items={[...item.toc]} />
-        <MdxArticle>{compiled.content}</MdxArticle>
+        <MdxArticle>{compiled?.content}</MdxArticle>
       </div>
     </main>
   );

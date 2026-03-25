@@ -5,8 +5,8 @@ export function TableOfContents({ items }: { items: TocItem[] }) {
 
   return (
     <aside aria-label="Table of contents" className="sticky top-24">
-      <div className="rounded-2xl border bg-white p-4">
-        <p className="text-sm font-semibold">On this page</p>
+      <div className="rounded-2xl border p-4">
+        <p className="text-lg font-semibold lg:text-2xl">On this page</p>
         <ol className="mt-3 space-y-2 text-sm">
           {items.map((it) => (
             <li key={it.id} className={it.level === 3 ? "ml-4" : ""}>
