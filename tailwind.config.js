@@ -58,6 +58,7 @@ module.exports = {
       fontFamily: {
         chrcy: ["var(--font-chrcy)", "sans-serif"], // 👈 now available as font-myfont
         manrope: ["var(--font-manrope)", "sans-serif"],
+        bricolage: ['var(--font-bricolage)', 'sans-serif']
       },
       borderRadius: {
         "2xl": "20px",

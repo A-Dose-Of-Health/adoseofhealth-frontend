@@ -6,7 +6,15 @@
     "icon": "heart",
     "order": 1,
     "sections": [
-      { "title": "Body & Anatomy", "subtopics": ["Body & Anatomy"] }
+      { "title": "Body & Anatomy", "subtopics": ["Body & Anatomy"] },
+      { "title": "Puberty & Safety", "subtopics": ["Body & Anatomy"] },
+      { "title": "Hormones Across Life Stages" },
+      { "title": "Menstrual Health" },
+      { "title": "Gynaecological Conditions & Cancers" },
+      { "title": "Fertility & Infertility" },
+      { "title": "Contraception — Your Complete Guide" },
+      { "title": "Menopause & Perimenopause" }
+
     ]
   },
   {
