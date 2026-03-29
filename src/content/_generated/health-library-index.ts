@@ -242,6 +242,71 @@ export const HEALTH_LIBRARY_INDEX = {
           "id": "kenya-myth-busting-vaginal-health",
           "text": "Kenya Myth-Busting: Vaginal Health",
           "level": 2
+        },
+        {
+          "id": "the-cervix-the-gatekeeper",
+          "text": "The Cervix — The Gatekeeper",
+          "level": 2
+        },
+        {
+          "id": "four-critical-functions",
+          "text": "Four Critical Functions",
+          "level": 3
+        },
+        {
+          "id": "the-transformation-zone-why-it-matters",
+          "text": "The Transformation Zone — Why It Matters",
+          "level": 3
+        },
+        {
+          "id": "cervical-screening-kenya-guidelines",
+          "text": "Cervical Screening — Kenya Guidelines",
+          "level": 2
+        },
+        {
+          "id": "uterus-fallopian-tubes-ovaries",
+          "text": "Uterus, Fallopian Tubes & Ovaries",
+          "level": 2
+        },
+        {
+          "id": "the-uterus-womb",
+          "text": "The Uterus (Womb)",
+          "level": 3
+        },
+        {
+          "id": "the-fallopian-tubes-where-fertilisation-happens",
+          "text": "The Fallopian Tubes — Where Fertilisation Happens",
+          "level": 3
+        },
+        {
+          "id": "the-ovaries-hormonal-architects",
+          "text": "The Ovaries — Hormonal Architects",
+          "level": 3
+        },
+        {
+          "id": "the-urethra-urinary-pathway",
+          "text": "The Urethra — Urinary Pathway",
+          "level": 2
+        },
+        {
+          "id": "structure-three-layers",
+          "text": "Structure: Three Layers",
+          "level": 3
+        },
+        {
+          "id": "two-sphincters-control-urination",
+          "text": "Two Sphincters Control Urination",
+          "level": 3
+        },
+        {
+          "id": "uti-urinary-tract-infection",
+          "text": "UTI — Urinary Tract Infection",
+          "level": 2
+        },
+        {
+          "id": "kenya-myth-busting-urinary-health",
+          "text": "Kenya Myth-Busting: Urinary Health",
+          "level": 2
         }
       ]
     },
