@@ -6,11 +6,6 @@ import matter from "gray-matter";
 import topicsJson from "../src/content/health-library/topics.json" with { type: "json" };
 const HEALTH_TOPICS = topicsJson;
 
-// NOTE: This script runs in Node. We validate frontmatter using a minimal approach here,
-// because importing TS/Zod in a Node .mjs script would require extra tooling.
-// If you want strict validation here too, we can convert this script to TS and run with tsx.
-// For now, we keep it simple and safe: require key fields and normalize.
-
 const CONTENT_ROOT = path.join(process.cwd(), "src", "content", "health-library");
 
 function titleFromSlug(slug) {
@@ -46,13 +41,45 @@ function extractTocFromMdx(mdx) {
   return toc;
 }
 
+/**
+ * Strip MDX/Markdown formatting and return clean plain text suitable for
+ * full-text search. Keeps the actual words; removes syntax characters.
+ */
+function extractPlainText(mdxContent) {
+  return mdxContent
+    // Remove fenced code blocks entirely (code isn't useful to search)
+    .replace(/```[\s\S]*?```/g, " ")
+    // Remove inline code but keep the text inside
+    .replace(/`([^`]+)`/g, "$1")
+    // Remove markdown images
+    .replace(/!\[([^\]]*)\]\([^)]+\)/g, "$1")
+    // Remove markdown links but keep link text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    // Remove table separator rows (e.g. |---|---|)
+    .replace(/^\|[-:| ]+\|$/gm, "")
+    // Strip table pipe delimiters — keep cell content
+    .replace(/\|/g, " ")
+    // Remove heading hashes (keep heading text)
+    .replace(/^#{1,6}\s+/gm, "")
+    // Remove bold / italic markers (keep inner text)
+    .replace(/\*{1,3}([^*\n]+)\*{1,3}/g, "$1")
+    .replace(/_{1,3}([^_\n]+)_{1,3}/g, "$1")
+    // Remove blockquote markers
+    .replace(/^>\s*/gm, "")
+    // Remove horizontal rules
+    .replace(/^---+$/gm, "")
+    // Remove HTML/JSX tags
+    .replace(/<[^>]+>/g, " ")
+    // Collapse all whitespace (newlines, tabs, multiple spaces) to a single space
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function ensureFrontmatterFields(fm, file) {
   const required = ["title", "summary", "topic", "subtopic", "slug", "updatedAt", "formats"];
   const missing = required.filter((k) => fm?.[k] == null || fm?.[k] === "");
   if (missing.length) {
-    throw new Error(
-      `Missing frontmatter fields in ${file}: ${missing.join(", ")}`
-    );
+    throw new Error(`Missing frontmatter fields in ${file}: ${missing.join(", ")}`);
   }
   return fm;
 }
@@ -61,6 +88,8 @@ async function main() {
   const mdxFiles = await fg(["**/*.mdx"], { cwd: CONTENT_ROOT, absolute: true });
 
   const articles = [];
+  // route → plain-text content, built in parallel with articles array
+  const searchTextByRoute = {};
 
   for (const absFile of mdxFiles) {
     const raw = await fs.readFile(absFile, "utf-8");
@@ -68,11 +97,9 @@ async function main() {
     const fm = ensureFrontmatterFields(parsed.data, absFile);
 
     const toc = extractTocFromMdx(parsed.content);
+    const contentText = extractPlainText(parsed.content);
 
-    // route derived from fm
     const route = `/health-library/${fm.topic}/${fm.subtopic}/${fm.slug}`;
-
-    // store project-relative path for portability
     const relFilePath = path.relative(process.cwd(), absFile);
 
     articles.push({
@@ -93,23 +120,20 @@ async function main() {
       },
       toc,
     });
+
+    searchTextByRoute[route] = contentText;
   }
 
-  // Build topic/subtopic lists from articles
+  // ── Build topic / subtopic structure (unchanged) ────────────────────────
   const topicsFromContent = new Set(articles.map((a) => a.frontmatter.topic));
 
   const topicConfigs = HEALTH_TOPICS
     .filter((t) => topicsFromContent.has(t.slug))
     .sort((a, b) => (a.order ?? 999) - (b.order ?? 999));
 
-  // ensure any topic folders that exist but are not in registry still appear
   for (const t of topicsFromContent) {
     if (!topicConfigs.find((x) => x.slug === t)) {
-      topicConfigs.push({
-        slug: t,
-        title: titleFromSlug(t),
-        description: "",
-      });
+      topicConfigs.push({ slug: t, title: titleFromSlug(t), description: "" });
     }
   }
 
@@ -119,7 +143,7 @@ async function main() {
     for (const a of articles.filter((x) => x.frontmatter.topic === t)) {
       subtopicCounts.set(
         a.frontmatter.subtopic,
-        (subtopicCounts.get(a.frontmatter.subtopic) ?? 0) + 1
+        (subtopicCounts.get(a.frontmatter.subtopic) ?? 0) + 1,
       );
     }
     subtopicsByTopic[t] = Array.from(subtopicCounts.entries())
@@ -134,7 +158,6 @@ async function main() {
   const topics = topicConfigs.map((t) => {
     const subtopics = subtopicsByTopic[t.slug] ?? [];
     const articleCount = articles.filter((a) => a.frontmatter.topic === t.slug).length;
-
     return {
       slug: t.slug,
       title: t.title,
@@ -146,26 +169,28 @@ async function main() {
     };
   });
 
-  const indexObj = {
-    topics,
-    subtopicsByTopic,
-    articles,
-  };
-
+  // ── Write output files ──────────────────────────────────────────────────
   const outDir = path.join(process.cwd(), "src", "content", "_generated");
   await fs.mkdir(outDir, { recursive: true });
 
-  const outFile = path.join(outDir, "health-library-index.ts");
+  // 1. Structural index (unchanged shape — still uses `as const`)
+  const indexObj = { topics, subtopicsByTopic, articles };
+  await fs.writeFile(
+    path.join(outDir, "health-library-index.ts"),
+    `/* eslint-disable */\n// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\n// Run: npm run content:index\n\nexport const HEALTH_LIBRARY_INDEX = ${JSON.stringify(indexObj, null, 2)} as const;\n`,
+    "utf-8",
+  );
+  console.log("[content:index] Wrote src/content/_generated/health-library-index.ts");
 
-  const ts = `/* eslint-disable */
-// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.
-// Run: npm run content:index
-
-export const HEALTH_LIBRARY_INDEX = ${JSON.stringify(indexObj, null, 2)} as const;
-`;
-
-  await fs.writeFile(outFile, ts, "utf-8");
-  console.log(`[content:index] Wrote ${path.relative(process.cwd(), outFile)}`);
+  // 2. Search text map — NOT `as const` (avoids TS inferring thousands of
+  //    literal string types, which would slow down the compiler significantly).
+  //    Typed as a plain Record<string, string> instead.
+  await fs.writeFile(
+    path.join(outDir, "health-library-search.ts"),
+    `/* eslint-disable */\n// THIS FILE IS AUTO-GENERATED. DO NOT EDIT.\n// Run: npm run content:index\n\n/** Maps article route → stripped plain-text body for full-text search. */\nexport const HEALTH_LIBRARY_SEARCH: Record<string, string> = ${JSON.stringify(searchTextByRoute, null, 2)};\n`,
+    "utf-8",
+  );
+  console.log("[content:index] Wrote src/content/_generated/health-library-search.ts");
 }
 
 main().catch((err) => {
