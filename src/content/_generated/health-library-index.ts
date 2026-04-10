@@ -44,7 +44,7 @@ export const HEALTH_LIBRARY_INDEX = {
       ],
       "counts": {
         "subtopics": 8,
-        "articles": 8
+        "articles": 22
       }
     },
     {
@@ -79,17 +79,17 @@ export const HEALTH_LIBRARY_INDEX = {
       {
         "slug": "body-anatomy",
         "title": "Body Anatomy",
-        "articleCount": 1
+        "articleCount": 3
       },
       {
         "slug": "contraception",
         "title": "Contraception",
-        "articleCount": 1
+        "articleCount": 10
       },
       {
         "slug": "fertility-infertility",
         "title": "Fertility Infertility",
-        "articleCount": 1
+        "articleCount": 4
       },
       {
         "slug": "gynaecological-conditions",
@@ -311,6 +311,298 @@ export const HEALTH_LIBRARY_INDEX = {
       ]
     },
     {
+      "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\external-organs.mdx",
+      "route": "/health-library/womens-health/body-anatomy/external-organs",
+      "frontmatter": {
+        "title": "External Organs",
+        "summary": "The vulva is the collective name for all external female genitalia — learn what each structure is, how it works, and how to care for it.",
+        "topic": "womens-health",
+        "subtopic": "body-anatomy",
+        "slug": "external-organs",
+        "updatedAt": "2026-03-05",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "body-anatomy",
+          "external-anatomy"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "the-vulva-external-anatomy",
+          "text": "The Vulva — External Anatomy",
+          "level": 2
+        },
+        {
+          "id": "mons-pubis",
+          "text": "Mons Pubis",
+          "level": 3
+        },
+        {
+          "id": "labia-majora-outer-lips",
+          "text": "Labia Majora (Outer Lips)",
+          "level": 3
+        },
+        {
+          "id": "labia-minora-inner-lips",
+          "text": "Labia Minora (Inner Lips)",
+          "level": 3
+        },
+        {
+          "id": "clitoris-the-full-structure",
+          "text": "Clitoris (The Full Structure)",
+          "level": 3
+        },
+        {
+          "id": "urethral-opening-meatus",
+          "text": "Urethral Opening (Meatus)",
+          "level": 3
+        },
+        {
+          "id": "vaginal-opening-hymen",
+          "text": "Vaginal Opening & Hymen",
+          "level": 3
+        },
+        {
+          "id": "bartholins-glands",
+          "text": "Bartholin's Glands",
+          "level": 3
+        },
+        {
+          "id": "skenes-glands-paraurethral",
+          "text": "Skene's Glands (Paraurethral)",
+          "level": 3
+        },
+        {
+          "id": "vulva-hygiene-daily-dos-donts",
+          "text": "Vulva Hygiene: Daily Do's & Don'ts",
+          "level": 2
+        },
+        {
+          "id": "-do",
+          "text": "✅ Do",
+          "level": 3
+        },
+        {
+          "id": "-never",
+          "text": "🚫 Never",
+          "level": 3
+        },
+        {
+          "id": "common-vulvar-conditions",
+          "text": "Common Vulvar Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\internal-organs.mdx",
+      "route": "/health-library/womens-health/body-anatomy/internal-organs",
+      "frontmatter": {
+        "title": "Internal Organs",
+        "summary": "The vagina is a self-cleaning fibromuscular canal connecting the cervix to the outside world — understand its structure, how infections occur, and what the myths get wrong.",
+        "topic": "womens-health",
+        "subtopic": "body-anatomy",
+        "slug": "internal-organs",
+        "updatedAt": "2026-03-05",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "body-anatomy",
+          "internal-anatomy"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "the-three-layers-of-the-vaginal-wall",
+          "text": "The Three Layers of the Vaginal Wall",
+          "level": 2
+        },
+        {
+          "id": "1-mucosal-layer-inner",
+          "text": "1. Mucosal Layer (Inner)",
+          "level": 3
+        },
+        {
+          "id": "2-muscular-layer-middle",
+          "text": "2. Muscular Layer (Middle)",
+          "level": 3
+        },
+        {
+          "id": "3-adventitia-layer-outer",
+          "text": "3. Adventitia Layer (Outer)",
+          "level": 3
+        },
+        {
+          "id": "vaginal-infections",
+          "text": "Vaginal Infections",
+          "level": 2
+        },
+        {
+          "id": "the-three-main-types",
+          "text": "The Three Main Types",
+          "level": 3
+        },
+        {
+          "id": "kenya-myth-busting-vaginal-health",
+          "text": "Kenya Myth-Busting: Vaginal Health",
+          "level": 2
+        },
+        {
+          "id": "the-cervix-the-gatekeeper",
+          "text": "The Cervix — The Gatekeeper",
+          "level": 2
+        },
+        {
+          "id": "four-critical-functions",
+          "text": "Four Critical Functions",
+          "level": 3
+        },
+        {
+          "id": "the-transformation-zone-why-it-matters",
+          "text": "The Transformation Zone — Why It Matters",
+          "level": 3
+        },
+        {
+          "id": "cervical-screening-kenya-guidelines",
+          "text": "Cervical Screening — Kenya Guidelines",
+          "level": 2
+        },
+        {
+          "id": "uterus-fallopian-tubes-ovaries",
+          "text": "Uterus, Fallopian Tubes & Ovaries",
+          "level": 2
+        },
+        {
+          "id": "the-uterus-womb",
+          "text": "The Uterus (Womb)",
+          "level": 3
+        },
+        {
+          "id": "the-fallopian-tubes-where-fertilisation-happens",
+          "text": "The Fallopian Tubes — Where Fertilisation Happens",
+          "level": 3
+        },
+        {
+          "id": "the-ovaries-hormonal-architects",
+          "text": "The Ovaries — Hormonal Architects",
+          "level": 3
+        },
+        {
+          "id": "the-urethra-urinary-pathway",
+          "text": "The Urethra — Urinary Pathway",
+          "level": 2
+        },
+        {
+          "id": "structure-three-layers",
+          "text": "Structure: Three Layers",
+          "level": 3
+        },
+        {
+          "id": "two-sphincters-control-urination",
+          "text": "Two Sphincters Control Urination",
+          "level": 3
+        },
+        {
+          "id": "uti-urinary-tract-infection",
+          "text": "UTI — Urinary Tract Infection",
+          "level": 2
+        },
+        {
+          "id": "kenya-myth-busting-urinary-health",
+          "text": "Kenya Myth-Busting: Urinary Health",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\contraception\\barrier-methods.mdx",
+      "route": "/health-library/womens-health/contraception/barrier-methods",
+      "frontmatter": {
+        "title": "Barrier Methods",
+        "summary": "Barrier methods physically block sperm from reaching the egg — and condoms are the only contraceptive that also protects against STIs and HIV. Learn how to use each method correctly.",
+        "topic": "womens-health",
+        "subtopic": "contraception",
+        "slug": "barrier-methods",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "contraception",
+          "barrier-methods",
+          "condoms"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "barrier-methods",
+          "text": "Barrier Methods",
+          "level": 2
+        },
+        {
+          "id": "male-condom",
+          "text": "Male Condom",
+          "level": 3
+        },
+        {
+          "id": "female-condom",
+          "text": "Female Condom",
+          "level": 3
+        },
+        {
+          "id": "diaphragm-cervical-cap",
+          "text": "Diaphragm & Cervical Cap",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\contraception\\contraception-a-story-about-choice.mdx",
+      "route": "/health-library/womens-health/contraception/contraception-a-story-about-choice",
+      "frontmatter": {
+        "title": "Contraception: A Story About Choice",
+        "summary": "An overview of contraception in Kenya — why it matters, what the data says, and how to find the right method for your body and lifestyle.",
+        "topic": "womens-health",
+        "subtopic": "contraception",
+        "slug": "contraception-a-story-about-choice",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "contraception"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "contraception-a-story-about-choice",
+          "text": "Contraception: A Story About Choice",
+          "level": 2
+        },
+        {
+          "id": "all-methods-at-a-glance-comparison-table",
+          "text": "All Methods at a Glance — Comparison Table",
+          "level": 2
+        },
+        {
+          "id": "myth-busting-contraception-in-kenya",
+          "text": "Myth-Busting: Contraception in Kenya",
+          "level": 2
+        }
+      ]
+    },
+    {
       "filePath": "src\\content\\health-library\\womens-health\\contraception\\contraception.mdx",
       "route": "/health-library/womens-health/contraception/contraception",
       "frontmatter": {
@@ -442,6 +734,282 @@ export const HEALTH_LIBRARY_INDEX = {
       ]
     },
     {
+      "filePath": "src\\content\\health-library\\womens-health\\contraception\\emergency-contraception.mdx",
+      "route": "/health-library/womens-health/contraception/emergency-contraception",
+      "frontmatter": {
+        "title": "Emergency Contraception (EC)",
+        "summary": "Emergency contraception prevents pregnancy after unprotected sex — it is not the abortion pill. Learn which method is most effective, how soon to act, and where to access it in Kenya.",
+        "topic": "womens-health",
+        "subtopic": "contraception",
+        "slug": "emergency-contraception",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "contraception",
+          "emergency-contraception"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "emergency-contraception-ec",
+          "text": "Emergency Contraception (EC)",
+          "level": 2
+        },
+        {
+          "id": "ec-methods-compared",
+          "text": "EC Methods Compared",
+          "level": 3
+        },
+        {
+          "id": "awareness-in-kenya",
+          "text": "Awareness in Kenya",
+          "level": 3
+        },
+        {
+          "id": "ec-and-hiv-risk",
+          "text": "EC and HIV Risk",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\contraception\\fertility-awareness-methods.mdx",
+      "route": "/health-library/womens-health/contraception/fertility-awareness-methods",
+      "frontmatter": {
+        "title": "Fertility Awareness Methods (FAMs)",
+        "summary": "FAMs use your body's natural signs — cervical mucus, temperature, and cycle tracking — to identify fertile days. Highly effective with perfect use, but require daily discipline.",
+        "topic": "womens-health",
+        "subtopic": "contraception",
+        "slug": "fertility-awareness-methods",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "contraception",
+          "fertility-awareness",
+          "natural-methods"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "fertility-awareness-methods-fams",
+          "text": "Fertility Awareness Methods (FAMs)",
+          "level": 2
+        },
+        {
+          "id": "signs-tracked",
+          "text": "Signs Tracked",
+          "level": 3
+        },
+        {
+          "id": "effectiveness-considerations",
+          "text": "Effectiveness & Considerations",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\contraception\\hormonal-methods.mdx",
+      "route": "/health-library/womens-health/contraception/hormonal-methods",
+      "frontmatter": {
+        "title": "Hormonal Methods — How They Work",
+        "summary": "Hormonal contraceptives use synthetic hormones to prevent pregnancy — from the daily pill to the 3-month injection. Find out how each works, what suits your lifestyle, and what to watch for.",
+        "topic": "womens-health",
+        "subtopic": "contraception",
+        "slug": "hormonal-methods",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "contraception",
+          "hormonal-methods"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "hormonal-methods-how-they-work",
+          "text": "Hormonal Methods — How They Work",
+          "level": 2
+        },
+        {
+          "id": "1-combined-oral-contraceptive-pill-coc-the-pill",
+          "text": "1. Combined Oral Contraceptive Pill (COC / \"The Pill\")",
+          "level": 3
+        },
+        {
+          "id": "2-progestogen-only-pill-pop-mini-pill",
+          "text": "2. Progestogen-Only Pill (POP / Mini-Pill)",
+          "level": 3
+        },
+        {
+          "id": "3-contraceptive-injection-depo-provera-sayana-press",
+          "text": "3. Contraceptive Injection (Depo-Provera / Sayana Press)",
+          "level": 3
+        },
+        {
+          "id": "4-contraceptive-implant-implanon-jadelle",
+          "text": "4. Contraceptive Implant (Implanon / Jadelle)",
+          "level": 3
+        },
+        {
+          "id": "5-contraceptive-patch-vaginal-ring",
+          "text": "5. Contraceptive Patch & Vaginal Ring",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\contraception\\lactational-amenorrhea-method.mdx",
+      "route": "/health-library/womens-health/contraception/lactational-amenorrhea-method",
+      "frontmatter": {
+        "title": "Lactational Amenorrhea Method (LAM)",
+        "summary": "Exclusive breastfeeding can prevent pregnancy — but only when three specific conditions are all met simultaneously. Learn what they are and when to switch to another method.",
+        "topic": "womens-health",
+        "subtopic": "contraception",
+        "slug": "lactational-amenorrhea-method",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "contraception",
+          "breastfeeding",
+          "LAM"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "lactational-amenorrhea-method-lam",
+          "text": "Lactational Amenorrhea Method (LAM)",
+          "level": 2
+        },
+        {
+          "id": "the-three-required-conditions",
+          "text": "The Three Required Conditions",
+          "level": 3
+        },
+        {
+          "id": "important-limits",
+          "text": "Important Limits",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\contraception\\long-acting-reversible-contraception.mdx",
+      "route": "/health-library/womens-health/contraception/long-acting-reversible-contraception",
+      "frontmatter": {
+        "title": "Long-Acting Reversible Contraception (LARCs)",
+        "summary": "LARCs are the most effective reversible methods available — recommended for most women including adolescents. Learn how the copper IUD and hormonal IUS work and what to expect.",
+        "topic": "womens-health",
+        "subtopic": "contraception",
+        "slug": "long-acting-reversible-contraception",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "contraception",
+          "LARCs",
+          "IUD"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "long-acting-reversible-contraception-larcs",
+          "text": "Long-Acting Reversible Contraception (LARCs)",
+          "level": 2
+        },
+        {
+          "id": "copper-iud-non-hormonal-larc",
+          "text": "Copper IUD — Non-Hormonal LARC",
+          "level": 3
+        },
+        {
+          "id": "hormonal-ius-mirena-hormonal-larc",
+          "text": "Hormonal IUS (Mirena) — Hormonal LARC",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\contraception\\permanent-methods-sterilisation.mdx",
+      "route": "/health-library/womens-health/contraception/permanent-methods-sterilisation",
+      "frontmatter": {
+        "title": "Permanent Methods — Sterilisation",
+        "summary": "Sterilisation is the most effective contraception available, intended to be permanent. Understand how tubal ligation and vasectomy work, what they do and don't affect, and what to consider before deciding.",
+        "topic": "womens-health",
+        "subtopic": "contraception",
+        "slug": "permanent-methods-sterilisation",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "contraception",
+          "sterilisation",
+          "permanent-methods"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "permanent-methods-sterilisation",
+          "text": "Permanent Methods — Sterilisation",
+          "level": 2
+        },
+        {
+          "id": "before-you-decide",
+          "text": "Before You Decide",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\contraception\\where-to-access-contraception-in-kenya.mdx",
+      "route": "/health-library/womens-health/contraception/where-to-access-contraception-in-kenya",
+      "frontmatter": {
+        "title": "Where to Access Contraception in Kenya",
+        "summary": "From public hospitals to online pharmacies, contraception is more accessible in Kenya than ever. Find out which services are available near you and what they cost.",
+        "topic": "womens-health",
+        "subtopic": "contraception",
+        "slug": "where-to-access-contraception-in-kenya",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "contraception",
+          "kenya",
+          "access"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "where-to-access-contraception-in-kenya",
+          "text": "Where to Access Contraception in Kenya",
+          "level": 2
+        }
+      ]
+    },
+    {
       "filePath": "src\\content\\health-library\\womens-health\\fertility-infertility\\fertility-infertility.mdx",
       "route": "/health-library/womens-health/fertility-infertility/fertility-infertility",
       "frontmatter": {
@@ -543,6 +1111,174 @@ export const HEALTH_LIBRARY_INDEX = {
         {
           "id": "myth-busting-fertility-in-kenya",
           "text": "Myth-Busting: Fertility in Kenya",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\fertility-infertility\\fertility-treatment-options.mdx",
+      "route": "/health-library/womens-health/fertility-infertility/fertility-treatment-options",
+      "frontmatter": {
+        "title": "Fertility Treatment Options",
+        "summary": "From lifestyle changes and medication to IVF and Kenya's new ART Act — a complete guide to fertility treatment options, including safer conception strategies for HIV-serodifferent couples.",
+        "topic": "womens-health",
+        "subtopic": "fertility-infertility",
+        "slug": "fertility-treatment-options",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "fertility",
+          "IVF",
+          "ART",
+          "treatment"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "fertility-treatment-options",
+          "text": "Fertility Treatment Options",
+          "level": 2
+        },
+        {
+          "id": "1-lifestyle-changes-timed-intercourse",
+          "text": "1. Lifestyle Changes & Timed Intercourse",
+          "level": 3
+        },
+        {
+          "id": "2-medical-treatments",
+          "text": "2. Medical Treatments",
+          "level": 3
+        },
+        {
+          "id": "3-surgical-treatments",
+          "text": "3. Surgical Treatments",
+          "level": 3
+        },
+        {
+          "id": "4-assisted-reproductive-technology-art",
+          "text": "4. Assisted Reproductive Technology (ART)",
+          "level": 3
+        },
+        {
+          "id": "kenyas-assisted-reproductive-technology-art-act-2022",
+          "text": "Kenya's Assisted Reproductive Technology (ART) Act, 2022",
+          "level": 2
+        },
+        {
+          "id": "safer-conception-special-considerations-for-hiv",
+          "text": "Safer Conception — Special Considerations for HIV",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\fertility-infertility\\infertility-causes-and-diagnostic-journey.mdx",
+      "route": "/health-library/womens-health/fertility-infertility/infertility-causes-and-diagnostic-journey",
+      "frontmatter": {
+        "title": "Infertility — Causes & The Diagnostic Journey",
+        "summary": "Infertility affects 1 in 6 couples and involves both partners equally. Understand the main causes, the tests used to investigate them, how lifestyle factors contribute, and how to cope emotionally.",
+        "topic": "womens-health",
+        "subtopic": "fertility-infertility",
+        "slug": "infertility-causes-and-diagnostic-journey",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "fertility",
+          "infertility",
+          "diagnosis"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "infertility-causes-the-diagnostic-journey",
+          "text": "Infertility — Causes & The Diagnostic Journey",
+          "level": 2
+        },
+        {
+          "id": "female-factor-infertility-main-causes",
+          "text": "Female Factor Infertility — Main Causes",
+          "level": 3
+        },
+        {
+          "id": "male-factor-infertility-main-causes",
+          "text": "Male Factor Infertility — Main Causes",
+          "level": 3
+        },
+        {
+          "id": "lifestyle-risk-factors-affecting-both-partners",
+          "text": "Lifestyle Risk Factors Affecting Both Partners",
+          "level": 2
+        },
+        {
+          "id": "male-specific-tips",
+          "text": "Male-Specific Tips",
+          "level": 3
+        },
+        {
+          "id": "diagnostic-tests",
+          "text": "Diagnostic Tests",
+          "level": 2
+        },
+        {
+          "id": "coping-with-infertility-emotional-support",
+          "text": "Coping with Infertility — Emotional Support",
+          "level": 2
+        },
+        {
+          "id": "what-to-remember",
+          "text": "What to Remember",
+          "level": 3
+        },
+        {
+          "id": "myth-busting-fertility-in-kenya",
+          "text": "Myth-Busting: Fertility in Kenya",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\fertility-infertility\\understanding-fertility-and-conception.mdx",
+      "route": "/health-library/womens-health/fertility-infertility/understanding-fertility-and-conception",
+      "frontmatter": {
+        "title": "Understanding Fertility & Conception",
+        "summary": "Fertility is not a fixed state — it changes across life stages and depends on timing, body signals and age. Learn how conception works, how to identify your fertile window, and when to seek help.",
+        "topic": "womens-health",
+        "subtopic": "fertility-infertility",
+        "slug": "understanding-fertility-and-conception",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "fertility",
+          "conception",
+          "ovulation"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "understanding-fertility-conception",
+          "text": "Understanding Fertility & Conception",
+          "level": 2
+        },
+        {
+          "id": "the-fertile-window-ovulation-signs",
+          "text": "The Fertile Window & Ovulation Signs",
+          "level": 2
+        },
+        {
+          "id": "fertility-across-life-stages",
+          "text": "Fertility Across Life Stages",
           "level": 2
         }
       ]
