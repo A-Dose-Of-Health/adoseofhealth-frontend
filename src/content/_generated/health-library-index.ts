@@ -44,7 +44,7 @@ export const HEALTH_LIBRARY_INDEX = {
       ],
       "counts": {
         "subtopics": 8,
-        "articles": 22
+        "articles": 39
       }
     },
     {
@@ -94,22 +94,22 @@ export const HEALTH_LIBRARY_INDEX = {
       {
         "slug": "gynaecological-conditions",
         "title": "Gynaecological Conditions",
-        "articleCount": 1
+        "articleCount": 6
       },
       {
         "slug": "hormones-life-stages",
         "title": "Hormones Life Stages",
-        "articleCount": 1
+        "articleCount": 3
       },
       {
         "slug": "menopause-perimenopause",
         "title": "Menopause Perimenopause",
-        "articleCount": 1
+        "articleCount": 7
       },
       {
         "slug": "menstrual-health",
         "title": "Menstrual Health",
-        "articleCount": 1
+        "articleCount": 5
       },
       {
         "slug": "puberty-safety",
@@ -1284,6 +1284,87 @@ export const HEALTH_LIBRARY_INDEX = {
       ]
     },
     {
+      "filePath": "src\\content\\health-library\\womens-health\\gynaecological-conditions\\adenomyosis.mdx",
+      "route": "/health-library/womens-health/gynaecological-conditions/adenomyosis",
+      "frontmatter": {
+        "title": "Adenomyosis",
+        "summary": "Adenomyosis occurs when the uterine lining grows into the muscle wall, causing an enlarged, boggy uterus with severe cramping and heavy bleeding. Learn how to recognise it and what to do.",
+        "topic": "womens-health",
+        "subtopic": "gynaecological-conditions",
+        "slug": "adenomyosis",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "gynaecological-conditions",
+          "adenomyosis"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "adenomyosis",
+          "text": "Adenomyosis",
+          "level": 2
+        },
+        {
+          "id": "symptoms-of-adenomyosis",
+          "text": "Symptoms of Adenomyosis",
+          "level": 3
+        },
+        {
+          "id": "diagnosis-treatment",
+          "text": "Diagnosis & Treatment",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\gynaecological-conditions\\endometriosis.mdx",
+      "route": "/health-library/womens-health/gynaecological-conditions/endometriosis",
+      "frontmatter": {
+        "title": "Endometriosis",
+        "summary": "Endometriosis affects 190 million women worldwide — yet takes an average of 4–12 years to diagnose. Understand the symptoms, why diagnosis is delayed, and what treatment options are available.",
+        "topic": "womens-health",
+        "subtopic": "gynaecological-conditions",
+        "slug": "endometriosis",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "gynaecological-conditions",
+          "endometriosis"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "endometriosis",
+          "text": "Endometriosis",
+          "level": 2
+        },
+        {
+          "id": "key-symptoms-of-endometriosis",
+          "text": "Key Symptoms of Endometriosis",
+          "level": 3
+        },
+        {
+          "id": "diagnosis-the-412-year-delay",
+          "text": "Diagnosis & The 4–12 Year Delay",
+          "level": 3
+        },
+        {
+          "id": "treatment-options-for-endometriosis",
+          "text": "Treatment Options for Endometriosis",
+          "level": 3
+        }
+      ]
+    },
+    {
       "filePath": "src\\content\\health-library\\womens-health\\gynaecological-conditions\\gynaecological-conditions.mdx",
       "route": "/health-library/womens-health/gynaecological-conditions/gynaecological-conditions",
       "frontmatter": {
@@ -1470,6 +1551,152 @@ export const HEALTH_LIBRARY_INDEX = {
       ]
     },
     {
+      "filePath": "src\\content\\health-library\\womens-health\\gynaecological-conditions\\pelvic-inflammatory-disease.mdx",
+      "route": "/health-library/womens-health/gynaecological-conditions/pelvic-inflammatory-disease",
+      "frontmatter": {
+        "title": "Pelvic Inflammatory Disease (PID)",
+        "summary": "PID is an infection of the upper reproductive tract — often silent, yet capable of causing infertility, chronic pain and life-threatening complications if untreated. Know the signs and act fast.",
+        "topic": "womens-health",
+        "subtopic": "gynaecological-conditions",
+        "slug": "pelvic-inflammatory-disease",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "gynaecological-conditions",
+          "PID",
+          "infection"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "pelvic-inflammatory-disease-pid",
+          "text": "Pelvic Inflammatory Disease (PID)",
+          "level": 2
+        },
+        {
+          "id": "symptoms-of-pelvic-inflammatory-disease",
+          "text": "Symptoms of Pelvic Inflammatory Disease",
+          "level": 3
+        },
+        {
+          "id": "risk-factors",
+          "text": "Risk Factors",
+          "level": 3
+        },
+        {
+          "id": "complications-of-untreated-pid",
+          "text": "Complications of Untreated PID",
+          "level": 3
+        },
+        {
+          "id": "go-to-hospital-immediately-if",
+          "text": "Go to Hospital Immediately If",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\gynaecological-conditions\\polycystic-ovary-syndrome.mdx",
+      "route": "/health-library/womens-health/gynaecological-conditions/polycystic-ovary-syndrome",
+      "frontmatter": {
+        "title": "Polycystic Ovary Syndrome (PCOS)",
+        "summary": "PCOS is one of the most common hormonal conditions in women of reproductive age — affecting periods, fertility, skin, weight and long-term metabolic health. Learn how it's diagnosed and managed.",
+        "topic": "womens-health",
+        "subtopic": "gynaecological-conditions",
+        "slug": "polycystic-ovary-syndrome",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "gynaecological-conditions",
+          "PCOS",
+          "hormones"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "polycystic-ovary-syndrome-pcos",
+          "text": "Polycystic Ovary Syndrome (PCOS)",
+          "level": 2
+        },
+        {
+          "id": "the-rotterdam-criteria-diagnosis-needs-2-of-3",
+          "text": "The Rotterdam Criteria — Diagnosis Needs 2 of 3",
+          "level": 3
+        },
+        {
+          "id": "key-symptoms-of-polycystic-ovary-syndrome",
+          "text": "Key Symptoms of Polycystic Ovary Syndrome",
+          "level": 3
+        },
+        {
+          "id": "why-insulin-resistance-matters-in-pcos",
+          "text": "Why Insulin Resistance Matters in PCOS",
+          "level": 3
+        },
+        {
+          "id": "treatment-options-for-polycystic-ovary-syndrome",
+          "text": "Treatment Options for Polycystic Ovary Syndrome",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\gynaecological-conditions\\uterine-fibroids.mdx",
+      "route": "/health-library/womens-health/gynaecological-conditions/uterine-fibroids",
+      "frontmatter": {
+        "title": "Uterine Fibroids (Leiomyomas)",
+        "summary": "Up to 70–80% of women develop fibroids by age 50 — yet only 1 in 3 have symptoms. Learn the four types, what symptoms to watch for, how they're diagnosed, and the full range of treatment options.",
+        "topic": "womens-health",
+        "subtopic": "gynaecological-conditions",
+        "slug": "uterine-fibroids",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "gynaecological-conditions",
+          "fibroids"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "uterine-fibroids-leiomyomas",
+          "text": "Uterine Fibroids (Leiomyomas)",
+          "level": 2
+        },
+        {
+          "id": "4-types-by-location",
+          "text": "4 Types by Location",
+          "level": 3
+        },
+        {
+          "id": "key-symptoms-of-uterine-fibroids",
+          "text": "Key Symptoms of Uterine Fibroids",
+          "level": 3
+        },
+        {
+          "id": "diagnosis-methods",
+          "text": "Diagnosis Methods",
+          "level": 3
+        },
+        {
+          "id": "treatment-options-for-uterine-fibroids-tailored-to-your-goals",
+          "text": "Treatment Options for Uterine Fibroids — Tailored to Your Goals",
+          "level": 3
+        }
+      ]
+    },
+    {
       "filePath": "src\\content\\health-library\\womens-health\\hormones-life-stages\\hormones-life-stages.mdx",
       "route": "/health-library/womens-health/hormones-life-stages/hormones-life-stages",
       "frontmatter": {
@@ -1566,6 +1793,222 @@ export const HEALTH_LIBRARY_INDEX = {
         {
           "id": "when-to-seek-medical-help-at-any-stage",
           "text": "When to Seek Medical Help at Any Stage",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\hormones-life-stages\\introduction-a-lifetime-of-hormonal-change.mdx",
+      "route": "/health-library/womens-health/hormones-life-stages/introduction-a-lifetime-of-hormonal-change",
+      "frontmatter": {
+        "title": "Introduction: A Lifetime of Hormonal Change",
+        "summary": "Your hormones change from before birth through menopause — shaping your health, mood and experience at every stage. Understand the key hormones and how they shift across all five life stages.",
+        "topic": "womens-health",
+        "subtopic": "hormones-life-stages",
+        "slug": "introduction-a-lifetime-of-hormonal-change",
+        "updatedAt": "2026-01-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "hormones",
+          "life-stages"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "introduction-a-lifetime-of-hormonal-change",
+          "text": "Introduction: A Lifetime of Hormonal Change",
+          "level": 2
+        },
+        {
+          "id": "the-6-key-hormones",
+          "text": "The 6 Key Hormones",
+          "level": 2
+        },
+        {
+          "id": "estrogen-estradiol",
+          "text": "Estrogen (Estradiol)",
+          "level": 3
+        },
+        {
+          "id": "progesterone",
+          "text": "Progesterone",
+          "level": 3
+        },
+        {
+          "id": "testosterone",
+          "text": "Testosterone",
+          "level": 3
+        },
+        {
+          "id": "fsh-follicle-stimulating-hormone",
+          "text": "FSH — Follicle-Stimulating Hormone",
+          "level": 3
+        },
+        {
+          "id": "lh-luteinising-hormone",
+          "text": "LH — Luteinising Hormone",
+          "level": 3
+        },
+        {
+          "id": "prolactin",
+          "text": "Prolactin",
+          "level": 3
+        },
+        {
+          "id": "hormones-across-all-5-life-stages",
+          "text": "Hormones Across All 5 Life Stages",
+          "level": 2
+        },
+        {
+          "id": "stage-1-in-the-beginning-fetal-development-infancy",
+          "text": "Stage 1: In the Beginning — Fetal Development & Infancy",
+          "level": 3
+        },
+        {
+          "id": "stage-2-puberty-adolescence-ages-819",
+          "text": "Stage 2: Puberty & Adolescence (Ages 8–19)",
+          "level": 3
+        },
+        {
+          "id": "stage-3-the-reproductive-years-ages-2039",
+          "text": "Stage 3: The Reproductive Years (Ages 20–39)",
+          "level": 3
+        },
+        {
+          "id": "stage-4-the-perimenopause-transition-ages-40early-50s",
+          "text": "Stage 4: The Perimenopause Transition (Ages 40–Early 50s)",
+          "level": 3
+        },
+        {
+          "id": "stage-5-menopause-beyond-ages-50",
+          "text": "Stage 5: Menopause & Beyond (Ages 50+)",
+          "level": 3
+        },
+        {
+          "id": "when-to-seek-medical-help-at-any-stage",
+          "text": "When to Seek Medical Help at Any Stage",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\hormones-life-stages\\which-stage-am-i-in.mdx",
+      "route": "/health-library/womens-health/hormones-life-stages/which-stage-am-i-in",
+      "frontmatter": {
+        "title": "Which Stage Am I In? — Quick Reference",
+        "summary": "A quick-reference guide to identifying your hormonal life stage — from puberty to postmenopause — and knowing exactly when to seek medical help.",
+        "topic": "womens-health",
+        "subtopic": "hormones-life-stages",
+        "slug": "which-stage-am-i-in",
+        "updatedAt": "2026-01-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "hormones",
+          "life-stages",
+          "reference"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "which-stage-am-i-in-quick-reference",
+          "text": "Which Stage Am I In? — Quick Reference",
+          "level": 2
+        },
+        {
+          "id": "when-to-seek-medical-help-at-any-stage",
+          "text": "When to Seek Medical Help at Any Stage",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menopause-perimenopause\\emerging-research-future-of-menopause-care.mdx",
+      "route": "/health-library/womens-health/menopause-perimenopause/emerging-research-future-of-menopause-care",
+      "frontmatter": {
+        "title": "Part 7: Emerging Research — The Future of Menopause Care",
+        "summary": "From estrogen's newly discovered organ-protective mechanisms to experimental regenerative therapies, the field of reproductive longevity is rapidly evolving. Here's what the latest science reveals.",
+        "topic": "womens-health",
+        "subtopic": "menopause-perimenopause",
+        "slug": "emerging-research-future-of-menopause-care",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menopause",
+          "research",
+          "emerging-treatments"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "part-7-emerging-research-the-future-of-menopause-care",
+          "text": "Part 7: Emerging Research — The Future of Menopause Care",
+          "level": 2
+        },
+        {
+          "id": "estrogen-receptor-autophagy-axis-jan-2026",
+          "text": "Estrogen Receptor-Autophagy Axis (Jan 2026)",
+          "level": 3
+        },
+        {
+          "id": "regenerative-research-experimental",
+          "text": "Regenerative Research — Experimental",
+          "level": 3
+        },
+        {
+          "id": "the-goal",
+          "text": "The Goal",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menopause-perimenopause\\long-term-health-after-menopause.mdx",
+      "route": "/health-library/womens-health/menopause-perimenopause/long-term-health-after-menopause",
+      "frontmatter": {
+        "title": "Part 6: Long-Term Health After Menopause",
+        "summary": "Lower estrogen changes your bone, heart, brain and pelvic floor health for decades to come. Learn what shifts, what to monitor, and how to build the habits that protect you in the long term.",
+        "topic": "womens-health",
+        "subtopic": "menopause-perimenopause",
+        "slug": "long-term-health-after-menopause",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menopause",
+          "long-term-health",
+          "osteoporosis",
+          "heart-health"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "part-6-long-term-health-after-menopause",
+          "text": "Part 6: Long-Term Health After Menopause",
+          "level": 2
+        },
+        {
+          "id": "myth-busting-menopause",
+          "text": "Myth-Busting: Menopause",
+          "level": 2
+        },
+        {
+          "id": "when-to-seek-medical-help",
+          "text": "When to Seek Medical Help",
           "level": 2
         }
       ]
@@ -1713,6 +2156,229 @@ export const HEALTH_LIBRARY_INDEX = {
           "id": "when-to-seek-medical-help",
           "text": "When to Seek Medical Help",
           "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menopause-perimenopause\\menopause-the-milestone.mdx",
+      "route": "/health-library/womens-health/menopause-perimenopause/menopause-the-milestone",
+      "frontmatter": {
+        "title": "Part 2: Menopause — The Milestone",
+        "summary": "Menopause is officially defined as 12 consecutive months without a period. Understand the clinical definition, the STRAW+10 staging system, and what induced menopause means.",
+        "topic": "womens-health",
+        "subtopic": "menopause-perimenopause",
+        "slug": "menopause-the-milestone",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menopause",
+          "definition",
+          "STRAW"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "part-2-menopause-the-milestone",
+          "text": "Part 2: Menopause — The Milestone",
+          "level": 2
+        },
+        {
+          "id": "official-definition",
+          "text": "Official Definition",
+          "level": 3
+        },
+        {
+          "id": "straw10-staging-system",
+          "text": "STRAW+10 Staging System",
+          "level": 3
+        },
+        {
+          "id": "induced-menopause",
+          "text": "Induced Menopause",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menopause-perimenopause\\perimenopause-the-years-before.mdx",
+      "route": "/health-library/womens-health/menopause-perimenopause/perimenopause-the-years-before",
+      "frontmatter": {
+        "title": "Part 1: Perimenopause — The Years Before",
+        "summary": "Perimenopause isn't a slow fade — it's a hormonal rollercoaster that can last 4–8 years. Understand what's happening in your body, why the fluctuations matter, and what to expect.",
+        "topic": "womens-health",
+        "subtopic": "menopause-perimenopause",
+        "slug": "perimenopause-the-years-before",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menopause",
+          "perimenopause",
+          "hormones"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "part-1-perimenopause-the-years-before",
+          "text": "Part 1: Perimenopause — The Years Before",
+          "level": 2
+        },
+        {
+          "id": "what-happens-hormonally",
+          "text": "What Happens Hormonally",
+          "level": 3
+        },
+        {
+          "id": "new-research-estrogen-depression-risk",
+          "text": "New Research: Estrogen & Depression Risk",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menopause-perimenopause\\the-2025-fda-landmark-changes.mdx",
+      "route": "/health-library/womens-health/menopause-perimenopause/the-2025-fda-landmark-changes",
+      "frontmatter": {
+        "title": "Part 4: The 2025 FDA Landmark Changes",
+        "summary": "In November 2025, the FDA removed decades-old black box warnings from hormone therapy labels — the most significant update in menopause medicine in over 20 years. Here's what changed and why it matters.",
+        "topic": "womens-health",
+        "subtopic": "menopause-perimenopause",
+        "slug": "the-2025-fda-landmark-changes",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menopause",
+          "HRT",
+          "FDA",
+          "hormone-therapy"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "part-4-the-2025-fda-landmark-changes",
+          "text": "Part 4: The 2025 FDA Landmark Changes",
+          "level": 2
+        },
+        {
+          "id": "why-did-this-change-happen",
+          "text": "Why Did This Change Happen?",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menopause-perimenopause\\treatment-options.mdx",
+      "route": "/health-library/womens-health/menopause-perimenopause/treatment-options",
+      "frontmatter": {
+        "title": "Part 5: Treatment Options — What's Available Now",
+        "summary": "From hormone replacement therapy and new non-hormonal medications to lifestyle strategies — a complete guide to what's available for managing menopause symptoms in 2025 and beyond.",
+        "topic": "womens-health",
+        "subtopic": "menopause-perimenopause",
+        "slug": "treatment-options",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menopause",
+          "HRT",
+          "treatment",
+          "non-hormonal"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "part-5-treatment-options-whats-available-now",
+          "text": "Part 5: Treatment Options — What's Available Now",
+          "level": 2
+        },
+        {
+          "id": "1-hormone-replacement-therapy-hrt-mht",
+          "text": "1. Hormone Replacement Therapy (HRT / MHT)",
+          "level": 3
+        },
+        {
+          "id": "routes-of-administration",
+          "text": "Routes of Administration",
+          "level": 3
+        },
+        {
+          "id": "benefits-vs-risks-of-hrt",
+          "text": "Benefits vs Risks of HRT",
+          "level": 3
+        },
+        {
+          "id": "2-non-hormonal-prescription-medications",
+          "text": "2. Non-Hormonal Prescription Medications",
+          "level": 3
+        },
+        {
+          "id": "3-lifestyle-approaches",
+          "text": "3. Lifestyle Approaches",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\management-and-treatment.mdx",
+      "route": "/health-library/womens-health/menstrual-health/management-and-treatment",
+      "frontmatter": {
+        "title": "Management & Treatment",
+        "summary": "From lifestyle changes to SSRIs and hormonal therapy — a practical guide to managing PMS and PMDD, with clear guidance on when to seek urgent help and how to get a diagnosis.",
+        "topic": "womens-health",
+        "subtopic": "menstrual-health",
+        "slug": "management-and-treatment",
+        "updatedAt": "2026-01-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menstrual-health",
+          "PMS",
+          "PMDD",
+          "treatment"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "management-treatment",
+          "text": "Management & Treatment",
+          "level": 2
+        },
+        {
+          "id": "lifestyle-first-line-for-mildmoderate-pms",
+          "text": "Lifestyle (First-line for mild–moderate PMS)",
+          "level": 3
+        },
+        {
+          "id": "medical-treatments-for-pmdd-or-severe-pms",
+          "text": "Medical Treatments (for PMDD or severe PMS)",
+          "level": 3
+        },
+        {
+          "id": "when-to-seek-urgent-help",
+          "text": "When to Seek Urgent Help",
+          "level": 3
+        },
+        {
+          "id": "how-to-get-a-diagnosis-the-4-step-approach",
+          "text": "How to Get a Diagnosis — The 4-Step Approach",
+          "level": 3
         }
       ]
     },
@@ -1868,6 +2534,203 @@ export const HEALTH_LIBRARY_INDEX = {
         {
           "id": "medical-treatments-for-pmdd-or-severe-pms",
           "text": "Medical Treatments (for PMDD or severe PMS)",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\period-problems-bleeding-issues.mdx",
+      "route": "/health-library/womens-health/menstrual-health/period-problems-bleeding-issues",
+      "frontmatter": {
+        "title": "Period Problems: Bleeding Issues",
+        "summary": "Heavy periods, irregular cycles, absent periods, spotting between periods — understand what each pattern means, what causes it, and when it requires medical investigation.",
+        "topic": "womens-health",
+        "subtopic": "menstrual-health",
+        "slug": "period-problems-bleeding-issues",
+        "updatedAt": "2026-01-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menstrual-health",
+          "bleeding",
+          "period-problems"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "period-problems-bleeding-issues",
+          "text": "Period Problems: Bleeding Issues",
+          "level": 2
+        },
+        {
+          "id": "1-heavy-menstrual-bleeding-menorrhagia",
+          "text": "1. Heavy Menstrual Bleeding (Menorrhagia)",
+          "level": 3
+        },
+        {
+          "id": "2-irregular-periods-oligomenorrhea",
+          "text": "2. Irregular Periods (Oligomenorrhea)",
+          "level": 3
+        },
+        {
+          "id": "3-absent-periods-amenorrhea",
+          "text": "3. Absent Periods (Amenorrhea)",
+          "level": 3
+        },
+        {
+          "id": "4-bleeding-between-periods-intermenstrual-bleeding",
+          "text": "4. Bleeding Between Periods (Intermenstrual Bleeding)",
+          "level": 3
+        },
+        {
+          "id": "period-pain-dysmenorrhea",
+          "text": "Period Pain: Dysmenorrhea",
+          "level": 2
+        },
+        {
+          "id": "primary-dysmenorrhea-normal-cramping",
+          "text": "Primary Dysmenorrhea — \"Normal\" Cramping",
+          "level": 3
+        },
+        {
+          "id": "secondary-dysmenorrhea-pain-caused-by-a-condition",
+          "text": "Secondary Dysmenorrhea — Pain Caused by a Condition",
+          "level": 3
+        },
+        {
+          "id": "kenya-myth-busting-period-problems",
+          "text": "Kenya Myth-Busting: Period Problems",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\pms-and-pmdd.mdx",
+      "route": "/health-library/womens-health/menstrual-health/pms-and-pmdd",
+      "frontmatter": {
+        "title": "PMS & PMDD — The Pre-Menstrual Phase",
+        "summary": "PMS affects up to 75% of people who menstruate. PMDD is its severe form — a recognised psychiatric condition, not a character flaw. Learn how to tell them apart and what causes them.",
+        "topic": "womens-health",
+        "subtopic": "menstrual-health",
+        "slug": "pms-and-pmdd",
+        "updatedAt": "2026-01-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menstrual-health",
+          "PMS",
+          "PMDD"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "pms-pmdd-the-pre-menstrual-phase",
+          "text": "PMS & PMDD — The Pre-Menstrual Phase",
+          "level": 2
+        },
+        {
+          "id": "pms-vs-pmdd-side-by-side",
+          "text": "PMS vs PMDD — Side by Side",
+          "level": 3
+        },
+        {
+          "id": "pmdd-core-symptoms-dsm-criteria-must-include-at-least-1-of-first-4",
+          "text": "PMDD Core Symptoms (DSM criteria — must include at least 1 of first 4)",
+          "level": 3
+        },
+        {
+          "id": "what-causes-pms-pmdd",
+          "text": "What Causes PMS & PMDD?",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\the-menstrual-cycle.mdx",
+      "route": "/health-library/womens-health/menstrual-health/the-menstrual-cycle",
+      "frontmatter": {
+        "title": "The Menstrual Cycle — Your Body's Vital Sign",
+        "summary": "Your period is more than just bleeding — it is a monthly vital sign reflecting your overall hormonal health. Learn the four phases, how to track ovulation, and the basics of menstrual hygiene and self-care.",
+        "topic": "womens-health",
+        "subtopic": "menstrual-health",
+        "slug": "the-menstrual-cycle",
+        "updatedAt": "2026-01-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menstrual-health",
+          "cycle",
+          "ovulation"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "the-menstrual-cycle-your-bodys-vital-sign",
+          "text": "The Menstrual Cycle — Your Body's Vital Sign",
+          "level": 2
+        },
+        {
+          "id": "the-four-phases-of-your-cycle",
+          "text": "The Four Phases of Your Cycle",
+          "level": 2
+        },
+        {
+          "id": "phase-1-menstruation-days-15",
+          "text": "Phase 1 — Menstruation (Days 1–5)",
+          "level": 3
+        },
+        {
+          "id": "phase-2-follicular-phase-days-113-overlaps-with-menstruation",
+          "text": "Phase 2 — Follicular Phase (Days 1–13, overlaps with menstruation)",
+          "level": 3
+        },
+        {
+          "id": "phase-3-ovulation-around-day-14-in-a-28-day-cycle",
+          "text": "Phase 3 — Ovulation (Around Day 14 in a 28-day cycle)",
+          "level": 3
+        },
+        {
+          "id": "phase-4-luteal-phase-days-1528",
+          "text": "Phase 4 — Luteal Phase (Days 15–28)",
+          "level": 3
+        },
+        {
+          "id": "signs-of-ovulation-how-to-recognise-it",
+          "text": "Signs of Ovulation — How to Recognise It",
+          "level": 2
+        },
+        {
+          "id": "menstrual-hygiene-products",
+          "text": "Menstrual Hygiene & Products",
+          "level": 2
+        },
+        {
+          "id": "self-care-for-cramps-pain",
+          "text": "Self-Care for Cramps & Pain",
+          "level": 2
+        },
+        {
+          "id": "heat-therapy",
+          "text": "Heat Therapy",
+          "level": 3
+        },
+        {
+          "id": "otc-medication",
+          "text": "OTC Medication",
+          "level": 3
+        },
+        {
+          "id": "movement-massage",
+          "text": "Movement & Massage",
           "level": 3
         }
       ]
