@@ -44,7 +44,7 @@ export const HEALTH_LIBRARY_INDEX = {
       ],
       "counts": {
         "subtopics": 8,
-        "articles": 39
+        "articles": 41
       }
     },
     {
@@ -114,7 +114,7 @@ export const HEALTH_LIBRARY_INDEX = {
       {
         "slug": "puberty-safety",
         "title": "Puberty Safety",
-        "articleCount": 1
+        "articleCount": 3
       }
     ]
   },
@@ -2736,6 +2736,119 @@ export const HEALTH_LIBRARY_INDEX = {
       ]
     },
     {
+      "filePath": "src\\content\\health-library\\womens-health\\puberty-safety\\growing-up-staying-safe-in-kenya.mdx",
+      "route": "/health-library/womens-health/puberty-safety/growing-up-staying-safe-in-kenya",
+      "frontmatter": {
+        "title": "Introduction: Growing Up, Staying Safe in Kenya",
+        "summary": "Puberty brings physical and emotional change — but it also brings new safety questions. This guide covers what to expect from your body, your rights under Kenyan law, and the foundations of body autonomy.",
+        "topic": "womens-health",
+        "subtopic": "puberty-safety",
+        "slug": "growing-up-staying-safe-in-kenya",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "lifeStages": [
+          "reproductive-years"
+        ],
+        "tags": [
+          "womens-health",
+          "puberty",
+          "safety",
+          "kenya",
+          "body-autonomy"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "introduction-growing-up-staying-safe-in-kenya",
+          "text": "Introduction: Growing Up, Staying Safe in Kenya",
+          "level": 2
+        },
+        {
+          "id": "body-changes-for-girls",
+          "text": "Body Changes for Girls",
+          "level": 2
+        },
+        {
+          "id": "body-changes-for-boys",
+          "text": "Body Changes for Boys",
+          "level": 2
+        },
+        {
+          "id": "vaginal-discharge-whats-normal",
+          "text": "Vaginal Discharge: What's Normal?",
+          "level": 2
+        },
+        {
+          "id": "normal-discharge",
+          "text": "Normal Discharge",
+          "level": 3
+        },
+        {
+          "id": "see-a-provider-if",
+          "text": "See a Provider If",
+          "level": 3
+        },
+        {
+          "id": "menstruation-what-to-expect",
+          "text": "Menstruation: What to Expect",
+          "level": 2
+        },
+        {
+          "id": "hygiene-during-puberty",
+          "text": "Hygiene During Puberty",
+          "level": 2
+        },
+        {
+          "id": "for-girls",
+          "text": "For Girls",
+          "level": 3
+        },
+        {
+          "id": "for-boys",
+          "text": "For Boys",
+          "level": 3
+        },
+        {
+          "id": "body-autonomy-i-own-my-body",
+          "text": "Body Autonomy: I Own My Body",
+          "level": 2
+        },
+        {
+          "id": "4-key-principles-of-body-autonomy",
+          "text": "4 Key Principles of Body Autonomy",
+          "level": 3
+        },
+        {
+          "id": "safe-touch-vs-unsafe-touch",
+          "text": "Safe Touch vs Unsafe Touch",
+          "level": 3
+        },
+        {
+          "id": "the-no-go-tell-rule",
+          "text": "The No-Go-Tell Rule",
+          "level": 2
+        },
+        {
+          "id": "step-1-no",
+          "text": "Step 1 — NO",
+          "level": 3
+        },
+        {
+          "id": "step-2-go",
+          "text": "Step 2 — GO",
+          "level": 3
+        },
+        {
+          "id": "step-3-tell",
+          "text": "Step 3 — TELL",
+          "level": 3
+        }
+      ]
+    },
+    {
       "filePath": "src\\content\\health-library\\womens-health\\puberty-safety\\puberty-safety.mdx",
       "route": "/health-library/womens-health/puberty-safety/puberty-safety",
       "frontmatter": {
@@ -2863,6 +2976,60 @@ export const HEALTH_LIBRARY_INDEX = {
           "id": "what-happens-after-reporting",
           "text": "What Happens After Reporting",
           "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\puberty-safety\\recognising-abuse.mdx",
+      "route": "/health-library/womens-health/puberty-safety/recognising-abuse",
+      "frontmatter": {
+        "title": "Recognising Abuse",
+        "summary": "Abuse takes many forms — physical, sexual, emotional, neglect and exploitation. Learn to recognise the signs, understand Kenya's legal penalties, and know exactly where and how to report.",
+        "topic": "womens-health",
+        "subtopic": "puberty-safety",
+        "slug": "recognising-abuse",
+        "updatedAt": "2026-02-01",
+        "formats": [
+          "text"
+        ],
+        "lifeStages": [
+          "reproductive-years"
+        ],
+        "tags": [
+          "womens-health",
+          "puberty",
+          "safety",
+          "abuse",
+          "kenya",
+          "reporting"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "recognising-abuse",
+          "text": "Recognising Abuse",
+          "level": 2
+        },
+        {
+          "id": "reporting-pathways-in-kenya",
+          "text": "Reporting Pathways in Kenya",
+          "level": 2
+        },
+        {
+          "id": "child-protection-organisations",
+          "text": "Child Protection Organisations",
+          "level": 3
+        },
+        {
+          "id": "what-happens-after-reporting",
+          "text": "What Happens After Reporting",
+          "level": 2
+        },
+        {
+          "id": "if-youve-been-sexually-assaulted",
+          "text": "If You've Been Sexually Assaulted",
+          "level": 3
         }
       ]
     }
