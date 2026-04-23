@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, Search, Sun, Moon } from "lucide-react";
@@ -10,6 +10,7 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showHeaderMenu, setShowHeaderMenu] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,8 +20,25 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Write the navbar height as a CSS variable so other components can use it
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const update = () => {
+      document.documentElement.style.setProperty(
+        "--header-height",
+        `${el.offsetHeight}px`
+      );
+    };
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <header
+      ref={headerRef}
       className={`sticky top-0 z-50 border-b border-[#737373]/10 bg-[#FEFBF4] shadow-[0px_16px_32px_-12px_rgba(88,92,95,0.06)] ${
         isScrolled ? "backdrop-blur-md" : ""
       }`}

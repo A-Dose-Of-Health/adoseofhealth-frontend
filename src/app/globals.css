@@ -12,6 +12,9 @@
   --font-mono: var(--font-geist-mono);
   --font-chrcy: var(--font-chrcy);
   --font-manrope: 'Manrope', sans-serif;
+
+  /* Set by the Header component via ResizeObserver; fallback keeps things sane on first paint */
+  --header-height: 80px;
 }
 
 /* @theme inline {
@@ -51,10 +54,12 @@ body {
 
   .prose h3 {
     @apply mt-8 mb-4 text-xl font-medium lg:text-2xl/7.75;
+    scroll-margin-top: calc(var(--header-height, 80px) + 2rem);
   }
 
   .prose h2 {
     @apply mt-8 mb-4 text-2xl font-medium lg:text-h2;
+    scroll-margin-top: calc(var(--header-height, 80px) + 2rem);
   }
 
   .prose ul > li {
@@ -148,4 +153,12 @@ body {
 .text-outline {
   -webkit-text-stroke: 2px #1E444C; /* stroke width + color */
   color: transparent; /* makes the fill invisible */
+}
+
+/* Offset anchor-linked headings so they don't hide behind the sticky navbar */
+.prose-slate h1,
+.prose-slate h2,
+.prose-slate h3,
+.prose-slate h4 {
+  scroll-margin-top: calc(var(--header-height, 80px) + 2rem);
 }

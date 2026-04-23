@@ -19,23 +19,37 @@ function slugifyHeading(text) {
   return text
     .toLowerCase()
     .trim()
-    .replace(/[^\w\s-]/g, "")
+    // 1. Remove commas and dots entirely (remark-slug usually ignores these)
+    .replace(/[,.]/g, "")
+    // 2. Replace spaces with a hyphen
     .replace(/\s+/g, "-")
-    .replace(/-+/g, "-");
+    // 3. Replace any remaining non-word characters (like & or —) with a hyphen
+    .replace(/[^\w-]/g, "-")
+    // 4. Collapse three or more hyphens down to two
+    // This handles [space][&][space] becoming --- then --
+    .replace(/-{3,}/g, "--")
+    // 5. Remove leading/trailing hyphens
+    .replace(/^-+|-+$/g, "");
 }
+
 
 function extractTocFromMdx(mdx) {
   const lines = mdx.split("\n");
   const toc = [];
+  
   for (const line of lines) {
-    const h2 = line.match(/^##\s+(.*)$/);
-    const h3 = line.match(/^###\s+(.*)$/);
-    if (h2) {
-      const text = h2[1].trim();
-      toc.push({ id: slugifyHeading(text), text, level: 2 });
-    } else if (h3) {
-      const text = h3[1].trim();
-      toc.push({ id: slugifyHeading(text), text, level: 3 });
+    // Modified regex to catch h1, h2, or h3
+    const match = line.match(/^(#{1,3})\s+(.*)$/);
+    
+    if (match) {
+      const level = match[1].length;
+      const text = match[2].trim();
+      
+      toc.push({ 
+        id: slugifyHeading(text), 
+        text, 
+        level 
+      });
     }
   }
   return toc;

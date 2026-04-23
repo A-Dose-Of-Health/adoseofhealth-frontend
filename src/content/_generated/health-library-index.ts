@@ -140,388 +140,6 @@ export const HEALTH_LIBRARY_INDEX = {
       "toc": []
     },
     {
-      "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\body-anatomy.mdx",
-      "route": "/health-library/womens-health/body-anatomy/body-anatomy",
-      "frontmatter": {
-        "title": "Body & Anatomy",
-        "summary": "Body & Anatomy",
-        "topic": "womens-health",
-        "subtopic": "body-anatomy",
-        "slug": "body-anatomy",
-        "updatedAt": "2026-03-05",
-        "formats": [
-          "text"
-        ],
-        "tags": [
-          "womens-health, body-anatomy"
-        ],
-        "featured": true
-      },
-      "toc": [
-        {
-          "id": "the-vulva-external-anatomy",
-          "text": "The Vulva — External Anatomy",
-          "level": 2
-        },
-        {
-          "id": "mons-pubis",
-          "text": "Mons Pubis",
-          "level": 3
-        },
-        {
-          "id": "labia-majora-outer-lips",
-          "text": "Labia Majora (Outer Lips)",
-          "level": 3
-        },
-        {
-          "id": "labia-minora-inner-lips",
-          "text": "Labia Minora (Inner Lips)",
-          "level": 3
-        },
-        {
-          "id": "clitoris-the-full-structure",
-          "text": "Clitoris — The Full Structure",
-          "level": 3
-        },
-        {
-          "id": "urethral-opening-meatus",
-          "text": "Urethral Opening (Meatus)",
-          "level": 3
-        },
-        {
-          "id": "vaginal-opening-hymen",
-          "text": "Vaginal Opening & Hymen",
-          "level": 3
-        },
-        {
-          "id": "bartholins-glands",
-          "text": "Bartholin's Glands",
-          "level": 3
-        },
-        {
-          "id": "skenes-glands-paraurethral",
-          "text": "Skene's Glands (Paraurethral)",
-          "level": 3
-        },
-        {
-          "id": "vulva-hygiene-daily-dos-donts",
-          "text": "Vulva Hygiene: Daily Do's & Don'ts",
-          "level": 2
-        },
-        {
-          "id": "-do",
-          "text": "✅ Do",
-          "level": 3
-        },
-        {
-          "id": "-never",
-          "text": "🚫 Never",
-          "level": 3
-        },
-        {
-          "id": "common-vulvar-conditions",
-          "text": "Common Vulvar Conditions",
-          "level": 2
-        },
-        {
-          "id": "the-vagina-internal-canal",
-          "text": "The Vagina — Internal Canal",
-          "level": 2
-        },
-        {
-          "id": "the-three-layers-of-the-vaginal-wall",
-          "text": "The Three Layers of the Vaginal Wall",
-          "level": 3
-        },
-        {
-          "id": "vaginal-infections-the-three-main-types",
-          "text": "Vaginal Infections — The Three Main Types",
-          "level": 2
-        },
-        {
-          "id": "kenya-myth-busting-vaginal-health",
-          "text": "Kenya Myth-Busting: Vaginal Health",
-          "level": 2
-        },
-        {
-          "id": "the-cervix-the-gatekeeper",
-          "text": "The Cervix — The Gatekeeper",
-          "level": 2
-        },
-        {
-          "id": "four-critical-functions",
-          "text": "Four Critical Functions",
-          "level": 3
-        },
-        {
-          "id": "the-transformation-zone-why-it-matters",
-          "text": "The Transformation Zone — Why It Matters",
-          "level": 3
-        },
-        {
-          "id": "cervical-screening-kenya-guidelines",
-          "text": "Cervical Screening — Kenya Guidelines",
-          "level": 2
-        },
-        {
-          "id": "uterus-fallopian-tubes-ovaries",
-          "text": "Uterus, Fallopian Tubes & Ovaries",
-          "level": 2
-        },
-        {
-          "id": "the-uterus-womb",
-          "text": "The Uterus (Womb)",
-          "level": 3
-        },
-        {
-          "id": "the-fallopian-tubes-where-fertilisation-happens",
-          "text": "The Fallopian Tubes — Where Fertilisation Happens",
-          "level": 3
-        },
-        {
-          "id": "the-ovaries-hormonal-architects",
-          "text": "The Ovaries — Hormonal Architects",
-          "level": 3
-        },
-        {
-          "id": "the-urethra-urinary-pathway",
-          "text": "The Urethra — Urinary Pathway",
-          "level": 2
-        },
-        {
-          "id": "structure-three-layers",
-          "text": "Structure: Three Layers",
-          "level": 3
-        },
-        {
-          "id": "two-sphincters-control-urination",
-          "text": "Two Sphincters Control Urination",
-          "level": 3
-        },
-        {
-          "id": "uti-urinary-tract-infection",
-          "text": "UTI — Urinary Tract Infection",
-          "level": 2
-        },
-        {
-          "id": "kenya-myth-busting-urinary-health",
-          "text": "Kenya Myth-Busting: Urinary Health",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\external-organs.mdx",
-      "route": "/health-library/womens-health/body-anatomy/external-organs",
-      "frontmatter": {
-        "title": "External Organs",
-        "summary": "The vulva is the collective name for all external female genitalia — learn what each structure is, how it works, and how to care for it.",
-        "topic": "womens-health",
-        "subtopic": "body-anatomy",
-        "slug": "external-organs",
-        "updatedAt": "2026-03-05",
-        "formats": [
-          "text"
-        ],
-        "tags": [
-          "womens-health",
-          "body-anatomy",
-          "external-anatomy"
-        ],
-        "featured": true
-      },
-      "toc": [
-        {
-          "id": "the-vulva-external-anatomy",
-          "text": "The Vulva — External Anatomy",
-          "level": 2
-        },
-        {
-          "id": "mons-pubis",
-          "text": "Mons Pubis",
-          "level": 3
-        },
-        {
-          "id": "labia-majora-outer-lips",
-          "text": "Labia Majora (Outer Lips)",
-          "level": 3
-        },
-        {
-          "id": "labia-minora-inner-lips",
-          "text": "Labia Minora (Inner Lips)",
-          "level": 3
-        },
-        {
-          "id": "clitoris-the-full-structure",
-          "text": "Clitoris (The Full Structure)",
-          "level": 3
-        },
-        {
-          "id": "urethral-opening-meatus",
-          "text": "Urethral Opening (Meatus)",
-          "level": 3
-        },
-        {
-          "id": "vaginal-opening-hymen",
-          "text": "Vaginal Opening & Hymen",
-          "level": 3
-        },
-        {
-          "id": "bartholins-glands",
-          "text": "Bartholin's Glands",
-          "level": 3
-        },
-        {
-          "id": "skenes-glands-paraurethral",
-          "text": "Skene's Glands (Paraurethral)",
-          "level": 3
-        },
-        {
-          "id": "vulva-hygiene-daily-dos-donts",
-          "text": "Vulva Hygiene: Daily Do's & Don'ts",
-          "level": 2
-        },
-        {
-          "id": "-do",
-          "text": "✅ Do",
-          "level": 3
-        },
-        {
-          "id": "-never",
-          "text": "🚫 Never",
-          "level": 3
-        },
-        {
-          "id": "common-vulvar-conditions",
-          "text": "Common Vulvar Conditions",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\internal-organs.mdx",
-      "route": "/health-library/womens-health/body-anatomy/internal-organs",
-      "frontmatter": {
-        "title": "Internal Organs",
-        "summary": "The vagina is a self-cleaning fibromuscular canal connecting the cervix to the outside world — understand its structure, how infections occur, and what the myths get wrong.",
-        "topic": "womens-health",
-        "subtopic": "body-anatomy",
-        "slug": "internal-organs",
-        "updatedAt": "2026-03-05",
-        "formats": [
-          "text"
-        ],
-        "tags": [
-          "womens-health",
-          "body-anatomy",
-          "internal-anatomy"
-        ],
-        "featured": true
-      },
-      "toc": [
-        {
-          "id": "the-three-layers-of-the-vaginal-wall",
-          "text": "The Three Layers of the Vaginal Wall",
-          "level": 2
-        },
-        {
-          "id": "1-mucosal-layer-inner",
-          "text": "1. Mucosal Layer (Inner)",
-          "level": 3
-        },
-        {
-          "id": "2-muscular-layer-middle",
-          "text": "2. Muscular Layer (Middle)",
-          "level": 3
-        },
-        {
-          "id": "3-adventitia-layer-outer",
-          "text": "3. Adventitia Layer (Outer)",
-          "level": 3
-        },
-        {
-          "id": "vaginal-infections",
-          "text": "Vaginal Infections",
-          "level": 2
-        },
-        {
-          "id": "the-three-main-types",
-          "text": "The Three Main Types",
-          "level": 3
-        },
-        {
-          "id": "kenya-myth-busting-vaginal-health",
-          "text": "Kenya Myth-Busting: Vaginal Health",
-          "level": 2
-        },
-        {
-          "id": "the-cervix-the-gatekeeper",
-          "text": "The Cervix — The Gatekeeper",
-          "level": 2
-        },
-        {
-          "id": "four-critical-functions",
-          "text": "Four Critical Functions",
-          "level": 3
-        },
-        {
-          "id": "the-transformation-zone-why-it-matters",
-          "text": "The Transformation Zone — Why It Matters",
-          "level": 3
-        },
-        {
-          "id": "cervical-screening-kenya-guidelines",
-          "text": "Cervical Screening — Kenya Guidelines",
-          "level": 2
-        },
-        {
-          "id": "uterus-fallopian-tubes-ovaries",
-          "text": "Uterus, Fallopian Tubes & Ovaries",
-          "level": 2
-        },
-        {
-          "id": "the-uterus-womb",
-          "text": "The Uterus (Womb)",
-          "level": 3
-        },
-        {
-          "id": "the-fallopian-tubes-where-fertilisation-happens",
-          "text": "The Fallopian Tubes — Where Fertilisation Happens",
-          "level": 3
-        },
-        {
-          "id": "the-ovaries-hormonal-architects",
-          "text": "The Ovaries — Hormonal Architects",
-          "level": 3
-        },
-        {
-          "id": "the-urethra-urinary-pathway",
-          "text": "The Urethra — Urinary Pathway",
-          "level": 2
-        },
-        {
-          "id": "structure-three-layers",
-          "text": "Structure: Three Layers",
-          "level": 3
-        },
-        {
-          "id": "two-sphincters-control-urination",
-          "text": "Two Sphincters Control Urination",
-          "level": 3
-        },
-        {
-          "id": "uti-urinary-tract-infection",
-          "text": "UTI — Urinary Tract Infection",
-          "level": 2
-        },
-        {
-          "id": "kenya-myth-busting-urinary-health",
-          "text": "Kenya Myth-Busting: Urinary Health",
-          "level": 2
-        }
-      ]
-    },
-    {
       "filePath": "src\\content\\health-library\\womens-health\\contraception\\barrier-methods.mdx",
       "route": "/health-library/womens-health/contraception/barrier-methods",
       "frontmatter": {
@@ -559,7 +177,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "diaphragm-cervical-cap",
+          "id": "diaphragm--cervical-cap",
           "text": "Diaphragm & Cervical Cap",
           "level": 3
         }
@@ -586,17 +204,17 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "contraception-a-story-about-choice",
+          "id": "contraception--a-story-about-choice",
           "text": "Contraception: A Story About Choice",
           "level": 2
         },
         {
-          "id": "all-methods-at-a-glance-comparison-table",
+          "id": "all-methods-at-a-glance--comparison-table",
           "text": "All Methods at a Glance — Comparison Table",
           "level": 2
         },
         {
-          "id": "myth-busting-contraception-in-kenya",
+          "id": "myth-busting--contraception-in-kenya",
           "text": "Myth-Busting: Contraception in Kenya",
           "level": 2
         }
@@ -622,57 +240,62 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "contraception-a-story-about-choice",
+          "id": "contraception--your-complete-guide",
+          "text": "Contraception — Your Complete Guide",
+          "level": 1
+        },
+        {
+          "id": "contraception--a-story-about-choice",
           "text": "Contraception: A Story About Choice",
           "level": 2
         },
         {
-          "id": "all-methods-at-a-glance-comparison-table",
+          "id": "all-methods-at-a-glance--comparison-table",
           "text": "All Methods at a Glance — Comparison Table",
           "level": 2
         },
         {
-          "id": "hormonal-methods-how-they-work",
+          "id": "hormonal-methods--how-they-work",
           "text": "Hormonal Methods — How They Work",
           "level": 2
         },
         {
-          "id": "1-combined-oral-contraceptive-pill-coc-the-pill",
+          "id": "1-combined-oral-contraceptive-pill--coc--the-pill",
           "text": "1. Combined Oral Contraceptive Pill (COC / \"The Pill\")",
           "level": 3
         },
         {
-          "id": "2-progestogen-only-pill-pop-mini-pill",
+          "id": "2-progestogen-only-pill--pop--mini-pill",
           "text": "2. Progestogen-Only Pill (POP / Mini-Pill)",
           "level": 3
         },
         {
-          "id": "3-contraceptive-injection-depo-provera-sayana-press",
+          "id": "3-contraceptive-injection--depo-provera--sayana-press",
           "text": "3. Contraceptive Injection (Depo-Provera / Sayana Press)",
           "level": 3
         },
         {
-          "id": "4-contraceptive-implant-implanon-jadelle",
+          "id": "4-contraceptive-implant--implanon--jadelle",
           "text": "4. Contraceptive Implant (Implanon / Jadelle)",
           "level": 3
         },
         {
-          "id": "5-contraceptive-patch-vaginal-ring",
+          "id": "5-contraceptive-patch--vaginal-ring",
           "text": "5. Contraceptive Patch & Vaginal Ring",
           "level": 3
         },
         {
-          "id": "long-acting-reversible-contraception-larcs",
+          "id": "long-acting-reversible-contraception--larcs",
           "text": "Long-Acting Reversible Contraception (LARCs)",
           "level": 2
         },
         {
-          "id": "copper-iud-non-hormonal-larc",
+          "id": "copper-iud--non-hormonal-larc",
           "text": "Copper IUD — Non-Hormonal LARC",
           "level": 3
         },
         {
-          "id": "hormonal-ius-mirena-hormonal-larc",
+          "id": "hormonal-ius--mirena--hormonal-larc",
           "text": "Hormonal IUS (Mirena) — Hormonal LARC",
           "level": 3
         },
@@ -692,32 +315,32 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "diaphragm-cervical-cap",
+          "id": "diaphragm--cervical-cap",
           "text": "Diaphragm & Cervical Cap",
           "level": 3
         },
         {
-          "id": "natural-permanent-methods",
+          "id": "natural--permanent-methods",
           "text": "Natural & Permanent Methods",
           "level": 2
         },
         {
-          "id": "fertility-awareness-methods-fams",
+          "id": "fertility-awareness-methods--fams",
           "text": "Fertility Awareness Methods (FAMs)",
           "level": 3
         },
         {
-          "id": "lactational-amenorrhea-method-lam",
+          "id": "lactational-amenorrhea-method--lam",
           "text": "Lactational Amenorrhea Method (LAM)",
           "level": 3
         },
         {
-          "id": "permanent-methods-sterilisation",
+          "id": "permanent-methods--sterilisation",
           "text": "Permanent Methods — Sterilisation",
           "level": 3
         },
         {
-          "id": "emergency-contraception-ec",
+          "id": "emergency-contraception--ec",
           "text": "Emergency Contraception (EC)",
           "level": 2
         },
@@ -727,7 +350,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "myth-busting-contraception-in-kenya",
+          "id": "myth-busting--contraception-in-kenya",
           "text": "Myth-Busting: Contraception in Kenya",
           "level": 2
         }
@@ -755,7 +378,7 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "emergency-contraception-ec",
+          "id": "emergency-contraception--ec",
           "text": "Emergency Contraception (EC)",
           "level": 2
         },
@@ -799,7 +422,7 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "fertility-awareness-methods-fams",
+          "id": "fertility-awareness-methods--fams",
           "text": "Fertility Awareness Methods (FAMs)",
           "level": 2
         },
@@ -809,7 +432,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "effectiveness-considerations",
+          "id": "effectiveness--considerations",
           "text": "Effectiveness & Considerations",
           "level": 3
         }
@@ -837,32 +460,32 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "hormonal-methods-how-they-work",
+          "id": "hormonal-methods--how-they-work",
           "text": "Hormonal Methods — How They Work",
           "level": 2
         },
         {
-          "id": "1-combined-oral-contraceptive-pill-coc-the-pill",
+          "id": "1-combined-oral-contraceptive-pill--coc--the-pill",
           "text": "1. Combined Oral Contraceptive Pill (COC / \"The Pill\")",
           "level": 3
         },
         {
-          "id": "2-progestogen-only-pill-pop-mini-pill",
+          "id": "2-progestogen-only-pill--pop--mini-pill",
           "text": "2. Progestogen-Only Pill (POP / Mini-Pill)",
           "level": 3
         },
         {
-          "id": "3-contraceptive-injection-depo-provera-sayana-press",
+          "id": "3-contraceptive-injection--depo-provera--sayana-press",
           "text": "3. Contraceptive Injection (Depo-Provera / Sayana Press)",
           "level": 3
         },
         {
-          "id": "4-contraceptive-implant-implanon-jadelle",
+          "id": "4-contraceptive-implant--implanon--jadelle",
           "text": "4. Contraceptive Implant (Implanon / Jadelle)",
           "level": 3
         },
         {
-          "id": "5-contraceptive-patch-vaginal-ring",
+          "id": "5-contraceptive-patch--vaginal-ring",
           "text": "5. Contraceptive Patch & Vaginal Ring",
           "level": 3
         }
@@ -891,7 +514,7 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "lactational-amenorrhea-method-lam",
+          "id": "lactational-amenorrhea-method--lam",
           "text": "Lactational Amenorrhea Method (LAM)",
           "level": 2
         },
@@ -930,17 +553,17 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "long-acting-reversible-contraception-larcs",
+          "id": "long-acting-reversible-contraception--larcs",
           "text": "Long-Acting Reversible Contraception (LARCs)",
           "level": 2
         },
         {
-          "id": "copper-iud-non-hormonal-larc",
+          "id": "copper-iud--non-hormonal-larc",
           "text": "Copper IUD — Non-Hormonal LARC",
           "level": 3
         },
         {
-          "id": "hormonal-ius-mirena-hormonal-larc",
+          "id": "hormonal-ius--mirena--hormonal-larc",
           "text": "Hormonal IUS (Mirena) — Hormonal LARC",
           "level": 3
         }
@@ -969,7 +592,7 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "permanent-methods-sterilisation",
+          "id": "permanent-methods--sterilisation",
           "text": "Permanent Methods — Sterilisation",
           "level": 2
         },
@@ -1010,6 +633,398 @@ export const HEALTH_LIBRARY_INDEX = {
       ]
     },
     {
+      "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\body-anatomy.mdx",
+      "route": "/health-library/womens-health/body-anatomy/body-anatomy",
+      "frontmatter": {
+        "title": "Body & Anatomy",
+        "summary": "Body & Anatomy",
+        "topic": "womens-health",
+        "subtopic": "body-anatomy",
+        "slug": "body-anatomy",
+        "updatedAt": "2026-03-05",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health, body-anatomy"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "body--anatomy",
+          "text": "Body & Anatomy",
+          "level": 1
+        },
+        {
+          "id": "the-vulva--external-anatomy",
+          "text": "The Vulva — External Anatomy.",
+          "level": 2
+        },
+        {
+          "id": "mons-pubis",
+          "text": "Mons Pubis",
+          "level": 3
+        },
+        {
+          "id": "labia-majora--outer-lips",
+          "text": "Labia Majora (Outer Lips)",
+          "level": 3
+        },
+        {
+          "id": "labia-minora--inner-lips",
+          "text": "Labia Minora (Inner Lips)",
+          "level": 3
+        },
+        {
+          "id": "clitoris--the-full-structure",
+          "text": "Clitoris — The Full Structure",
+          "level": 3
+        },
+        {
+          "id": "urethral-opening--meatus",
+          "text": "Urethral Opening (Meatus)",
+          "level": 3
+        },
+        {
+          "id": "vaginal-opening--hymen",
+          "text": "Vaginal Opening & Hymen",
+          "level": 3
+        },
+        {
+          "id": "bartholin-s-glands",
+          "text": "Bartholin's Glands",
+          "level": 3
+        },
+        {
+          "id": "skene-s-glands--paraurethral",
+          "text": "Skene's Glands (Paraurethral)",
+          "level": 3
+        },
+        {
+          "id": "vulva-hygiene--daily-do-s--don-ts",
+          "text": "Vulva Hygiene: Daily Do's & Don'ts",
+          "level": 2
+        },
+        {
+          "id": "do",
+          "text": "✅ Do",
+          "level": 3
+        },
+        {
+          "id": "never",
+          "text": "🚫 Never",
+          "level": 3
+        },
+        {
+          "id": "common-vulvar-conditions",
+          "text": "Common Vulvar Conditions",
+          "level": 2
+        },
+        {
+          "id": "the-vagina--internal-canal",
+          "text": "The Vagina — Internal Canal",
+          "level": 2
+        },
+        {
+          "id": "the-three-layers-of-the-vaginal-wall",
+          "text": "The Three Layers of the Vaginal Wall",
+          "level": 3
+        },
+        {
+          "id": "vaginal-infections--the-three-main-types",
+          "text": "Vaginal Infections — The Three Main Types",
+          "level": 2
+        },
+        {
+          "id": "kenya-myth-busting--vaginal-health",
+          "text": "Kenya Myth-Busting: Vaginal Health",
+          "level": 2
+        },
+        {
+          "id": "the-cervix--the-gatekeeper",
+          "text": "The Cervix — The Gatekeeper",
+          "level": 2
+        },
+        {
+          "id": "four-critical-functions",
+          "text": "Four Critical Functions",
+          "level": 3
+        },
+        {
+          "id": "the-transformation-zone--why-it-matters",
+          "text": "The Transformation Zone — Why It Matters",
+          "level": 3
+        },
+        {
+          "id": "cervical-screening--kenya-guidelines",
+          "text": "Cervical Screening — Kenya Guidelines",
+          "level": 2
+        },
+        {
+          "id": "uterus-fallopian-tubes--ovaries",
+          "text": "Uterus, Fallopian Tubes & Ovaries",
+          "level": 2
+        },
+        {
+          "id": "the-uterus--womb",
+          "text": "The Uterus (Womb)",
+          "level": 3
+        },
+        {
+          "id": "the-fallopian-tubes--where-fertilisation-happens",
+          "text": "The Fallopian Tubes — Where Fertilisation Happens",
+          "level": 3
+        },
+        {
+          "id": "the-ovaries--hormonal-architects",
+          "text": "The Ovaries — Hormonal Architects",
+          "level": 3
+        },
+        {
+          "id": "the-urethra--urinary-pathway",
+          "text": "The Urethra — Urinary Pathway",
+          "level": 2
+        },
+        {
+          "id": "structure--three-layers",
+          "text": "Structure: Three Layers",
+          "level": 3
+        },
+        {
+          "id": "two-sphincters-control-urination",
+          "text": "Two Sphincters Control Urination",
+          "level": 3
+        },
+        {
+          "id": "uti--urinary-tract-infection",
+          "text": "UTI — Urinary Tract Infection",
+          "level": 2
+        },
+        {
+          "id": "kenya-myth-busting--urinary-health",
+          "text": "Kenya Myth-Busting: Urinary Health",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\external-organs.mdx",
+      "route": "/health-library/womens-health/body-anatomy/external-organs",
+      "frontmatter": {
+        "title": "External Organs",
+        "summary": "The vulva is the collective name for all external female genitalia — learn what each structure is, how it works, and how to care for it.",
+        "topic": "womens-health",
+        "subtopic": "body-anatomy",
+        "slug": "external-organs",
+        "updatedAt": "2026-03-05",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "body-anatomy",
+          "external-anatomy"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "the-vulva--external-anatomy",
+          "text": "The Vulva — External Anatomy",
+          "level": 2
+        },
+        {
+          "id": "mons-pubis",
+          "text": "Mons Pubis",
+          "level": 3
+        },
+        {
+          "id": "labia-majora--outer-lips",
+          "text": "Labia Majora (Outer Lips)",
+          "level": 3
+        },
+        {
+          "id": "labia-minora--inner-lips",
+          "text": "Labia Minora (Inner Lips)",
+          "level": 3
+        },
+        {
+          "id": "clitoris--the-full-structure",
+          "text": "Clitoris (The Full Structure)",
+          "level": 3
+        },
+        {
+          "id": "urethral-opening--meatus",
+          "text": "Urethral Opening (Meatus)",
+          "level": 3
+        },
+        {
+          "id": "vaginal-opening--hymen",
+          "text": "Vaginal Opening & Hymen",
+          "level": 3
+        },
+        {
+          "id": "bartholin-s-glands",
+          "text": "Bartholin's Glands",
+          "level": 3
+        },
+        {
+          "id": "skene-s-glands--paraurethral",
+          "text": "Skene's Glands (Paraurethral)",
+          "level": 3
+        },
+        {
+          "id": "vulva-hygiene--daily-do-s--don-ts",
+          "text": "Vulva Hygiene: Daily Do's & Don'ts",
+          "level": 2
+        },
+        {
+          "id": "do",
+          "text": "✅ Do",
+          "level": 3
+        },
+        {
+          "id": "never",
+          "text": "🚫 Never",
+          "level": 3
+        },
+        {
+          "id": "common-vulvar-conditions",
+          "text": "Common Vulvar Conditions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\internal-organs.mdx",
+      "route": "/health-library/womens-health/body-anatomy/internal-organs",
+      "frontmatter": {
+        "title": "Internal Organs",
+        "summary": "The vagina is a self-cleaning fibromuscular canal connecting the cervix to the outside world — understand its structure, how infections occur, and what the myths get wrong.",
+        "topic": "womens-health",
+        "subtopic": "body-anatomy",
+        "slug": "internal-organs",
+        "updatedAt": "2026-03-05",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "body-anatomy",
+          "internal-anatomy"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "the-vagina--internal-canal",
+          "text": "The Vagina — Internal Canal",
+          "level": 1
+        },
+        {
+          "id": "the-three-layers-of-the-vaginal-wall",
+          "text": "The Three Layers of the Vaginal Wall",
+          "level": 2
+        },
+        {
+          "id": "1-mucosal-layer--inner",
+          "text": "1. Mucosal Layer (Inner)",
+          "level": 3
+        },
+        {
+          "id": "2-muscular-layer--middle",
+          "text": "2. Muscular Layer (Middle)",
+          "level": 3
+        },
+        {
+          "id": "3-adventitia-layer--outer",
+          "text": "3. Adventitia Layer (Outer)",
+          "level": 3
+        },
+        {
+          "id": "vaginal-infections",
+          "text": "Vaginal Infections",
+          "level": 2
+        },
+        {
+          "id": "the-three-main-types",
+          "text": "The Three Main Types",
+          "level": 3
+        },
+        {
+          "id": "kenya-myth-busting--vaginal-health",
+          "text": "Kenya Myth-Busting: Vaginal Health",
+          "level": 2
+        },
+        {
+          "id": "the-cervix--the-gatekeeper",
+          "text": "The Cervix — The Gatekeeper",
+          "level": 2
+        },
+        {
+          "id": "four-critical-functions",
+          "text": "Four Critical Functions",
+          "level": 3
+        },
+        {
+          "id": "the-transformation-zone--why-it-matters",
+          "text": "The Transformation Zone — Why It Matters",
+          "level": 3
+        },
+        {
+          "id": "cervical-screening--kenya-guidelines",
+          "text": "Cervical Screening — Kenya Guidelines",
+          "level": 2
+        },
+        {
+          "id": "uterus-fallopian-tubes--ovaries",
+          "text": "Uterus, Fallopian Tubes & Ovaries",
+          "level": 2
+        },
+        {
+          "id": "the-uterus--womb",
+          "text": "The Uterus (Womb)",
+          "level": 3
+        },
+        {
+          "id": "the-fallopian-tubes--where-fertilisation-happens",
+          "text": "The Fallopian Tubes — Where Fertilisation Happens",
+          "level": 3
+        },
+        {
+          "id": "the-ovaries--hormonal-architects",
+          "text": "The Ovaries — Hormonal Architects",
+          "level": 3
+        },
+        {
+          "id": "the-urethra--urinary-pathway",
+          "text": "The Urethra — Urinary Pathway",
+          "level": 2
+        },
+        {
+          "id": "structure--three-layers",
+          "text": "Structure: Three Layers",
+          "level": 3
+        },
+        {
+          "id": "two-sphincters-control-urination",
+          "text": "Two Sphincters Control Urination",
+          "level": 3
+        },
+        {
+          "id": "uti--urinary-tract-infection",
+          "text": "UTI — Urinary Tract Infection",
+          "level": 2
+        },
+        {
+          "id": "kenya-myth-busting--urinary-health",
+          "text": "Kenya Myth-Busting: Urinary Health",
+          "level": 2
+        }
+      ]
+    },
+    {
       "filePath": "src\\content\\health-library\\womens-health\\fertility-infertility\\fertility-infertility.mdx",
       "route": "/health-library/womens-health/fertility-infertility/fertility-infertility",
       "frontmatter": {
@@ -1029,12 +1044,17 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "understanding-fertility-conception",
+          "id": "fertility--infertility",
+          "text": "Fertility & Infertility",
+          "level": 1
+        },
+        {
+          "id": "understanding-fertility--conception",
           "text": "Understanding Fertility & Conception",
           "level": 2
         },
         {
-          "id": "the-fertile-window-ovulation-signs",
+          "id": "the-fertile-window--ovulation-signs",
           "text": "The Fertile Window & Ovulation Signs",
           "level": 2
         },
@@ -1044,17 +1064,17 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "infertility-causes-the-diagnostic-journey",
+          "id": "infertility--causes--the-diagnostic-journey",
           "text": "Infertility — Causes & The Diagnostic Journey",
           "level": 2
         },
         {
-          "id": "female-factor-infertility-main-causes",
+          "id": "female-factor-infertility--main-causes",
           "text": "Female Factor Infertility — Main Causes",
           "level": 3
         },
         {
-          "id": "male-factor-infertility-main-causes",
+          "id": "male-factor-infertility--main-causes",
           "text": "Male Factor Infertility — Main Causes",
           "level": 3
         },
@@ -1074,7 +1094,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "1-lifestyle-changes-timed-intercourse",
+          "id": "1-lifestyle-changes--timed-intercourse",
           "text": "1. Lifestyle Changes & Timed Intercourse",
           "level": 3
         },
@@ -1089,27 +1109,27 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "4-assisted-reproductive-technology-art",
+          "id": "4-assisted-reproductive-technology--art",
           "text": "4. Assisted Reproductive Technology (ART)",
           "level": 3
         },
         {
-          "id": "kenyas-assisted-reproductive-technology-art-act-2022",
+          "id": "kenya-s-assisted-reproductive-technology--art--act-2022",
           "text": "Kenya's Assisted Reproductive Technology (ART) Act, 2022",
           "level": 2
         },
         {
-          "id": "safer-conception-special-considerations-for-hiv",
+          "id": "safer-conception--special-considerations-for-hiv",
           "text": "Safer Conception — Special Considerations for HIV",
           "level": 2
         },
         {
-          "id": "coping-with-infertility-emotional-support",
+          "id": "coping-with-infertility--emotional-support",
           "text": "Coping with Infertility — Emotional Support",
           "level": 2
         },
         {
-          "id": "myth-busting-fertility-in-kenya",
+          "id": "myth-busting--fertility-in-kenya",
           "text": "Myth-Busting: Fertility in Kenya",
           "level": 2
         }
@@ -1144,7 +1164,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "1-lifestyle-changes-timed-intercourse",
+          "id": "1-lifestyle-changes--timed-intercourse",
           "text": "1. Lifestyle Changes & Timed Intercourse",
           "level": 3
         },
@@ -1159,17 +1179,17 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "4-assisted-reproductive-technology-art",
+          "id": "4-assisted-reproductive-technology--art",
           "text": "4. Assisted Reproductive Technology (ART)",
           "level": 3
         },
         {
-          "id": "kenyas-assisted-reproductive-technology-art-act-2022",
+          "id": "kenya-s-assisted-reproductive-technology--art--act-2022",
           "text": "Kenya's Assisted Reproductive Technology (ART) Act, 2022",
           "level": 2
         },
         {
-          "id": "safer-conception-special-considerations-for-hiv",
+          "id": "safer-conception--special-considerations-for-hiv",
           "text": "Safer Conception — Special Considerations for HIV",
           "level": 2
         }
@@ -1198,17 +1218,17 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "infertility-causes-the-diagnostic-journey",
+          "id": "infertility--causes--the-diagnostic-journey",
           "text": "Infertility — Causes & The Diagnostic Journey",
           "level": 2
         },
         {
-          "id": "female-factor-infertility-main-causes",
+          "id": "female-factor-infertility--main-causes",
           "text": "Female Factor Infertility — Main Causes",
           "level": 3
         },
         {
-          "id": "male-factor-infertility-main-causes",
+          "id": "male-factor-infertility--main-causes",
           "text": "Male Factor Infertility — Main Causes",
           "level": 3
         },
@@ -1228,7 +1248,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "coping-with-infertility-emotional-support",
+          "id": "coping-with-infertility--emotional-support",
           "text": "Coping with Infertility — Emotional Support",
           "level": 2
         },
@@ -1238,7 +1258,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "myth-busting-fertility-in-kenya",
+          "id": "myth-busting--fertility-in-kenya",
           "text": "Myth-Busting: Fertility in Kenya",
           "level": 2
         }
@@ -1267,12 +1287,12 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "understanding-fertility-conception",
+          "id": "understanding-fertility--conception",
           "text": "Understanding Fertility & Conception",
           "level": 2
         },
         {
-          "id": "the-fertile-window-ovulation-signs",
+          "id": "the-fertile-window--ovulation-signs",
           "text": "The Fertile Window & Ovulation Signs",
           "level": 2
         },
@@ -1315,7 +1335,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "diagnosis-treatment",
+          "id": "diagnosis--treatment",
           "text": "Diagnosis & Treatment",
           "level": 3
         }
@@ -1353,7 +1373,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "diagnosis-the-412-year-delay",
+          "id": "diagnosis--the-4-12-year-delay",
           "text": "Diagnosis & The 4–12 Year Delay",
           "level": 3
         },
@@ -1384,7 +1404,12 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "introduction-what-are-gynaecological-conditions",
+          "id": "gynaecological-conditions--cancers",
+          "text": "Gynaecological Conditions & Cancers",
+          "level": 1
+        },
+        {
+          "id": "introduction--what-are-gynaecological-conditions",
           "text": "Introduction: What Are Gynaecological Conditions?",
           "level": 2
         },
@@ -1399,7 +1424,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "diagnosis-the-412-year-delay",
+          "id": "diagnosis--the-4-12-year-delay",
           "text": "Diagnosis & The 4–12 Year Delay",
           "level": 3
         },
@@ -1409,7 +1434,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "uterine-fibroids-leiomyomas",
+          "id": "uterine-fibroids--leiomyomas",
           "text": "Uterine Fibroids (Leiomyomas)",
           "level": 2
         },
@@ -1419,7 +1444,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "key-symptoms-of-uterine-fibroids-only-1-in-3-women-have-symptoms",
+          "id": "key-symptoms-of-uterine-fibroids--only-1-in-3-women-have-symptoms",
           "text": "Key Symptoms of Uterine Fibroids (only 1 in 3 women have symptoms)",
           "level": 3
         },
@@ -1429,17 +1454,17 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "treatment-options-for-uterine-fibroids-tailored-to-your-goals",
+          "id": "treatment-options-for-uterine-fibroids--tailored-to-your-goals",
           "text": "Treatment Options for Uterine Fibroids — Tailored to Your Goals",
           "level": 3
         },
         {
-          "id": "polycystic-ovary-syndrome-pcos",
+          "id": "polycystic-ovary-syndrome--pcos",
           "text": "Polycystic Ovary Syndrome (PCOS)",
           "level": 2
         },
         {
-          "id": "the-rotterdam-criteria-diagnosis-needs-2-of-3",
+          "id": "the-rotterdam-criteria--diagnosis-needs-2-of-3",
           "text": "The Rotterdam Criteria — Diagnosis Needs 2 of 3",
           "level": 3
         },
@@ -1469,12 +1494,12 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "diagnosis-treatment",
+          "id": "diagnosis--treatment",
           "text": "Diagnosis & Treatment",
           "level": 3
         },
         {
-          "id": "pelvic-inflammatory-disease-pid",
+          "id": "pelvic-inflammatory-disease--pid",
           "text": "Pelvic Inflammatory Disease (PID)",
           "level": 2
         },
@@ -1494,47 +1519,47 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "gynaecological-cancers-overview",
+          "id": "gynaecological-cancers--overview",
           "text": "Gynaecological Cancers — Overview",
           "level": 2
         },
         {
-          "id": "figo-staging-universal-system-for-all-gynaecological-cancers",
+          "id": "figo-staging--universal-system-for-all-gynaecological-cancers",
           "text": "FIGO Staging — Universal System for All Gynaecological Cancers",
           "level": 3
         },
         {
-          "id": "cervical-cancer-the-one-we-can-prevent",
+          "id": "cervical-cancer--the-one-we-can-prevent",
           "text": "Cervical Cancer — The One We Can Prevent",
           "level": 2
         },
         {
-          "id": "prevention-90-70-90-targets",
+          "id": "prevention--90-70-90-targets",
           "text": "Prevention — 90-70-90 Targets",
           "level": 3
         },
         {
-          "id": "uterine-endometrial-cancer",
+          "id": "uterine--endometrial--cancer",
           "text": "Uterine (Endometrial) Cancer",
           "level": 2
         },
         {
-          "id": "ovarian-cancer-recognising-the-subtle-signs",
+          "id": "ovarian-cancer--recognising-the-subtle-signs",
           "text": "Ovarian Cancer — Recognising the Subtle Signs",
           "level": 2
         },
         {
-          "id": "symptoms-of-ovarian-cancer-persistent-for-2-weeks",
+          "id": "symptoms-of-ovarian-cancer--persistent-for--2-weeks",
           "text": "Symptoms of Ovarian Cancer — Persistent for >2 Weeks",
           "level": 3
         },
         {
-          "id": "vulvar-cancer-highly-curable-when-caught-early",
+          "id": "vulvar-cancer--highly-curable-when-caught-early",
           "text": "Vulvar Cancer — Highly Curable When Caught Early",
           "level": 2
         },
         {
-          "id": "treatment-support-in-kenya",
+          "id": "treatment--support-in-kenya",
           "text": "Treatment & Support in Kenya",
           "level": 2
         },
@@ -1573,7 +1598,7 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "pelvic-inflammatory-disease-pid",
+          "id": "pelvic-inflammatory-disease--pid",
           "text": "Pelvic Inflammatory Disease (PID)",
           "level": 2
         },
@@ -1622,12 +1647,12 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "polycystic-ovary-syndrome-pcos",
+          "id": "polycystic-ovary-syndrome--pcos",
           "text": "Polycystic Ovary Syndrome (PCOS)",
           "level": 2
         },
         {
-          "id": "the-rotterdam-criteria-diagnosis-needs-2-of-3",
+          "id": "the-rotterdam-criteria--diagnosis-needs-2-of-3",
           "text": "The Rotterdam Criteria — Diagnosis Needs 2 of 3",
           "level": 3
         },
@@ -1670,7 +1695,7 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "uterine-fibroids-leiomyomas",
+          "id": "uterine-fibroids--leiomyomas",
           "text": "Uterine Fibroids (Leiomyomas)",
           "level": 2
         },
@@ -1690,7 +1715,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "treatment-options-for-uterine-fibroids-tailored-to-your-goals",
+          "id": "treatment-options-for-uterine-fibroids--tailored-to-your-goals",
           "text": "Treatment Options for Uterine Fibroids — Tailored to Your Goals",
           "level": 3
         }
@@ -1716,7 +1741,12 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "introduction-a-lifetime-of-hormonal-change",
+          "id": "hormones-across-life-stages",
+          "text": "Hormones Across Life Stages",
+          "level": 1
+        },
+        {
+          "id": "introduction--a-lifetime-of-hormonal-change",
           "text": "Introduction: A Lifetime of Hormonal Change",
           "level": 2
         },
@@ -1726,7 +1756,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "estrogen-estradiol",
+          "id": "estrogen--estradiol",
           "text": "Estrogen (Estradiol)",
           "level": 3
         },
@@ -1741,12 +1771,12 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "fsh-follicle-stimulating-hormone",
+          "id": "fsh--follicle-stimulating-hormone",
           "text": "FSH — Follicle-Stimulating Hormone",
           "level": 3
         },
         {
-          "id": "lh-luteinising-hormone",
+          "id": "lh--luteinising-hormone",
           "text": "LH — Luteinising Hormone",
           "level": 3
         },
@@ -1761,32 +1791,32 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "stage-1-in-the-beginning-fetal-development-infancy",
+          "id": "stage-1--in-the-beginning--fetal-development--infancy",
           "text": "Stage 1: In the Beginning — Fetal Development & Infancy",
           "level": 3
         },
         {
-          "id": "stage-2-puberty-adolescence-ages-819",
+          "id": "stage-2--puberty--adolescence--ages-8-19",
           "text": "Stage 2: Puberty & Adolescence (Ages 8–19)",
           "level": 3
         },
         {
-          "id": "stage-3-the-reproductive-years-ages-2039",
+          "id": "stage-3--the-reproductive-years--ages-20-39",
           "text": "Stage 3: The Reproductive Years (Ages 20–39)",
           "level": 3
         },
         {
-          "id": "stage-4-the-perimenopause-transition-ages-40early-50s",
+          "id": "stage-4--the-perimenopause-transition--ages-40-early-50s",
           "text": "Stage 4: The Perimenopause Transition (Ages 40–Early 50s)",
           "level": 3
         },
         {
-          "id": "stage-5-menopause-beyond-ages-50",
+          "id": "stage-5--menopause--beyond--ages-50",
           "text": "Stage 5: Menopause & Beyond (Ages 50+)",
           "level": 3
         },
         {
-          "id": "which-stage-am-i-in-quick-reference",
+          "id": "which-stage-am-i-in--quick-reference",
           "text": "Which Stage Am I In? — Quick Reference",
           "level": 2
         },
@@ -1819,7 +1849,7 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "introduction-a-lifetime-of-hormonal-change",
+          "id": "introduction--a-lifetime-of-hormonal-change",
           "text": "Introduction: A Lifetime of Hormonal Change",
           "level": 2
         },
@@ -1829,7 +1859,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "estrogen-estradiol",
+          "id": "estrogen--estradiol",
           "text": "Estrogen (Estradiol)",
           "level": 3
         },
@@ -1844,12 +1874,12 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "fsh-follicle-stimulating-hormone",
+          "id": "fsh--follicle-stimulating-hormone",
           "text": "FSH — Follicle-Stimulating Hormone",
           "level": 3
         },
         {
-          "id": "lh-luteinising-hormone",
+          "id": "lh--luteinising-hormone",
           "text": "LH — Luteinising Hormone",
           "level": 3
         },
@@ -1864,27 +1894,27 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "stage-1-in-the-beginning-fetal-development-infancy",
+          "id": "stage-1--in-the-beginning--fetal-development--infancy",
           "text": "Stage 1: In the Beginning — Fetal Development & Infancy",
           "level": 3
         },
         {
-          "id": "stage-2-puberty-adolescence-ages-819",
+          "id": "stage-2--puberty--adolescence--ages-8-19",
           "text": "Stage 2: Puberty & Adolescence (Ages 8–19)",
           "level": 3
         },
         {
-          "id": "stage-3-the-reproductive-years-ages-2039",
+          "id": "stage-3--the-reproductive-years--ages-20-39",
           "text": "Stage 3: The Reproductive Years (Ages 20–39)",
           "level": 3
         },
         {
-          "id": "stage-4-the-perimenopause-transition-ages-40early-50s",
+          "id": "stage-4--the-perimenopause-transition--ages-40-early-50s",
           "text": "Stage 4: The Perimenopause Transition (Ages 40–Early 50s)",
           "level": 3
         },
         {
-          "id": "stage-5-menopause-beyond-ages-50",
+          "id": "stage-5--menopause--beyond--ages-50",
           "text": "Stage 5: Menopause & Beyond (Ages 50+)",
           "level": 3
         },
@@ -1918,7 +1948,7 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "which-stage-am-i-in-quick-reference",
+          "id": "which-stage-am-i-in--quick-reference",
           "text": "Which Stage Am I In? — Quick Reference",
           "level": 2
         },
@@ -1926,6 +1956,414 @@ export const HEALTH_LIBRARY_INDEX = {
           "id": "when-to-seek-medical-help-at-any-stage",
           "text": "When to Seek Medical Help at Any Stage",
           "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\management-and-treatment.mdx",
+      "route": "/health-library/womens-health/menstrual-health/management-and-treatment",
+      "frontmatter": {
+        "title": "Management & Treatment",
+        "summary": "From lifestyle changes to SSRIs and hormonal therapy — a practical guide to managing PMS and PMDD, with clear guidance on when to seek urgent help and how to get a diagnosis.",
+        "topic": "womens-health",
+        "subtopic": "menstrual-health",
+        "slug": "management-and-treatment",
+        "updatedAt": "2026-01-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menstrual-health",
+          "PMS",
+          "PMDD",
+          "treatment"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "management--treatment",
+          "text": "Management & Treatment",
+          "level": 2
+        },
+        {
+          "id": "lifestyle--first-line-for-mild-moderate-pms",
+          "text": "Lifestyle (First-line for mild–moderate PMS)",
+          "level": 3
+        },
+        {
+          "id": "medical-treatments--for-pmdd-or-severe-pms",
+          "text": "Medical Treatments (for PMDD or severe PMS)",
+          "level": 3
+        },
+        {
+          "id": "when-to-seek-urgent-help",
+          "text": "When to Seek Urgent Help",
+          "level": 3
+        },
+        {
+          "id": "how-to-get-a-diagnosis--the-4-step-approach",
+          "text": "How to Get a Diagnosis — The 4-Step Approach",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\menstrual-health.mdx",
+      "route": "/health-library/womens-health/menstrual-health/menstrual-health",
+      "frontmatter": {
+        "title": "Menstrual Health",
+        "summary": "Menstrual Health",
+        "topic": "womens-health",
+        "subtopic": "menstrual-health",
+        "slug": "menstrual-health",
+        "updatedAt": "2026-01-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "menstrual-health",
+          "text": "Menstrual Health",
+          "level": 1
+        },
+        {
+          "id": "the-menstrual-cycle--your-body-s-vital-sign",
+          "text": "The Menstrual Cycle — Your Body's Vital Sign",
+          "level": 2
+        },
+        {
+          "id": "the-four-phases-of-your-cycle",
+          "text": "The Four Phases of Your Cycle",
+          "level": 2
+        },
+        {
+          "id": "phase-1--menstruation--days-1-5",
+          "text": "Phase 1 — Menstruation (Days 1–5)",
+          "level": 3
+        },
+        {
+          "id": "phase-2--follicular-phase--days-1-13-overlaps-with-menstruation",
+          "text": "Phase 2 — Follicular Phase (Days 1–13, overlaps with menstruation)",
+          "level": 3
+        },
+        {
+          "id": "phase-3--ovulation--around-day-14-in-a-28-day-cycle",
+          "text": "Phase 3 — Ovulation (Around Day 14 in a 28-day cycle)",
+          "level": 3
+        },
+        {
+          "id": "phase-4--luteal-phase--days-15-28",
+          "text": "Phase 4 — Luteal Phase (Days 15–28)",
+          "level": 3
+        },
+        {
+          "id": "signs-of-ovulation--how-to-recognise-it",
+          "text": "Signs of Ovulation — How to Recognise It",
+          "level": 2
+        },
+        {
+          "id": "menstrual-hygiene--products",
+          "text": "Menstrual Hygiene & Products",
+          "level": 2
+        },
+        {
+          "id": "self-care-for-cramps--pain",
+          "text": "Self-Care for Cramps & Pain",
+          "level": 2
+        },
+        {
+          "id": "heat-therapy",
+          "text": "Heat Therapy",
+          "level": 3
+        },
+        {
+          "id": "otc-medication",
+          "text": "OTC Medication",
+          "level": 3
+        },
+        {
+          "id": "movement--massage",
+          "text": "Movement & Massage",
+          "level": 3
+        },
+        {
+          "id": "period-problems--bleeding-issues",
+          "text": "Period Problems: Bleeding Issues",
+          "level": 2
+        },
+        {
+          "id": "1-heavy-menstrual-bleeding--menorrhagia",
+          "text": "1. Heavy Menstrual Bleeding (Menorrhagia)",
+          "level": 3
+        },
+        {
+          "id": "2-irregular-periods--oligomenorrhea",
+          "text": "2. Irregular Periods (Oligomenorrhea)",
+          "level": 3
+        },
+        {
+          "id": "3-absent-periods--amenorrhea",
+          "text": "3. Absent Periods (Amenorrhea)",
+          "level": 3
+        },
+        {
+          "id": "4-bleeding-between-periods--intermenstrual-bleeding",
+          "text": "4. Bleeding Between Periods (Intermenstrual Bleeding)",
+          "level": 3
+        },
+        {
+          "id": "period-pain--dysmenorrhea",
+          "text": "Period Pain: Dysmenorrhea",
+          "level": 2
+        },
+        {
+          "id": "primary-dysmenorrhea--normal--cramping",
+          "text": "Primary Dysmenorrhea — \"Normal\" Cramping",
+          "level": 3
+        },
+        {
+          "id": "secondary-dysmenorrhea--pain-caused-by-a-condition",
+          "text": "Secondary Dysmenorrhea — Pain Caused by a Condition",
+          "level": 3
+        },
+        {
+          "id": "kenya-myth-busting--period-problems",
+          "text": "Kenya Myth-Busting: Period Problems",
+          "level": 2
+        },
+        {
+          "id": "pms--pmdd--the-pre-menstrual-phase",
+          "text": "PMS & PMDD — The Pre-Menstrual Phase",
+          "level": 2
+        },
+        {
+          "id": "pmdd-core-symptoms--dsm-criteria--must-include--1-of-first-4",
+          "text": "PMDD Core Symptoms (DSM criteria — must include ≥1 of first 4)",
+          "level": 3
+        },
+        {
+          "id": "what-causes-pms--pmdd",
+          "text": "What Causes PMS & PMDD?",
+          "level": 2
+        },
+        {
+          "id": "management--treatment",
+          "text": "Management & Treatment",
+          "level": 2
+        },
+        {
+          "id": "lifestyle--first-line-for-mild-moderate-pms",
+          "text": "Lifestyle (First-line for mild–moderate PMS)",
+          "level": 3
+        },
+        {
+          "id": "medical-treatments--for-pmdd-or-severe-pms",
+          "text": "Medical Treatments (for PMDD or severe PMS)",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\period-problems-bleeding-issues.mdx",
+      "route": "/health-library/womens-health/menstrual-health/period-problems-bleeding-issues",
+      "frontmatter": {
+        "title": "Period Problems: Bleeding Issues",
+        "summary": "Heavy periods, irregular cycles, absent periods, spotting between periods — understand what each pattern means, what causes it, and when it requires medical investigation.",
+        "topic": "womens-health",
+        "subtopic": "menstrual-health",
+        "slug": "period-problems-bleeding-issues",
+        "updatedAt": "2026-01-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menstrual-health",
+          "bleeding",
+          "period-problems"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "period-problems--bleeding-issues",
+          "text": "Period Problems: Bleeding Issues",
+          "level": 2
+        },
+        {
+          "id": "1-heavy-menstrual-bleeding--menorrhagia",
+          "text": "1. Heavy Menstrual Bleeding (Menorrhagia)",
+          "level": 3
+        },
+        {
+          "id": "2-irregular-periods--oligomenorrhea",
+          "text": "2. Irregular Periods (Oligomenorrhea)",
+          "level": 3
+        },
+        {
+          "id": "3-absent-periods--amenorrhea",
+          "text": "3. Absent Periods (Amenorrhea)",
+          "level": 3
+        },
+        {
+          "id": "4-bleeding-between-periods--intermenstrual-bleeding",
+          "text": "4. Bleeding Between Periods (Intermenstrual Bleeding)",
+          "level": 3
+        },
+        {
+          "id": "period-pain--dysmenorrhea",
+          "text": "Period Pain: Dysmenorrhea",
+          "level": 2
+        },
+        {
+          "id": "primary-dysmenorrhea--normal--cramping",
+          "text": "Primary Dysmenorrhea — \"Normal\" Cramping",
+          "level": 3
+        },
+        {
+          "id": "secondary-dysmenorrhea--pain-caused-by-a-condition",
+          "text": "Secondary Dysmenorrhea — Pain Caused by a Condition",
+          "level": 3
+        },
+        {
+          "id": "kenya-myth-busting--period-problems",
+          "text": "Kenya Myth-Busting: Period Problems",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\pms-and-pmdd.mdx",
+      "route": "/health-library/womens-health/menstrual-health/pms-and-pmdd",
+      "frontmatter": {
+        "title": "PMS & PMDD — The Pre-Menstrual Phase",
+        "summary": "PMS affects up to 75% of people who menstruate. PMDD is its severe form — a recognised psychiatric condition, not a character flaw. Learn how to tell them apart and what causes them.",
+        "topic": "womens-health",
+        "subtopic": "menstrual-health",
+        "slug": "pms-and-pmdd",
+        "updatedAt": "2026-01-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menstrual-health",
+          "PMS",
+          "PMDD"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "pms--pmdd--the-pre-menstrual-phase",
+          "text": "PMS & PMDD — The Pre-Menstrual Phase",
+          "level": 2
+        },
+        {
+          "id": "pms-vs-pmdd--side-by-side",
+          "text": "PMS vs PMDD — Side by Side",
+          "level": 3
+        },
+        {
+          "id": "pmdd-core-symptoms--dsm-criteria--must-include-at-least-1-of-first-4",
+          "text": "PMDD Core Symptoms (DSM criteria — must include at least 1 of first 4)",
+          "level": 3
+        },
+        {
+          "id": "what-causes-pms--pmdd",
+          "text": "What Causes PMS & PMDD?",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\the-menstrual-cycle.mdx",
+      "route": "/health-library/womens-health/menstrual-health/the-menstrual-cycle",
+      "frontmatter": {
+        "title": "The Menstrual Cycle — Your Body's Vital Sign",
+        "summary": "Your period is more than just bleeding — it is a monthly vital sign reflecting your overall hormonal health. Learn the four phases, how to track ovulation, and the basics of menstrual hygiene and self-care.",
+        "topic": "womens-health",
+        "subtopic": "menstrual-health",
+        "slug": "the-menstrual-cycle",
+        "updatedAt": "2026-01-01",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "menstrual-health",
+          "cycle",
+          "ovulation"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "the-menstrual-cycle--your-body-s-vital-sign",
+          "text": "The Menstrual Cycle — Your Body's Vital Sign",
+          "level": 2
+        },
+        {
+          "id": "the-four-phases-of-your-cycle",
+          "text": "The Four Phases of Your Cycle",
+          "level": 2
+        },
+        {
+          "id": "phase-1--menstruation--days-1-5",
+          "text": "Phase 1 — Menstruation (Days 1–5)",
+          "level": 3
+        },
+        {
+          "id": "phase-2--follicular-phase--days-1-13-overlaps-with-menstruation",
+          "text": "Phase 2 — Follicular Phase (Days 1–13, overlaps with menstruation)",
+          "level": 3
+        },
+        {
+          "id": "phase-3--ovulation--around-day-14-in-a-28-day-cycle",
+          "text": "Phase 3 — Ovulation (Around Day 14 in a 28-day cycle)",
+          "level": 3
+        },
+        {
+          "id": "phase-4--luteal-phase--days-15-28",
+          "text": "Phase 4 — Luteal Phase (Days 15–28)",
+          "level": 3
+        },
+        {
+          "id": "signs-of-ovulation--how-to-recognise-it",
+          "text": "Signs of Ovulation — How to Recognise It",
+          "level": 2
+        },
+        {
+          "id": "menstrual-hygiene--products",
+          "text": "Menstrual Hygiene & Products",
+          "level": 2
+        },
+        {
+          "id": "self-care-for-cramps--pain",
+          "text": "Self-Care for Cramps & Pain",
+          "level": 2
+        },
+        {
+          "id": "heat-therapy",
+          "text": "Heat Therapy",
+          "level": 3
+        },
+        {
+          "id": "otc-medication",
+          "text": "OTC Medication",
+          "level": 3
+        },
+        {
+          "id": "movement--massage",
+          "text": "Movement & Massage",
+          "level": 3
         }
       ]
     },
@@ -1952,17 +2390,17 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "part-7-emerging-research-the-future-of-menopause-care",
+          "id": "part-7--emerging-research--the-future-of-menopause-care",
           "text": "Part 7: Emerging Research — The Future of Menopause Care",
           "level": 2
         },
         {
-          "id": "estrogen-receptor-autophagy-axis-jan-2026",
+          "id": "estrogen-receptor-autophagy-axis--jan-2026",
           "text": "Estrogen Receptor-Autophagy Axis (Jan 2026)",
           "level": 3
         },
         {
-          "id": "regenerative-research-experimental",
+          "id": "regenerative-research--experimental",
           "text": "Regenerative Research — Experimental",
           "level": 3
         },
@@ -1997,12 +2435,12 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "part-6-long-term-health-after-menopause",
+          "id": "part-6--long-term-health-after-menopause",
           "text": "Part 6: Long-Term Health After Menopause",
           "level": 2
         },
         {
-          "id": "myth-busting-menopause",
+          "id": "myth-busting--menopause",
           "text": "Myth-Busting: Menopause",
           "level": 2
         },
@@ -2033,12 +2471,17 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "introduction-a-natural-transition-a-new-understanding",
+          "id": "menopause--perimenopause",
+          "text": "Menopause & Perimenopause",
+          "level": 1
+        },
+        {
+          "id": "introduction--a-natural-transition-a-new-understanding",
           "text": "Introduction: A Natural Transition, A New Understanding",
           "level": 2
         },
         {
-          "id": "part-1-perimenopause-the-years-before",
+          "id": "part-1--perimenopause--the-years-before",
           "text": "Part 1: Perimenopause — The Years Before",
           "level": 2
         },
@@ -2048,12 +2491,12 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "new-research-estrogen-depression-risk",
+          "id": "new-research--estrogen--depression-risk",
           "text": "New Research: Estrogen & Depression Risk",
           "level": 3
         },
         {
-          "id": "part-2-menopause-the-milestone",
+          "id": "part-2--menopause--the-milestone",
           "text": "Part 2: Menopause — The Milestone",
           "level": 2
         },
@@ -2063,22 +2506,22 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "straw10-staging-system",
+          "id": "straw-10-staging-system",
           "text": "STRAW+10 Staging System",
           "level": 3
         },
         {
-          "id": "part-3-symptoms-what-to-expect",
+          "id": "part-3--symptoms--what-to-expect",
           "text": "Part 3: Symptoms — What to Expect",
           "level": 2
         },
         {
-          "id": "i-vasomotor-symptoms-hot-flashes-night-sweats",
+          "id": "i-vasomotor-symptoms--hot-flashes--night-sweats",
           "text": "I. Vasomotor Symptoms — Hot Flashes & Night Sweats",
           "level": 3
         },
         {
-          "id": "ii-genitourinary-syndrome-of-menopause-gsm",
+          "id": "ii-genitourinary-syndrome-of-menopause--gsm",
           "text": "II. Genitourinary Syndrome of Menopause (GSM)",
           "level": 3
         },
@@ -2088,7 +2531,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "part-4-the-2025-fda-landmark-changes",
+          "id": "part-4--the-2025-fda-landmark-changes",
           "text": "Part 4: The 2025 FDA Landmark Changes",
           "level": 2
         },
@@ -2098,12 +2541,12 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "part-5-treatment-options-whats-available-now",
+          "id": "part-5--treatment-options--what-s-available-now",
           "text": "Part 5: Treatment Options — What's Available Now",
           "level": 2
         },
         {
-          "id": "1-hormone-replacement-therapy-hrt-mht",
+          "id": "1-hormone-replacement-therapy--hrt--mht",
           "text": "1. Hormone Replacement Therapy (HRT / MHT)",
           "level": 3
         },
@@ -2128,27 +2571,27 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "part-6-long-term-health-after-menopause",
+          "id": "part-6--long-term-health-after-menopause",
           "text": "Part 6: Long-Term Health After Menopause",
           "level": 2
         },
         {
-          "id": "myth-busting-menopause",
+          "id": "myth-busting--menopause",
           "text": "Myth-Busting: Menopause",
           "level": 2
         },
         {
-          "id": "part-7-emerging-research-the-future-of-menopause-care",
+          "id": "part-7--emerging-research--the-future-of-menopause-care",
           "text": "Part 7: Emerging Research — The Future of Menopause Care",
           "level": 2
         },
         {
-          "id": "estrogen-receptor-autophagy-axis-jan-2026",
+          "id": "estrogen-receptor-autophagy-axis--jan-2026",
           "text": "Estrogen Receptor-Autophagy Axis (Jan 2026)",
           "level": 3
         },
         {
-          "id": "regenerative-research-experimental",
+          "id": "regenerative-research--experimental",
           "text": "Regenerative Research — Experimental",
           "level": 3
         },
@@ -2182,7 +2625,7 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "part-2-menopause-the-milestone",
+          "id": "part-2--menopause--the-milestone",
           "text": "Part 2: Menopause — The Milestone",
           "level": 2
         },
@@ -2192,7 +2635,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "straw10-staging-system",
+          "id": "straw-10-staging-system",
           "text": "STRAW+10 Staging System",
           "level": 3
         },
@@ -2226,7 +2669,7 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "part-1-perimenopause-the-years-before",
+          "id": "part-1--perimenopause--the-years-before",
           "text": "Part 1: Perimenopause — The Years Before",
           "level": 2
         },
@@ -2236,7 +2679,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "new-research-estrogen-depression-risk",
+          "id": "new-research--estrogen--depression-risk",
           "text": "New Research: Estrogen & Depression Risk",
           "level": 3
         }
@@ -2266,7 +2709,7 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "part-4-the-2025-fda-landmark-changes",
+          "id": "part-4--the-2025-fda-landmark-changes",
           "text": "Part 4: The 2025 FDA Landmark Changes",
           "level": 2
         },
@@ -2301,12 +2744,12 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "part-5-treatment-options-whats-available-now",
+          "id": "part-5--treatment-options--what-s-available-now",
           "text": "Part 5: Treatment Options — What's Available Now",
           "level": 2
         },
         {
-          "id": "1-hormone-replacement-therapy-hrt-mht",
+          "id": "1-hormone-replacement-therapy--hrt--mht",
           "text": "1. Hormone Replacement Therapy (HRT / MHT)",
           "level": 3
         },
@@ -2328,409 +2771,6 @@ export const HEALTH_LIBRARY_INDEX = {
         {
           "id": "3-lifestyle-approaches",
           "text": "3. Lifestyle Approaches",
-          "level": 3
-        }
-      ]
-    },
-    {
-      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\management-and-treatment.mdx",
-      "route": "/health-library/womens-health/menstrual-health/management-and-treatment",
-      "frontmatter": {
-        "title": "Management & Treatment",
-        "summary": "From lifestyle changes to SSRIs and hormonal therapy — a practical guide to managing PMS and PMDD, with clear guidance on when to seek urgent help and how to get a diagnosis.",
-        "topic": "womens-health",
-        "subtopic": "menstrual-health",
-        "slug": "management-and-treatment",
-        "updatedAt": "2026-01-01",
-        "formats": [
-          "text"
-        ],
-        "tags": [
-          "womens-health",
-          "menstrual-health",
-          "PMS",
-          "PMDD",
-          "treatment"
-        ],
-        "featured": true
-      },
-      "toc": [
-        {
-          "id": "management-treatment",
-          "text": "Management & Treatment",
-          "level": 2
-        },
-        {
-          "id": "lifestyle-first-line-for-mildmoderate-pms",
-          "text": "Lifestyle (First-line for mild–moderate PMS)",
-          "level": 3
-        },
-        {
-          "id": "medical-treatments-for-pmdd-or-severe-pms",
-          "text": "Medical Treatments (for PMDD or severe PMS)",
-          "level": 3
-        },
-        {
-          "id": "when-to-seek-urgent-help",
-          "text": "When to Seek Urgent Help",
-          "level": 3
-        },
-        {
-          "id": "how-to-get-a-diagnosis-the-4-step-approach",
-          "text": "How to Get a Diagnosis — The 4-Step Approach",
-          "level": 3
-        }
-      ]
-    },
-    {
-      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\menstrual-health.mdx",
-      "route": "/health-library/womens-health/menstrual-health/menstrual-health",
-      "frontmatter": {
-        "title": "Menstrual Health",
-        "summary": "Menstrual Health",
-        "topic": "womens-health",
-        "subtopic": "menstrual-health",
-        "slug": "menstrual-health",
-        "updatedAt": "2026-01-01",
-        "formats": [
-          "text"
-        ],
-        "tags": [
-          "womens-health"
-        ],
-        "featured": true
-      },
-      "toc": [
-        {
-          "id": "the-menstrual-cycle-your-bodys-vital-sign",
-          "text": "The Menstrual Cycle — Your Body's Vital Sign",
-          "level": 2
-        },
-        {
-          "id": "the-four-phases-of-your-cycle",
-          "text": "The Four Phases of Your Cycle",
-          "level": 2
-        },
-        {
-          "id": "phase-1-menstruation-days-15",
-          "text": "Phase 1 — Menstruation (Days 1–5)",
-          "level": 3
-        },
-        {
-          "id": "phase-2-follicular-phase-days-113-overlaps-with-menstruation",
-          "text": "Phase 2 — Follicular Phase (Days 1–13, overlaps with menstruation)",
-          "level": 3
-        },
-        {
-          "id": "phase-3-ovulation-around-day-14-in-a-28-day-cycle",
-          "text": "Phase 3 — Ovulation (Around Day 14 in a 28-day cycle)",
-          "level": 3
-        },
-        {
-          "id": "phase-4-luteal-phase-days-1528",
-          "text": "Phase 4 — Luteal Phase (Days 15–28)",
-          "level": 3
-        },
-        {
-          "id": "signs-of-ovulation-how-to-recognise-it",
-          "text": "Signs of Ovulation — How to Recognise It",
-          "level": 2
-        },
-        {
-          "id": "menstrual-hygiene-products",
-          "text": "Menstrual Hygiene & Products",
-          "level": 2
-        },
-        {
-          "id": "self-care-for-cramps-pain",
-          "text": "Self-Care for Cramps & Pain",
-          "level": 2
-        },
-        {
-          "id": "heat-therapy",
-          "text": "Heat Therapy",
-          "level": 3
-        },
-        {
-          "id": "otc-medication",
-          "text": "OTC Medication",
-          "level": 3
-        },
-        {
-          "id": "movement-massage",
-          "text": "Movement & Massage",
-          "level": 3
-        },
-        {
-          "id": "period-problems-bleeding-issues",
-          "text": "Period Problems: Bleeding Issues",
-          "level": 2
-        },
-        {
-          "id": "1-heavy-menstrual-bleeding-menorrhagia",
-          "text": "1. Heavy Menstrual Bleeding (Menorrhagia)",
-          "level": 3
-        },
-        {
-          "id": "2-irregular-periods-oligomenorrhea",
-          "text": "2. Irregular Periods (Oligomenorrhea)",
-          "level": 3
-        },
-        {
-          "id": "3-absent-periods-amenorrhea",
-          "text": "3. Absent Periods (Amenorrhea)",
-          "level": 3
-        },
-        {
-          "id": "4-bleeding-between-periods-intermenstrual-bleeding",
-          "text": "4. Bleeding Between Periods (Intermenstrual Bleeding)",
-          "level": 3
-        },
-        {
-          "id": "period-pain-dysmenorrhea",
-          "text": "Period Pain: Dysmenorrhea",
-          "level": 2
-        },
-        {
-          "id": "primary-dysmenorrhea-normal-cramping",
-          "text": "Primary Dysmenorrhea — \"Normal\" Cramping",
-          "level": 3
-        },
-        {
-          "id": "secondary-dysmenorrhea-pain-caused-by-a-condition",
-          "text": "Secondary Dysmenorrhea — Pain Caused by a Condition",
-          "level": 3
-        },
-        {
-          "id": "kenya-myth-busting-period-problems",
-          "text": "Kenya Myth-Busting: Period Problems",
-          "level": 2
-        },
-        {
-          "id": "pms-pmdd-the-pre-menstrual-phase",
-          "text": "PMS & PMDD — The Pre-Menstrual Phase",
-          "level": 2
-        },
-        {
-          "id": "pmdd-core-symptoms-dsm-criteria-must-include-1-of-first-4",
-          "text": "PMDD Core Symptoms (DSM criteria — must include ≥1 of first 4)",
-          "level": 3
-        },
-        {
-          "id": "what-causes-pms-pmdd",
-          "text": "What Causes PMS & PMDD?",
-          "level": 2
-        },
-        {
-          "id": "management-treatment",
-          "text": "Management & Treatment",
-          "level": 2
-        },
-        {
-          "id": "lifestyle-first-line-for-mildmoderate-pms",
-          "text": "Lifestyle (First-line for mild–moderate PMS)",
-          "level": 3
-        },
-        {
-          "id": "medical-treatments-for-pmdd-or-severe-pms",
-          "text": "Medical Treatments (for PMDD or severe PMS)",
-          "level": 3
-        }
-      ]
-    },
-    {
-      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\period-problems-bleeding-issues.mdx",
-      "route": "/health-library/womens-health/menstrual-health/period-problems-bleeding-issues",
-      "frontmatter": {
-        "title": "Period Problems: Bleeding Issues",
-        "summary": "Heavy periods, irregular cycles, absent periods, spotting between periods — understand what each pattern means, what causes it, and when it requires medical investigation.",
-        "topic": "womens-health",
-        "subtopic": "menstrual-health",
-        "slug": "period-problems-bleeding-issues",
-        "updatedAt": "2026-01-01",
-        "formats": [
-          "text"
-        ],
-        "tags": [
-          "womens-health",
-          "menstrual-health",
-          "bleeding",
-          "period-problems"
-        ],
-        "featured": true
-      },
-      "toc": [
-        {
-          "id": "period-problems-bleeding-issues",
-          "text": "Period Problems: Bleeding Issues",
-          "level": 2
-        },
-        {
-          "id": "1-heavy-menstrual-bleeding-menorrhagia",
-          "text": "1. Heavy Menstrual Bleeding (Menorrhagia)",
-          "level": 3
-        },
-        {
-          "id": "2-irregular-periods-oligomenorrhea",
-          "text": "2. Irregular Periods (Oligomenorrhea)",
-          "level": 3
-        },
-        {
-          "id": "3-absent-periods-amenorrhea",
-          "text": "3. Absent Periods (Amenorrhea)",
-          "level": 3
-        },
-        {
-          "id": "4-bleeding-between-periods-intermenstrual-bleeding",
-          "text": "4. Bleeding Between Periods (Intermenstrual Bleeding)",
-          "level": 3
-        },
-        {
-          "id": "period-pain-dysmenorrhea",
-          "text": "Period Pain: Dysmenorrhea",
-          "level": 2
-        },
-        {
-          "id": "primary-dysmenorrhea-normal-cramping",
-          "text": "Primary Dysmenorrhea — \"Normal\" Cramping",
-          "level": 3
-        },
-        {
-          "id": "secondary-dysmenorrhea-pain-caused-by-a-condition",
-          "text": "Secondary Dysmenorrhea — Pain Caused by a Condition",
-          "level": 3
-        },
-        {
-          "id": "kenya-myth-busting-period-problems",
-          "text": "Kenya Myth-Busting: Period Problems",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\pms-and-pmdd.mdx",
-      "route": "/health-library/womens-health/menstrual-health/pms-and-pmdd",
-      "frontmatter": {
-        "title": "PMS & PMDD — The Pre-Menstrual Phase",
-        "summary": "PMS affects up to 75% of people who menstruate. PMDD is its severe form — a recognised psychiatric condition, not a character flaw. Learn how to tell them apart and what causes them.",
-        "topic": "womens-health",
-        "subtopic": "menstrual-health",
-        "slug": "pms-and-pmdd",
-        "updatedAt": "2026-01-01",
-        "formats": [
-          "text"
-        ],
-        "tags": [
-          "womens-health",
-          "menstrual-health",
-          "PMS",
-          "PMDD"
-        ],
-        "featured": true
-      },
-      "toc": [
-        {
-          "id": "pms-pmdd-the-pre-menstrual-phase",
-          "text": "PMS & PMDD — The Pre-Menstrual Phase",
-          "level": 2
-        },
-        {
-          "id": "pms-vs-pmdd-side-by-side",
-          "text": "PMS vs PMDD — Side by Side",
-          "level": 3
-        },
-        {
-          "id": "pmdd-core-symptoms-dsm-criteria-must-include-at-least-1-of-first-4",
-          "text": "PMDD Core Symptoms (DSM criteria — must include at least 1 of first 4)",
-          "level": 3
-        },
-        {
-          "id": "what-causes-pms-pmdd",
-          "text": "What Causes PMS & PMDD?",
-          "level": 2
-        }
-      ]
-    },
-    {
-      "filePath": "src\\content\\health-library\\womens-health\\menstrual-health\\the-menstrual-cycle.mdx",
-      "route": "/health-library/womens-health/menstrual-health/the-menstrual-cycle",
-      "frontmatter": {
-        "title": "The Menstrual Cycle — Your Body's Vital Sign",
-        "summary": "Your period is more than just bleeding — it is a monthly vital sign reflecting your overall hormonal health. Learn the four phases, how to track ovulation, and the basics of menstrual hygiene and self-care.",
-        "topic": "womens-health",
-        "subtopic": "menstrual-health",
-        "slug": "the-menstrual-cycle",
-        "updatedAt": "2026-01-01",
-        "formats": [
-          "text"
-        ],
-        "tags": [
-          "womens-health",
-          "menstrual-health",
-          "cycle",
-          "ovulation"
-        ],
-        "featured": true
-      },
-      "toc": [
-        {
-          "id": "the-menstrual-cycle-your-bodys-vital-sign",
-          "text": "The Menstrual Cycle — Your Body's Vital Sign",
-          "level": 2
-        },
-        {
-          "id": "the-four-phases-of-your-cycle",
-          "text": "The Four Phases of Your Cycle",
-          "level": 2
-        },
-        {
-          "id": "phase-1-menstruation-days-15",
-          "text": "Phase 1 — Menstruation (Days 1–5)",
-          "level": 3
-        },
-        {
-          "id": "phase-2-follicular-phase-days-113-overlaps-with-menstruation",
-          "text": "Phase 2 — Follicular Phase (Days 1–13, overlaps with menstruation)",
-          "level": 3
-        },
-        {
-          "id": "phase-3-ovulation-around-day-14-in-a-28-day-cycle",
-          "text": "Phase 3 — Ovulation (Around Day 14 in a 28-day cycle)",
-          "level": 3
-        },
-        {
-          "id": "phase-4-luteal-phase-days-1528",
-          "text": "Phase 4 — Luteal Phase (Days 15–28)",
-          "level": 3
-        },
-        {
-          "id": "signs-of-ovulation-how-to-recognise-it",
-          "text": "Signs of Ovulation — How to Recognise It",
-          "level": 2
-        },
-        {
-          "id": "menstrual-hygiene-products",
-          "text": "Menstrual Hygiene & Products",
-          "level": 2
-        },
-        {
-          "id": "self-care-for-cramps-pain",
-          "text": "Self-Care for Cramps & Pain",
-          "level": 2
-        },
-        {
-          "id": "heat-therapy",
-          "text": "Heat Therapy",
-          "level": 3
-        },
-        {
-          "id": "otc-medication",
-          "text": "OTC Medication",
-          "level": 3
-        },
-        {
-          "id": "movement-massage",
-          "text": "Movement & Massage",
           "level": 3
         }
       ]
@@ -2762,7 +2802,7 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "introduction-growing-up-staying-safe-in-kenya",
+          "id": "introduction--growing-up-staying-safe-in-kenya",
           "text": "Introduction: Growing Up, Staying Safe in Kenya",
           "level": 2
         },
@@ -2777,7 +2817,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "vaginal-discharge-whats-normal",
+          "id": "vaginal-discharge--what-s-normal",
           "text": "Vaginal Discharge: What's Normal?",
           "level": 2
         },
@@ -2792,7 +2832,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "menstruation-what-to-expect",
+          "id": "menstruation--what-to-expect",
           "text": "Menstruation: What to Expect",
           "level": 2
         },
@@ -2812,7 +2852,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "body-autonomy-i-own-my-body",
+          "id": "body-autonomy--i-own-my-body",
           "text": "Body Autonomy: I Own My Body",
           "level": 2
         },
@@ -2832,17 +2872,17 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "step-1-no",
+          "id": "step-1--no",
           "text": "Step 1 — NO",
           "level": 3
         },
         {
-          "id": "step-2-go",
+          "id": "step-2--go",
           "text": "Step 2 — GO",
           "level": 3
         },
         {
-          "id": "step-3-tell",
+          "id": "step-3--tell",
           "text": "Step 3 — TELL",
           "level": 3
         }
@@ -2873,7 +2913,12 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "introduction-growing-up-staying-safe-in-kenya",
+          "id": "puberty--safety",
+          "text": "Puberty & Safety",
+          "level": 1
+        },
+        {
+          "id": "introduction--growing-up-staying-safe-in-kenya",
           "text": "Introduction: Growing Up, Staying Safe in Kenya",
           "level": 2
         },
@@ -2888,22 +2933,22 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "vaginal-discharge-whats-normal",
+          "id": "vaginal-discharge--what-s-normal",
           "text": "Vaginal Discharge: What's Normal?",
           "level": 2
         },
         {
-          "id": "-normal-discharge",
+          "id": "normal-discharge",
           "text": "✅ Normal Discharge",
           "level": 3
         },
         {
-          "id": "-see-a-provider-if",
+          "id": "see-a-provider-if",
           "text": "🚨 See a Provider If:",
           "level": 3
         },
         {
-          "id": "menstruation-what-to-expect",
+          "id": "menstruation--what-to-expect",
           "text": "Menstruation: What to Expect",
           "level": 2
         },
@@ -2923,7 +2968,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "body-autonomy-i-own-my-body",
+          "id": "body-autonomy--i-own-my-body",
           "text": "Body Autonomy: I Own My Body",
           "level": 2
         },
@@ -2943,17 +2988,17 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "step-1-no",
+          "id": "step-1--no",
           "text": "Step 1 — NO",
           "level": 3
         },
         {
-          "id": "step-2-go",
+          "id": "step-2--go",
           "text": "Step 2 — GO",
           "level": 3
         },
         {
-          "id": "step-3-tell",
+          "id": "step-3--tell",
           "text": "Step 3 — TELL",
           "level": 3
         },
@@ -3027,7 +3072,7 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "if-youve-been-sexually-assaulted",
+          "id": "if-you-ve-been-sexually-assaulted",
           "text": "If You've Been Sexually Assaulted",
           "level": 3
         }

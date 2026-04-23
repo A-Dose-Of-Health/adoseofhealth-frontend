@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
 import { Breadcrumbs } from "@/components/health-library/Breadcrumbs";
 import { TableOfContents } from "@/components/health-library/TableOfContents";
 import { MdxArticle } from "@/components/health-library/MdxArticle";
+import { ArticleRightSidebar } from "@/components/health-library/ArticleRightSidebar";
 import {
   getArticleBySlugs,
   getHealthLibraryIndex,
@@ -55,13 +57,38 @@ export default async function ArticlePage({ params }: PageProps) {
 
   const idx = getHealthLibraryIndex();
   const topicTitle = idx.topics.find((t) => t.slug === topic)?.title ?? topic;
-
   const subtopicTitle =
     (idx.subtopicsByTopic[topic] ?? []).find((s) => s.slug === subtopic)
       ?.title ?? subtopic;
 
+  // Build related articles: same subtopic first, fill from same topic if needed
+  const sameSubtopic = idx.articles.filter(
+    (a) =>
+      a.frontmatter.topic === topic &&
+      a.frontmatter.subtopic === subtopic &&
+      a.frontmatter.slug !== article
+  );
+  const sameTopic = idx.articles.filter(
+    (a) =>
+      a.frontmatter.topic === topic &&
+      a.frontmatter.subtopic !== subtopic &&
+      a.frontmatter.slug !== article
+  );
+  const related = [...sameSubtopic, ...sameTopic].slice(0, 4).map((a) => ({
+    route: a.route,
+    title: a.frontmatter.title,
+    summary: a.frontmatter.summary,
+    updatedAt: a.frontmatter.updatedAt,
+  }));
+
+  // Resolve the canonical article URL from request headers
+  const headersList = await headers();
+  const host = headersList.get("host") ?? "localhost:3000";
+  const protocol = host.startsWith("localhost") ? "http" : "https";
+  const articleUrl = `${protocol}://${host}${item.route}`;
+
   return (
-    <main className="relative grow overflow-hidden">
+    <main className="relative grow">
       <section className="relative overflow-hidden pt-12 lg:pt-20">
         {/* Radial BG shape */}
         <span className="absolute -right-[25rem] -bottom-[6.75rem] -z-[1] h-[43.75rem] w-[43.75rem] rounded-full [background:radial-gradient(circle_at_center,#6366f1,transparent)] blur-[100px] opacity-15"></span>
@@ -119,10 +146,28 @@ export default async function ArticlePage({ params }: PageProps) {
           </div>
         </div>
       </section>
+
       <section aria-label="Resources" className="container py-2 lg:py-6">
-        <div className="mt-8 grid gap-6 lg:grid-cols-[280px_1fr]">
+        {/* 
+          Three-column layout on large screens:
+            col 1 (260px) — Table of Contents (sticky)
+            col 2 (1fr)   — Article body
+            col 3 (240px) — Share + Related articles
+          Stacks to single column on mobile.
+        */}
+        <div className="mt-8 grid gap-6 lg:grid-cols-[260px_1fr_240px]">
+          {/* Left: TOC */}
           <TableOfContents items={[...item.toc]} />
+
+          {/* Centre: Article body */}
           <MdxArticle>{compiled?.content}</MdxArticle>
+
+          {/* Right: Share + Related */}
+          <ArticleRightSidebar
+            articleTitle={item.frontmatter.title}
+            articleUrl={articleUrl}
+            relatedArticles={related}
+          />
         </div>
       </section>
     </main>
