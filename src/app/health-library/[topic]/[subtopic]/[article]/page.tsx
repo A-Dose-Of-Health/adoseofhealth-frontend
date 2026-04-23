@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/health-library/Breadcrumbs";
 import { TableOfContents } from "@/components/health-library/TableOfContents";
 import { MdxArticle } from "@/components/health-library/MdxArticle";
@@ -32,18 +33,51 @@ export function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: PageProps) {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { topic, subtopic, article } = await params;
 
   const item = getArticleBySlugs(topic, subtopic, article);
+  if (!item) return {};
 
-  if (!item) {
-    return {};
-  }
+  const idx = getHealthLibraryIndex();
+  const topicTitle = idx.topics.find((t) => t.slug === topic)?.title ?? topic;
+  const subtopicTitle =
+    (idx.subtopicsByTopic[topic] ?? []).find((s) => s.slug === subtopic)
+      ?.title ?? subtopic;
+
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  const articleUrl = `${baseUrl}${item.route}`;
+  const fullTitle = `${item.frontmatter.title} | Health Library`;
 
   return {
-    title: `${item.frontmatter.title} | Health Library`,
+    title: fullTitle,
     description: item.frontmatter.summary,
+
+    openGraph: {
+      title: item.frontmatter.title,
+      description: item.frontmatter.summary,
+      url: articleUrl,
+      siteName: "A Dose of Health",
+      type: "article",
+      // og:image is automatically provided by opengraph-image.tsx in this route
+      locale: "en_GB",
+      // Article-specific OG fields
+      publishedTime: item.frontmatter.updatedAt,
+      modifiedTime: item.frontmatter.updatedAt,
+      section: topicTitle,
+      tags: item.frontmatter.tags ?? [topicTitle, subtopicTitle],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: item.frontmatter.title,
+      description: item.frontmatter.summary,
+      // twitter:image is also automatically resolved from opengraph-image.tsx
+    },
+
+    alternates: {
+      canonical: articleUrl,
+    },
   };
 }
 

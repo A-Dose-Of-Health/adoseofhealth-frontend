@@ -126,31 +126,152 @@ export function flattenToc(toc: TocItem[]): TocItem[] {
   return toc ?? [];
 }
 
+// ---------------------------------------------------------------------------
+// Related articles
+// ---------------------------------------------------------------------------
 
-export function getRelatedArticles(topic: string, subtopic: string, currentSlug: string) {
+const RELATED_LIMIT = 5;
+
+export type RelatedArticle = {
+  route: string;
+  title: string;
+  summary: string;
+  updatedAt: string;
+  /** true when this article was explicitly pinned via relatedSlugs */
+  pinned: boolean;
+};
+
+/**
+ * Parse a fully-qualified related slug: "topic/subtopic/article-slug"
+ * Returns null if the format is invalid.
+ */
+function parseRelatedSlug(
+  raw: string,
+): { topic: string; subtopic: string; slug: string } | null {
+  const parts = raw.trim().split("/");
+  if (parts.length !== 3 || parts.some((p) => !p)) return null;
+  return { topic: parts[0], subtopic: parts[1], slug: parts[2] };
+}
+
+/**
+ * Score a candidate article against the current article for auto-ranking.
+ *
+ * Scoring:
+ *   +1  per shared tag  (main relevance signal)
+ *   +0.5 if featured    (tiebreaker bonus only)
+ *
+ * Structural priority (same-subtopic > same-topic) is enforced by the order
+ * candidates are passed in, not by the score, so a highly-tagged but
+ * structurally distant article never crowds out an adjacent one.
+ */
+function scoreCandidate(
+  candidate: HealthArticleIndexItem,
+  currentTags: string[],
+): number {
+  const candidateTags = candidate.frontmatter.tags ?? [];
+  const sharedTags = candidateTags.filter((t) => currentTags.includes(t)).length;
+  const featuredBonus = candidate.frontmatter.featured ? 0.5 : 0;
+  return sharedTags + featuredBonus;
+}
+
+export function getRelatedArticles(
+  topic: string,
+  subtopic: string,
+  currentSlug: string,
+): RelatedArticle[] {
   const idx = getHealthLibraryIndex();
-  
-  // Filter for articles in the same subtopic (excluding current)
-  const sameSubtopic = idx.articles.filter(
+
+  // Resolve the current article so we can use its tags for scoring
+  const current = idx.articles.find(
     (a) =>
       a.frontmatter.topic === topic &&
       a.frontmatter.subtopic === subtopic &&
-      a.frontmatter.slug !== currentSlug
+      a.frontmatter.slug === currentSlug,
   );
+  const currentTags = current?.frontmatter.tags ?? [];
+  const pinnedSlugs = current?.frontmatter.relatedSlugs ?? [];
 
-  // Filter for other articles in the same topic (excluding current subtopic)
-  const sameTopic = idx.articles.filter(
-    (a) =>
-      a.frontmatter.topic === topic &&
-      a.frontmatter.subtopic !== subtopic &&
-      a.frontmatter.slug !== currentSlug
-  );
+  // ------------------------------------------------------------------
+  // 1. Resolve pinned articles (in declared order, skip bad/missing slugs)
+  // ------------------------------------------------------------------
+  const pinnedRoutesSeen = new Set<string>();
+  const pinned: RelatedArticle[] = [];
 
-  // Combine and map to the required sidebar format
-  return [...sameSubtopic, ...sameTopic].slice(0, 4).map((a) => ({
+  for (const raw of pinnedSlugs) {
+    if (pinned.length >= RELATED_LIMIT) break;
+
+    const parsed = parseRelatedSlug(raw);
+    if (!parsed) {
+      // Malformed slug — silently skip
+      continue;
+    }
+
+    const match = idx.articles.find(
+      (a) =>
+        a.frontmatter.topic === parsed.topic &&
+        a.frontmatter.subtopic === parsed.subtopic &&
+        a.frontmatter.slug === parsed.slug,
+    );
+
+    if (!match) {
+      // Article not found (deleted, renamed, typo) — silently skip
+      continue;
+    }
+
+    pinnedRoutesSeen.add(match.route);
+    pinned.push({
+      route: match.route,
+      title: match.frontmatter.title,
+      summary: match.frontmatter.summary,
+      updatedAt: match.frontmatter.updatedAt,
+      pinned: true,
+    });
+  }
+
+  // How many slots remain after pinned articles
+  const remaining = RELATED_LIMIT - pinned.length;
+  if (remaining === 0) return pinned;
+
+  // ------------------------------------------------------------------
+  // 2. Auto-fill: same subtopic first, then rest of same topic
+  //    Cross-topic articles are only surfaced via relatedSlugs (pinned).
+  //    Candidates already covered by pinned are excluded.
+  // ------------------------------------------------------------------
+  const isExcluded = (a: HealthArticleIndexItem) =>
+    (a.frontmatter.topic === topic &&
+      a.frontmatter.subtopic === subtopic &&
+      a.frontmatter.slug === currentSlug) ||
+    pinnedRoutesSeen.has(a.route);
+
+  const sameSubtopic = idx.articles
+    .filter(
+      (a) =>
+        a.frontmatter.topic === topic &&
+        a.frontmatter.subtopic === subtopic &&
+        !isExcluded(a),
+    )
+    .slice() // don't mutate the readonly array
+    .sort((a, b) => scoreCandidate(b, currentTags) - scoreCandidate(a, currentTags));
+
+  const sameTopic = idx.articles
+    .filter(
+      (a) =>
+        a.frontmatter.topic === topic &&
+        a.frontmatter.subtopic !== subtopic &&
+        !isExcluded(a),
+    )
+    .slice()
+    .sort((a, b) => scoreCandidate(b, currentTags) - scoreCandidate(a, currentTags));
+
+  const autoCandidates = [...sameSubtopic, ...sameTopic].slice(0, remaining);
+
+  const autoFilled: RelatedArticle[] = autoCandidates.map((a) => ({
     route: a.route,
     title: a.frontmatter.title,
     summary: a.frontmatter.summary,
     updatedAt: a.frontmatter.updatedAt,
+    pinned: false,
   }));
+
+  return [...pinned, ...autoFilled];
 }

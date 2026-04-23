@@ -10,14 +10,9 @@ import {
   Linkedin,
   Mail,
   MessageCircle,
+  Pin
 } from "lucide-react";
-
-type RelatedArticle = {
-  route: string;
-  title: string;
-  summary: string;
-  updatedAt: string;
-};
+import type { RelatedArticle } from "@/content/health-library/loaders";
 
 type Props = {
   articleTitle: string;
@@ -141,6 +136,13 @@ function RelatedArticlesSection({ articles }: { articles: RelatedArticle[] }) {
               href={article.route}
               className="group block rounded-xl border border-transparent p-3 transition hover:border-slate-200 hover:bg-slate-50"
             >
+              {/* Pinned indicator — only visible to editors, subtle enough not to confuse readers */}
+              {article.pinned && (
+                <span className="mb-1 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-widest text-primary/70">
+                  <Pin className="size-2.5" />
+                  Curated
+                </span>
+              )}
               <p className="text-sm font-medium text-slate-800 group-hover:text-primary leading-snug line-clamp-2">
                 {article.title}
               </p>

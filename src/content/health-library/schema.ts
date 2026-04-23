@@ -16,6 +16,7 @@ export const HealthArticleFrontmatterSchema = z.object({
   tags: z.array(z.string()).optional(),
   featured: z.boolean().optional(),
   readingMinutes: z.number().int().positive().optional(),
+  relatedSlugs: z.array(z.string()).optional()
 });
 
 export type HealthArticleFrontmatter = z.infer<
