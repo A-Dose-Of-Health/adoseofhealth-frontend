@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import { headers } from "next/headers";
 import { Breadcrumbs } from "@/components/health-library/Breadcrumbs";
 import { TableOfContents } from "@/components/health-library/TableOfContents";
 import { MdxArticle } from "@/components/health-library/MdxArticle";
@@ -7,6 +6,7 @@ import { ArticleRightSidebar } from "@/components/health-library/ArticleRightSid
 import {
   getArticleBySlugs,
   getHealthLibraryIndex,
+  getRelatedArticles,
   loadMdxArticle,
 } from "@/content/health-library/loaders";
 import Balancer from "react-wrap-balancer";
@@ -61,31 +61,12 @@ export default async function ArticlePage({ params }: PageProps) {
     (idx.subtopicsByTopic[topic] ?? []).find((s) => s.slug === subtopic)
       ?.title ?? subtopic;
 
-  // Build related articles: same subtopic first, fill from same topic if needed
-  const sameSubtopic = idx.articles.filter(
-    (a) =>
-      a.frontmatter.topic === topic &&
-      a.frontmatter.subtopic === subtopic &&
-      a.frontmatter.slug !== article
-  );
-  const sameTopic = idx.articles.filter(
-    (a) =>
-      a.frontmatter.topic === topic &&
-      a.frontmatter.subtopic !== subtopic &&
-      a.frontmatter.slug !== article
-  );
-  const related = [...sameSubtopic, ...sameTopic].slice(0, 4).map((a) => ({
-    route: a.route,
-    title: a.frontmatter.title,
-    summary: a.frontmatter.summary,
-    updatedAt: a.frontmatter.updatedAt,
-  }));
+  // Use the new loader helper
+  const related = getRelatedArticles(topic, subtopic, article);
 
-  // Resolve the canonical article URL from request headers
-  const headersList = await headers();
-  const host = headersList.get("host") ?? "localhost:3000";
-  const protocol = host.startsWith("localhost") ? "http" : "https";
-  const articleUrl = `${protocol}://${host}${item.route}`;
+  // Build the URL statically using environment variables
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  const articleUrl = `${baseUrl}${item.route}`;
 
   return (
     <main className="relative grow">
@@ -147,7 +128,7 @@ export default async function ArticlePage({ params }: PageProps) {
         </div>
       </section>
 
-      <section aria-label="Resources" className="container py-2 lg:py-6">
+      <section aria-label="Resources" className="container">
         {/* 
           Three-column layout on large screens:
             col 1 (260px) — Table of Contents (sticky)

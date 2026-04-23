@@ -125,3 +125,32 @@ export async function loadMdxArticle(filePathFromIndex: string) {
 export function flattenToc(toc: TocItem[]): TocItem[] {
   return toc ?? [];
 }
+
+
+export function getRelatedArticles(topic: string, subtopic: string, currentSlug: string) {
+  const idx = getHealthLibraryIndex();
+  
+  // Filter for articles in the same subtopic (excluding current)
+  const sameSubtopic = idx.articles.filter(
+    (a) =>
+      a.frontmatter.topic === topic &&
+      a.frontmatter.subtopic === subtopic &&
+      a.frontmatter.slug !== currentSlug
+  );
+
+  // Filter for other articles in the same topic (excluding current subtopic)
+  const sameTopic = idx.articles.filter(
+    (a) =>
+      a.frontmatter.topic === topic &&
+      a.frontmatter.subtopic !== subtopic &&
+      a.frontmatter.slug !== currentSlug
+  );
+
+  // Combine and map to the required sidebar format
+  return [...sameSubtopic, ...sameTopic].slice(0, 4).map((a) => ({
+    route: a.route,
+    title: a.frontmatter.title,
+    summary: a.frontmatter.summary,
+    updatedAt: a.frontmatter.updatedAt,
+  }));
+}
