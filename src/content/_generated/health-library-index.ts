@@ -140,182 +140,6 @@ export const HEALTH_LIBRARY_INDEX = {
       "toc": []
     },
     {
-      "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\body-anatomy.mdx",
-      "route": "/health-library/womens-health/body-anatomy/body-anatomy",
-      "frontmatter": {
-        "title": "Body & Anatomy",
-        "summary": "Body & Anatomy",
-        "topic": "womens-health",
-        "subtopic": "body-anatomy",
-        "slug": "body-anatomy",
-        "updatedAt": "2026-03-05",
-        "formats": [
-          "text"
-        ],
-        "tags": [
-          "womens-health, body-anatomy"
-        ],
-        "featured": true
-      },
-      "toc": [
-        {
-          "id": "body--anatomy",
-          "text": "Body & Anatomy",
-          "level": 1
-        },
-        {
-          "id": "the-vulva--external-anatomy",
-          "text": "The Vulva — External Anatomy.",
-          "level": 2
-        },
-        {
-          "id": "mons-pubis",
-          "text": "Mons Pubis",
-          "level": 3
-        },
-        {
-          "id": "labia-majora--outer-lips",
-          "text": "Labia Majora (Outer Lips)",
-          "level": 3
-        },
-        {
-          "id": "labia-minora--inner-lips",
-          "text": "Labia Minora (Inner Lips)",
-          "level": 3
-        },
-        {
-          "id": "clitoris--the-full-structure",
-          "text": "Clitoris — The Full Structure",
-          "level": 3
-        },
-        {
-          "id": "urethral-opening--meatus",
-          "text": "Urethral Opening (Meatus)",
-          "level": 3
-        },
-        {
-          "id": "vaginal-opening--hymen",
-          "text": "Vaginal Opening & Hymen",
-          "level": 3
-        },
-        {
-          "id": "bartholin-s-glands",
-          "text": "Bartholin's Glands",
-          "level": 3
-        },
-        {
-          "id": "skene-s-glands--paraurethral",
-          "text": "Skene's Glands (Paraurethral)",
-          "level": 3
-        },
-        {
-          "id": "vulva-hygiene--daily-do-s--don-ts",
-          "text": "Vulva Hygiene: Daily Do's & Don'ts",
-          "level": 2
-        },
-        {
-          "id": "do",
-          "text": "✅ Do",
-          "level": 3
-        },
-        {
-          "id": "never",
-          "text": "🚫 Never",
-          "level": 3
-        },
-        {
-          "id": "common-vulvar-conditions",
-          "text": "Common Vulvar Conditions",
-          "level": 2
-        },
-        {
-          "id": "the-vagina--internal-canal",
-          "text": "The Vagina — Internal Canal",
-          "level": 2
-        },
-        {
-          "id": "the-three-layers-of-the-vaginal-wall",
-          "text": "The Three Layers of the Vaginal Wall",
-          "level": 3
-        },
-        {
-          "id": "vaginal-infections--the-three-main-types",
-          "text": "Vaginal Infections — The Three Main Types",
-          "level": 2
-        },
-        {
-          "id": "kenya-myth-busting--vaginal-health",
-          "text": "Kenya Myth-Busting: Vaginal Health",
-          "level": 2
-        },
-        {
-          "id": "the-cervix--the-gatekeeper",
-          "text": "The Cervix — The Gatekeeper",
-          "level": 2
-        },
-        {
-          "id": "four-critical-functions",
-          "text": "Four Critical Functions",
-          "level": 3
-        },
-        {
-          "id": "the-transformation-zone--why-it-matters",
-          "text": "The Transformation Zone — Why It Matters",
-          "level": 3
-        },
-        {
-          "id": "cervical-screening--kenya-guidelines",
-          "text": "Cervical Screening — Kenya Guidelines",
-          "level": 2
-        },
-        {
-          "id": "uterus-fallopian-tubes--ovaries",
-          "text": "Uterus, Fallopian Tubes & Ovaries",
-          "level": 2
-        },
-        {
-          "id": "the-uterus--womb",
-          "text": "The Uterus (Womb)",
-          "level": 3
-        },
-        {
-          "id": "the-fallopian-tubes--where-fertilisation-happens",
-          "text": "The Fallopian Tubes — Where Fertilisation Happens",
-          "level": 3
-        },
-        {
-          "id": "the-ovaries--hormonal-architects",
-          "text": "The Ovaries — Hormonal Architects",
-          "level": 3
-        },
-        {
-          "id": "the-urethra--urinary-pathway",
-          "text": "The Urethra — Urinary Pathway",
-          "level": 2
-        },
-        {
-          "id": "structure--three-layers",
-          "text": "Structure: Three Layers",
-          "level": 3
-        },
-        {
-          "id": "two-sphincters-control-urination",
-          "text": "Two Sphincters Control Urination",
-          "level": 3
-        },
-        {
-          "id": "uti--urinary-tract-infection",
-          "text": "UTI — Urinary Tract Infection",
-          "level": 2
-        },
-        {
-          "id": "kenya-myth-busting--urinary-health",
-          "text": "Kenya Myth-Busting: Urinary Health",
-          "level": 2
-        }
-      ]
-    },
-    {
       "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\external-organs.mdx",
       "route": "/health-library/womens-health/body-anatomy/external-organs",
       "frontmatter": {
@@ -337,8 +161,8 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "the-vulva--external-anatomy",
-          "text": "The Vulva — External Anatomy",
+          "id": "1-what-is-the-vulva",
+          "text": "1. What Is the Vulva?",
           "level": 2
         },
         {
@@ -404,11 +228,59 @@ export const HEALTH_LIBRARY_INDEX = {
       ]
     },
     {
+      "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\getting-to-know-your-body.mdx",
+      "route": "/health-library/womens-health/body-anatomy/getting-to-know-your-body",
+      "frontmatter": {
+        "title": "Getting to Know Your Body",
+        "summary": "Most of us were never properly taught about our own bodies. This is your foundation — why body literacy matters, what the medical system often gets wrong, and how to start with curiosity instead of shame.",
+        "topic": "womens-health",
+        "subtopic": "body-anatomy",
+        "slug": "getting-to-know-your-body",
+        "updatedAt": "2026-03-05",
+        "formats": [
+          "text"
+        ],
+        "tags": [
+          "womens-health",
+          "body-anatomy",
+          "body-literacy"
+        ],
+        "featured": true
+      },
+      "toc": [
+        {
+          "id": "why-this-matters",
+          "text": "Why This Matters",
+          "level": 2
+        },
+        {
+          "id": "the-vocabulary-gap",
+          "text": "The Vocabulary Gap",
+          "level": 2
+        },
+        {
+          "id": "what-the-medical-system-gets-wrong",
+          "text": "What the Medical System Gets Wrong",
+          "level": 2
+        },
+        {
+          "id": "body-literacy-as-self-advocacy",
+          "text": "Body Literacy as Self-Advocacy",
+          "level": 2
+        },
+        {
+          "id": "where-to-go-from-here",
+          "text": "Where to Go From Here",
+          "level": 2
+        }
+      ]
+    },
+    {
       "filePath": "src\\content\\health-library\\womens-health\\body-anatomy\\internal-organs.mdx",
       "route": "/health-library/womens-health/body-anatomy/internal-organs",
       "frontmatter": {
         "title": "Internal Organs",
-        "summary": "The vagina is a self-cleaning fibromuscular canal connecting the cervix to the outside world — understand its structure, how infections occur, and what the myths get wrong.",
+        "summary": "A comprehensive guide to the female internal anatomy — the vagina, cervix, uterus, fallopian tubes, ovaries and urethra — covering structure, function, common conditions and Kenya-specific health context.",
         "topic": "womens-health",
         "subtopic": "body-anatomy",
         "slug": "internal-organs",
@@ -467,17 +339,17 @@ export const HEALTH_LIBRARY_INDEX = {
         {
           "id": "the-cervix--the-gatekeeper",
           "text": "The Cervix — The Gatekeeper",
-          "level": 2
+          "level": 1
         },
         {
           "id": "four-critical-functions",
           "text": "Four Critical Functions",
-          "level": 3
+          "level": 2
         },
         {
           "id": "the-transformation-zone--why-it-matters",
           "text": "The Transformation Zone — Why It Matters",
-          "level": 3
+          "level": 2
         },
         {
           "id": "cervical-screening--kenya-guidelines",
@@ -487,37 +359,72 @@ export const HEALTH_LIBRARY_INDEX = {
         {
           "id": "uterus-fallopian-tubes--ovaries",
           "text": "Uterus, Fallopian Tubes & Ovaries",
-          "level": 2
+          "level": 1
         },
         {
           "id": "the-uterus--womb",
           "text": "The Uterus (Womb)",
+          "level": 2
+        },
+        {
+          "id": "three-layers-of-the-uterine-wall",
+          "text": "Three Layers of the Uterine Wall",
+          "level": 3
+        },
+        {
+          "id": "four-parts-of-the-uterus",
+          "text": "Four Parts of the Uterus",
+          "level": 3
+        },
+        {
+          "id": "three-key-functions",
+          "text": "Three Key Functions",
           "level": 3
         },
         {
           "id": "the-fallopian-tubes--where-fertilisation-happens",
           "text": "The Fallopian Tubes — Where Fertilisation Happens",
+          "level": 2
+        },
+        {
+          "id": "four-regions-of-each-tube",
+          "text": "Four Regions of Each Tube",
+          "level": 3
+        },
+        {
+          "id": "tubal-conditions",
+          "text": "Tubal Conditions",
           "level": 3
         },
         {
           "id": "the-ovaries--hormonal-architects",
           "text": "The Ovaries — Hormonal Architects",
+          "level": 2
+        },
+        {
+          "id": "egg-production--a-finite-resource",
+          "text": "Egg Production — A Finite Resource",
           "level": 3
         },
         {
-          "id": "the-urethra--urinary-pathway",
-          "text": "The Urethra — Urinary Pathway",
-          "level": 2
+          "id": "hormones-the-ovaries-produce",
+          "text": "Hormones the Ovaries Produce",
+          "level": 3
+        },
+        {
+          "id": "the-urethra--urinary-health",
+          "text": "The Urethra & Urinary Health",
+          "level": 1
         },
         {
           "id": "structure--three-layers",
           "text": "Structure: Three Layers",
-          "level": 3
+          "level": 2
         },
         {
           "id": "two-sphincters-control-urination",
           "text": "Two Sphincters Control Urination",
-          "level": 3
+          "level": 2
         },
         {
           "id": "uti--urinary-tract-infection",

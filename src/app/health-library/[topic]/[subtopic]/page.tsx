@@ -1,11 +1,12 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { Breadcrumbs } from "@/components/health-library/Breadcrumbs";
-import { ArticleCard } from "@/components/health-library/ArticleCard";
 import {
   getArticlesBySubtopic,
   getHealthLibraryIndex,
 } from "@/content/health-library/loaders";
-import Image from "next/image";
+import { getSubtopicConfig } from "@/content/health-library/subtopic-config";
+import { getLayoutComponent } from "@/components/health-library/layouts/index";
 
 type Params = {
   topic: string;
@@ -34,14 +35,15 @@ export async function generateMetadata({ params }: PageProps) {
 
   const idx = getHealthLibraryIndex();
   const topicItem = idx.topics.find((t) => t.slug === topic);
+  if (!topicItem) return {};
 
-  if (!topicItem) {
-    return {};
-  }
+  const subtopicItem = (idx.subtopicsByTopic[topicItem.slug] ?? []).find(
+    (s) => s.slug === subtopic,
+  );
 
   return {
-    title: `${subtopic.replace(/-/g, " ")} | ${topicItem.title} | Health Library`,
-    description: `Browse resources under ${topicItem.title} → ${subtopic.replace(/-/g, " ")}.`,
+    title: `${subtopicItem?.title ?? subtopic} | ${topicItem.title} | Health Library`,
+    description: `Browse resources under ${topicItem.title} — ${subtopicItem?.title ?? subtopic}.`,
   };
 }
 
@@ -59,16 +61,21 @@ export default async function SubtopicPage({ params }: PageProps) {
 
   const articles = getArticlesBySubtopic(topic, subtopic);
 
+  // Look up per-subtopic layout config. Returns null if no entry registered
+  // — the layout falls back to "grid" in that case.
+  const config = getSubtopicConfig(topic, subtopic);
+  const layoutMode = config?.layout ?? "grid";
+  const Layout = getLayoutComponent(layoutMode);
+
   return (
     <main className="relative grow overflow-hidden">
+      {/* ── Hero ── */}
       <section className="relative overflow-hidden py-12 lg:py-20">
-        {/* Radial BG shape */}
-        <span className="absolute -right-[25rem] -bottom-[6.75rem] -z-[1] h-[43.75rem] w-[43.75rem] rounded-full [background:radial-gradient(circle_at_center,#6366f1,transparent)] blur-[100px] opacity-15"></span>
+        <span className="absolute -right-[25rem] -bottom-[6.75rem] -z-[1] h-[43.75rem] w-[43.75rem] rounded-full [background:radial-gradient(circle_at_center,#6366f1,transparent)] blur-[100px] opacity-15" />
+        <span className="absolute -top-[30rem] left-0 -z-[1] h-[43.75rem] w-[43.75rem] rounded-full [background:radial-gradient(circle_at_center,#ef4444,transparent)] blur-[100px] opacity-15" />
 
-        {/* Pink radial background */}
-        <span className="absolute -top-[30rem] left-0 -z-[1] h-[43.75rem] w-[43.75rem] rounded-full [background:radial-gradient(circle_at_center,#ef4444,transparent)] blur-[100px] opacity-15"></span>
         <div className="container relative">
-          <div className="text-gray mb-2 flex items-center justify-center gap-1 text-sm/4.5 font-medium md:gap-2 ">
+          <div className="mb-2 flex items-center justify-center gap-1 text-sm/4.5 font-medium text-gray md:gap-2">
             <Breadcrumbs
               items={[
                 { label: "Health Library", href: "/health-library" },
@@ -82,7 +89,8 @@ export default async function SubtopicPage({ params }: PageProps) {
                 },
               ]}
             />
-          </div>{" "}
+          </div>
+
           <div className="mx-auto mb-8 w-full max-w-[964px] space-y-4 text-center md:space-y-6 lg:mb-12">
             <h1 className="relative text-3xl font-medium leading-10 sm:text-5xl sm:leading-[64px] xl:text-6xl xl:leading-[80px] 2xl:text-7xl 2xl:leading-[96px]">
               <span className="absolute left-0 top-3 hidden w-5 sm:block sm:w-auto">
@@ -102,7 +110,6 @@ export default async function SubtopicPage({ params }: PageProps) {
                 />
               </span>{" "}
               <span className="lg:block">
-                {" "}
                 <span className="relative inline-block pb-1 text-primary dark:text-tertiary">
                   <span className="absolute bottom-0 left-10 right-0 h-2 sm:left-16 md:h-4 xl:left-[104px]">
                     <Image
@@ -133,19 +140,15 @@ export default async function SubtopicPage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* ── Content — delegated to layout component ── */}
       <section aria-label="Resources" className="container py-12 lg:py-20">
-        <div className="relative mx-auto grid w-full max-w-[86%] gap-5 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 xl:gap-y-20">
-          {articles.map((a) => (
-            <ArticleCard
-              key={a.route}
-              route={a.route}
-              title={a.frontmatter.title}
-              summary={a.frontmatter.summary}
-              updatedAt={a.frontmatter.updatedAt}
-              formats={a.frontmatter.formats}
-            />
-          ))}
-        </div>
+        <Layout
+          articles={articles}
+          topicSlug={topic}
+          subtopicSlug={subtopic}
+          subtopicTitle={subtopicItem.title}
+          config={config}
+        />
       </section>
     </main>
   );

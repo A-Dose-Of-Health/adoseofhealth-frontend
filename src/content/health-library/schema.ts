@@ -11,6 +11,10 @@ export const HealthArticleFrontmatterSchema = z.object({
   updatedAt: z.string().min(4), // ISO date string recommended
   formats: z.array(HealthFormats).min(1),
 
+    // Pagination — only present on multi-page articles
+  pages: z.number().int().positive().optional(),
+  pageTitles: z.array(z.string()).optional(),
+
   // Optional metadata
   lifeStages: z.array(z.string()).optional(),
   tags: z.array(z.string()).optional(),

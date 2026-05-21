@@ -6,6 +6,7 @@ import {
   getHealthLibraryIndex,
 } from "@/content/health-library/loaders";
 
+export { generateStaticParams } from "./page";
 export const runtime = "nodejs";
 export const alt = "Article preview";
 export const size = { width: 1200, height: 630 };

@@ -1,27 +1,53 @@
-import type { ReactNode } from "react";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import Balancer from "react-wrap-balancer";
-import { clsx, type ClassValue } from "clsx";
+import remarkGfm from "remark-gfm";
+import remarkSlug from "remark-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { twMerge } from "tailwind-merge";
+import { mdxComponents } from "./mdx/index";
 
-export function MdxArticle({ children }: { children: ReactNode }) {
+type Props = {
+  source: string;
+};
+
+const MDX_OPTIONS = {
+  parseFrontmatter: true,
+  mdxOptions: {
+    remarkPlugins: [
+      remarkGfm as unknown as any,
+      remarkSlug as unknown as any,
+    ],
+    rehypePlugins: [
+      [
+        rehypeAutolinkHeadings as unknown as any,
+        {
+          behavior: "wrap",
+          properties: { className: ["anchor-link"] },
+        },
+      ] as any,
+    ],
+  },
+};
+
+export function MdxArticle({ source }: Props) {
   return (
     <article className="rounded-2xl p-8 shadow-sm border border-slate-100">
-      <div className={twMerge(
-        "prose prose-slate max-w-none font-bricolage", // Sets base font
-        
-        // --- PARAGRAPH SPECIFIC ---
-        "prose-p:font-normal",       // Force weight 400 (Regular)
-        "prose-p:text-slate-600",    // Soften the color for readability
-        "prose-p:leading-relaxed",   // Add breathing room between lines
-        "prose-p:!text-lg",           // Slightly larger for "Health" content
-        
-        // --- HEADING SPECIFIC ---
-        "prose-headings:font-extrabold", 
-        "prose-headings:tracking-tight",
-        "prose-headings:text-slate-900"
-      )}>
-        {children}
+      <div
+        className={twMerge(
+          "prose prose-slate max-w-none font-bricolage",
+          "prose-p:font-normal",
+          "prose-p:text-slate-600",
+          "prose-p:leading-relaxed",
+          "prose-p:!text-lg",
+          "prose-headings:font-extrabold",
+          "prose-headings:tracking-tight",
+          "prose-headings:text-slate-900",
+        )}
+      >
+        <MDXRemote
+          source={source}
+          options={MDX_OPTIONS}
+          components={mdxComponents}
+        />
       </div>
     </article>
   );

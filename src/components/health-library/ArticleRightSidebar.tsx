@@ -128,7 +128,7 @@ function RelatedArticlesSection({ articles }: { articles: RelatedArticle[] }) {
 
   return (
     <div className="rounded-2xl border p-4 space-y-3">
-      <p className="text-base font-semibold">Related articles</p>
+      <p className="text-base font-semibold">Related Topics</p>
       <ul className="space-y-3">
         {articles.map((article) => (
           <li key={article.route}>
