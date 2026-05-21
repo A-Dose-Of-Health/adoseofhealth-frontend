@@ -17,10 +17,14 @@ const nextConfig: NextConfig = {
         hostname: "digitalscholar.lsuhsc.edu",
       },
       {
-      protocol: "https",
-      hostname: "i.ytimg.com",
-    },
+        protocol: "https",
+        hostname: "i.ytimg.com",
+      },
     ],
+  },
+  // Add this property to force Vercel to bundle your MDX directory
+  outputFileTracingIncludes: {
+    '/health-library/**/*': ['./src/content/**/*'],
   },
 };
 
