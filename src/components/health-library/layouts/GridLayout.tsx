@@ -8,7 +8,7 @@ import type { LayoutProps } from "./index";
 
 export function GridLayout({ articles }: LayoutProps) {
   return (
-    <div className="relative mx-auto grid w-full max-w-[86%] gap-5 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 xl:gap-y-20">
+    <div className="relative mx-auto grid w-full gap-5 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 xl:gap-y-20">
       {articles.map((a) => (
         <ArticleCard
           key={a.route}

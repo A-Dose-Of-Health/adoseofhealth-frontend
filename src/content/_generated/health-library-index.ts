@@ -232,7 +232,7 @@ export const HEALTH_LIBRARY_INDEX = {
       "route": "/health-library/womens-health/body-anatomy/getting-to-know-your-body",
       "frontmatter": {
         "title": "Getting to Know Your Body",
-        "summary": "Most of us were never properly taught about our own bodies. This is your foundation — why body literacy matters, what the medical system often gets wrong, and how to start with curiosity instead of shame.",
+        "summary": "This is the age of curiosity and preparation. Your body is beginning to whisper the changes that will soon arrive. Understanding what is normal and knowing that your body belongs to you lays the foundation for a lifetime of health. Even before puberty begins, it is important to know the names and functions of your body parts. This knowledge is not shameful, it is protective.",
         "topic": "womens-health",
         "subtopic": "body-anatomy",
         "slug": "getting-to-know-your-body",

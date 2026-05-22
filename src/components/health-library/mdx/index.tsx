@@ -16,7 +16,8 @@
 import InteractiveVulva from "./interactive/InteractiveVulva";
 import { MdxImage } from "./ui/MdxImage";
 import { Callout } from "./ui/Callout";
-import { TlDr } from "./ui/TlDr";         
+import { TlDr } from "./ui/TlDr";
+import { MdxTable } from "./ui/MdxTable";          
 
 
 // ---------------------------------------------------------------------------
@@ -43,6 +44,7 @@ export const mdxComponents = {
   // ── Future components (uncomment as you build them) ─────────────────────
   Callout,
   TlDr,
+  MdxTable,
   // MythFact,
   // StatCard,
   // ExpandableSection,

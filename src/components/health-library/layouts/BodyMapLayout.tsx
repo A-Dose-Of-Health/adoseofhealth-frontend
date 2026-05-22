@@ -51,7 +51,7 @@ function VulvaMiniPreview() {
   return (
     <svg
       viewBox="0 0 80 120"
-      className="w-14"
+      className="w-32"
       aria-hidden="true"
       focusable="false"
     >
@@ -74,22 +74,22 @@ function IntroTile({ article }: { article: HealthArticleIndexItem }) {
   return (
     <Link
       href={article.route}
-      className="group flex flex-col justify-between rounded-2xl border border-black/10 bg-[#fefbf4] p-5 transition duration-200 hover:border-black/20 hover:shadow-sm lg:col-start-1 lg:row-start-1"
+      className="group flex flex-col justify-between rounded-2xl border border-black/10 bg-[#fefbf4] p-5 transition duration-200 hover:border-black/20 hover:shadow-sm lg:col-start-1 lg:row-start-1 font-bricolage"
     >
       <div>
-        <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-widest text-[#737373]">
+        <p className="mb-1.5 font-semibold uppercase tracking-widest text-[#737373]">
           Start here
         </p>
         <h3 className="text-base font-semibold leading-snug text-[#1e1e1e] transition-colors group-hover:text-[#1E444C]">
           {article.frontmatter.title}
         </h3>
-        <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-[#737373]">
+        <p className="mt-2 line-clamp-3 leading-relaxed text-[#737373]">
           {article.frontmatter.summary}
         </p>
       </div>
-      <div className="mt-4 flex items-center gap-1.5 text-xs font-semibold text-[#1E444C]">
+      <div className="mt-4 flex items-center gap-1.5 font-semibold text-[#1E444C]">
         Begin reading
-        <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
+        <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
       </div>
     </Link>
   );
@@ -97,13 +97,13 @@ function IntroTile({ article }: { article: HealthArticleIndexItem }) {
 
 function ExternalTile({ article }: { article: HealthArticleIndexItem }) {
   return (
-    <div className="flex flex-col rounded-2xl border border-[#f5b8bd] bg-[#FDE2E4] p-5 lg:col-start-2 lg:row-start-1 lg:row-span-2">
+    <div className="flex flex-col rounded-2xl border border-[#f5b8bd] bg-[#FDE2E4] p-5 lg:col-start-2 lg:row-start-1 lg:row-span-2 font-bricolage">
       {/* Header row */}
       <div className="mb-1 flex items-start justify-between gap-2">
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-[#993556]">
+        <p className="font-semibold uppercase tracking-widest text-[#993556]">
           External anatomy
         </p>
-        <span className="shrink-0 rounded-full border border-[#D4537E]/30 bg-[#ED93B1]/20 px-2 py-0.5 text-[10px] font-medium text-[#72243E]">
+        <span className="shrink-0 rounded-full border border-[#D4537E]/30 bg-[#ED93B1]/20 px-2 py-0.5 font-medium text-[#72243E]">
           surface
         </span>
       </div>
@@ -111,7 +111,7 @@ function ExternalTile({ article }: { article: HealthArticleIndexItem }) {
       <h3 className="text-lg font-semibold leading-snug text-[#4A1528]">
         The vulva
       </h3>
-      <p className="mt-1 text-xs leading-relaxed text-[#72243E]">
+      <p className="mt-1 leading-relaxed text-[#72243E]">
         What you can see. Every structure, correctly named.
       </p>
 
@@ -120,16 +120,16 @@ function ExternalTile({ article }: { article: HealthArticleIndexItem }) {
         <VulvaMiniPreview />
       </div>
 
-      <p className="mb-5 text-[11px] text-[#993556]/70">
+      <p className="mb-5 text-[#993556]/70">
         Includes an interactive anatomy diagram
       </p>
 
       <Link
         href={article.route}
-        className="group mt-auto inline-flex items-center gap-1.5 self-start rounded-full border border-[#D4537E] bg-[#D4537E]/10 px-3.5 py-1.5 text-xs font-semibold text-[#72243E] transition hover:bg-[#D4537E]/20"
+        className="group mt-auto inline-flex items-center gap-1.5 self-start rounded-full border border-[#D4537E] bg-[#D4537E]/10 px-3.5 py-1.5 font-semibold text-[#72243E] transition hover:bg-[#D4537E]/20"
       >
         Explore external organs
-        <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
+        <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
       </Link>
     </div>
   );
@@ -137,8 +137,8 @@ function ExternalTile({ article }: { article: HealthArticleIndexItem }) {
 
 function StatATile({ stat }: { stat: BodyMapData["stats"][0] }) {
   return (
-    <div className="flex flex-col justify-center rounded-2xl border border-slate-100 bg-white p-5 lg:col-start-1 lg:row-start-2">
-      <p className="mb-1 text-[10px] font-semibold uppercase tracking-widest text-[#737373]">
+    <div className="flex flex-col justify-center rounded-2xl border border-slate-100 bg-white p-5 lg:col-start-1 lg:row-start-2 font-bricolage">
+      <p className="mb-1 font-semibold uppercase tracking-widest text-[#737373]">
         Did you know
       </p>
       {"value" in stat && stat.value ? (
@@ -146,12 +146,12 @@ function StatATile({ stat }: { stat: BodyMapData["stats"][0] }) {
           <p className="text-3xl font-semibold leading-none text-[#D85A30]">
             {stat.value}
           </p>
-          <p className="mt-1.5 text-xs leading-snug text-slate-500">
+          <p className="mt-1.5 leading-snug text-slate-500">
             {stat.label}
           </p>
         </>
       ) : (
-        <p className="text-sm font-medium leading-snug text-slate-700">
+        <p className="text-6xl font-medium leading-snug text-slate-700">
           {"fact" in stat ? stat.fact : stat.label}
         </p>
       )}
@@ -167,13 +167,13 @@ function InternalTile({
   sections: string[];
 }) {
   return (
-    <div className="flex flex-col rounded-2xl border border-[#9FE1CB] bg-[#E1F5EE] p-5 lg:col-start-1 lg:row-start-3 lg:row-span-2">
+    <div className="flex flex-col rounded-2xl border border-[#9FE1CB] bg-[#E1F5EE] p-5 lg:col-start-1 lg:row-start-3 lg:row-span-2 font-bricolage">
       {/* Header row */}
       <div className="mb-1 flex items-start justify-between gap-2">
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-[#0F6E56]">
+        <p className="font-semibold uppercase tracking-widest text-[#0F6E56]">
           Internal organs
         </p>
-        <span className="shrink-0 rounded-full border border-[#1D9E75]/30 bg-[#1D9E75]/10 px-2 py-0.5 text-[10px] font-medium text-[#085041]">
+        <span className="shrink-0 rounded-full border border-[#1D9E75]/30 bg-[#1D9E75]/10 px-2 py-0.5 font-medium text-[#085041]">
           internal
         </span>
       </div>
@@ -181,7 +181,7 @@ function InternalTile({
       <h3 className="text-lg font-semibold leading-snug text-[#085041]">
         The vagina, cervix, uterus & more
       </h3>
-      <p className="mt-1 text-xs leading-relaxed text-[#0F6E56]">
+      <p className="mt-1 leading-relaxed text-[#0F6E56]">
         A 4-part guide through the internal reproductive system.
       </p>
 
@@ -192,15 +192,15 @@ function InternalTile({
             <Link
               key={i}
               href={pageHref(article.route, i + 1)}
-              className="group flex items-center gap-2.5 rounded-xl border border-[#1D9E75]/20 bg-white/60 px-3 py-2 transition hover:border-[#1D9E75]/40 hover:bg-white/90"
+              className="group flex items-center gap-2.5 rounded-xl border border-[#1D9E75]/20 bg-white/60 px-3 py-4 transition hover:border-[#1D9E75]/40 hover:bg-white/90"
             >
-              <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-[#1D9E75] text-[10px] font-bold text-white">
+              <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-[#1D9E75] text-[12px] font-bold text-white">
                 {i + 1}
               </span>
-              <span className="text-xs leading-snug text-[#085041]">
+              <span className="leading-snug text-[#085041]">
                 {title}
               </span>
-              <ArrowRight className="ml-auto size-3 shrink-0 text-[#1D9E75] opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" />
+              <ArrowRight className="ml-auto size-4 shrink-0 text-[#1D9E75] opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" />
             </Link>
           ))}
         </div>
@@ -208,10 +208,10 @@ function InternalTile({
 
       <Link
         href={article.route}
-        className="group mt-5 inline-flex items-center gap-1.5 self-start rounded-full border border-[#1D9E75] bg-[#1D9E75]/10 px-3.5 py-1.5 text-xs font-semibold text-[#085041] transition hover:bg-[#1D9E75]/20"
+        className="group mt-5 inline-flex items-center gap-1.5 self-start rounded-full border border-[#1D9E75] bg-[#1D9E75]/10 px-3.5 py-1.5 font-semibold text-[#085041] transition hover:bg-[#1D9E75]/20"
       >
         Start from the beginning
-        <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
+        <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
       </Link>
     </div>
   );
@@ -219,8 +219,8 @@ function InternalTile({
 
 function StatBTile({ stat }: { stat: BodyMapData["stats"][1] }) {
   return (
-    <div className="flex flex-col justify-center rounded-2xl border border-slate-100 bg-white p-5 lg:col-start-2 lg:row-start-3">
-      <p className="mb-1 text-[10px] font-semibold uppercase tracking-widest text-[#737373]">
+    <div className="flex flex-col justify-center rounded-2xl border border-slate-100 bg-white p-5 lg:col-start-2 lg:row-start-3 font-bricolage">
+      <p className="mb-1 font-semibold uppercase tracking-widest text-[#737373]">
         Did you know
       </p>
       {"value" in stat && stat.value ? (
@@ -228,12 +228,12 @@ function StatBTile({ stat }: { stat: BodyMapData["stats"][1] }) {
           <p className="text-3xl font-semibold leading-none text-[#1E444C]">
             {stat.value}
           </p>
-          <p className="mt-1.5 text-xs leading-snug text-slate-500">
+          <p className="mt-1.5 leading-snug text-slate-500">
             {stat.label}
           </p>
         </>
       ) : (
-        <p className="text-sm font-medium leading-snug text-slate-700">
+        <p className=" text-2xl font-medium leading-snug text-slate-700">
           {"fact" in stat ? stat.fact : stat.label}
         </p>
       )}
@@ -259,11 +259,11 @@ function ReadingOrderTile({
     .filter(Boolean) as { label: string; route: string }[];
 
   return (
-    <div className="flex flex-col rounded-2xl bg-[#1E444C] p-5 lg:col-start-2 lg:row-start-4">
-      <p className="text-[10px] font-semibold uppercase tracking-widest text-white/50">
+    <div className="flex flex-col rounded-2xl bg-[#1E444C] p-5 lg:col-start-2 lg:row-start-4 h-full font-bricolage">
+      <p className="font-semibold uppercase tracking-widest text-white/50">
         Suggested order
       </p>
-      <p className="mt-1 text-sm font-semibold leading-snug text-white">
+      <p className="mt-1 font-semibold leading-snug text-white">
         New here? Start outside, then go deeper.
       </p>
       <div className="mt-3.5 flex flex-wrap items-center gap-2">
@@ -271,12 +271,12 @@ function ReadingOrderTile({
           <div key={i} className="flex items-center gap-2">
             <Link
               href={item.route}
-              className="rounded-full border border-white/25 bg-white/10 px-2.5 py-1 text-[11px] text-white/85 transition hover:bg-white/20"
+              className="rounded-full border border-white/25 bg-white/10 px-2 py-2 text-white/85 transition hover:bg-white/20"
             >
               {item.label}
             </Link>
             {i < items.length - 1 && (
-              <span className="text-xs text-white/35">→</span>
+              <span className="text-white/35">→</span>
             )}
           </div>
         ))}
@@ -301,7 +301,7 @@ export function BodyMapLayout({ articles, config }: LayoutProps) {
   const stats = data?.stats;
 
   return (
-    <div className="mx-auto w-full max-w-4xl px-4">
+    <div className="mx-auto w-full max-w-7xl px-4">
       {/*
        * Mobile:  single-column stack (grid-cols-1, no explicit placement)
        * lg+:     2-column bento with explicit row/col placement via lg: prefixes

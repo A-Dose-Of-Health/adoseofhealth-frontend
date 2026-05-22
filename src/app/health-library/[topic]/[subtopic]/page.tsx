@@ -71,7 +71,7 @@ export default async function SubtopicPage({ params }: PageProps) {
     <main className="relative grow overflow-hidden">
       {/* ── Hero ── */}
       <section className="relative overflow-hidden py-12 lg:py-20">
-        <span className="absolute -right-[25rem] -bottom-[6.75rem] -z-[1] h-[43.75rem] w-[43.75rem] rounded-full [background:radial-gradient(circle_at_center,#6366f1,transparent)] blur-[100px] opacity-15" />
+        {/* <span className="absolute -right-[25rem] -bottom-[6.75rem] -z-[1] h-[43.75rem] w-[43.75rem] rounded-full [background:radial-gradient(circle_at_center,#6366f1,transparent)] blur-[100px] opacity-15" /> */}
         <span className="absolute -top-[30rem] left-0 -z-[1] h-[43.75rem] w-[43.75rem] rounded-full [background:radial-gradient(circle_at_center,#ef4444,transparent)] blur-[100px] opacity-15" />
 
         <div className="container relative">
@@ -92,7 +92,7 @@ export default async function SubtopicPage({ params }: PageProps) {
           </div>
 
           <div className="mx-auto mb-8 w-full max-w-[964px] space-y-4 text-center md:space-y-6 lg:mb-12">
-            <h1 className="relative text-3xl font-medium leading-10 sm:text-5xl sm:leading-[64px] xl:text-6xl xl:leading-[80px] 2xl:text-7xl 2xl:leading-[96px]">
+            <h1 className="relative leading-10 sm:text-5xl sm:leading-[64px] xl:text-6xl xl:leading-[80px] 2xl:text-7xl 2xl:leading-[96px] font-bricolage font-extrabold tracking-tight text-slate-900 text-4xl md:text-5xl lg:text-6xl">
               <span className="absolute left-0 top-3 hidden w-5 sm:block sm:w-auto">
                 <Image
                   alt="star"
@@ -141,7 +141,7 @@ export default async function SubtopicPage({ params }: PageProps) {
       </section>
 
       {/* ── Content — delegated to layout component ── */}
-      <section aria-label="Resources" className="container py-12 lg:py-20">
+      <section aria-label="Resources" className="container pb-12 lg:pb-20">
         <Layout
           articles={articles}
           topicSlug={topic}

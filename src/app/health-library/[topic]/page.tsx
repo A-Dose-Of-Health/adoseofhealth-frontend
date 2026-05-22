@@ -95,7 +95,7 @@ export default async function TopicPage({ params }: PageProps) {
           </div>
 
           <div className="mx-auto mb-8 w-full max-w-[964px] space-y-4 text-center md:space-y-6 lg:mb-12">
-            <h1 className="relative text-3xl font-medium leading-10 sm:text-5xl sm:leading-[64px] xl:text-6xl xl:leading-[80px] 2xl:text-7xl 2xl:leading-[96px]">
+            <h1 className="relative leading-10 sm:text-5xl sm:leading-[64px] xl:text-6xl xl:leading-[80px] 2xl:text-7xl 2xl:leading-[96px] font-bricolage font-extrabold tracking-tight text-slate-900 text-4xl md:text-5xl lg:text-6xl">
               <span className="absolute left-0 top-3 hidden w-5 sm:block sm:w-auto">
                 <Image
                   alt="star"
