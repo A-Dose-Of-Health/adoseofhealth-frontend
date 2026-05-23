@@ -232,7 +232,7 @@ export const HEALTH_LIBRARY_INDEX = {
       "route": "/health-library/womens-health/body-anatomy/getting-to-know-your-body",
       "frontmatter": {
         "title": "Getting to Know Your Body",
-        "summary": "This is the age of curiosity and preparation. Your body is beginning to whisper the changes that will soon arrive. Understanding what is normal and knowing that your body belongs to you lays the foundation for a lifetime of health. Even before puberty begins, it is important to know the names and functions of your body parts. This knowledge is not shameful, it is protective.",
+        "summary": "This is the age of curiosity and preparation. Your body is beginning to whisper the changes that will soon arrive. Understanding what is normal and knowing that your body belongs to you lays the foundation for a lifetime of health.",
         "topic": "womens-health",
         "subtopic": "body-anatomy",
         "slug": "getting-to-know-your-body",
@@ -249,28 +249,13 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "why-this-matters",
-          "text": "Why This Matters",
+          "id": "1-external-genitalia--the-vulva",
+          "text": "1. External Genitalia (The Vulva)",
           "level": 2
         },
         {
-          "id": "the-vocabulary-gap",
-          "text": "The Vocabulary Gap",
-          "level": 2
-        },
-        {
-          "id": "what-the-medical-system-gets-wrong",
-          "text": "What the Medical System Gets Wrong",
-          "level": 2
-        },
-        {
-          "id": "body-literacy-as-self-advocacy",
-          "text": "Body Literacy as Self-Advocacy",
-          "level": 2
-        },
-        {
-          "id": "where-to-go-from-here",
-          "text": "Where to Go From Here",
+          "id": "2-internal-organs",
+          "text": "2. Internal Organs",
           "level": 2
         }
       ]

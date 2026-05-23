@@ -71,11 +71,11 @@ export function MdxTable({
       
       {/* ── Header bar ──────── */}
       {title && (
-        <div className="border-b border-slate-100 bg-gradient-to-r from-rose-50 via-pink-50 to-slate-50 px-5 py-4">
+        <div className="border-b border-slate-100 bg-gradient-to-r from-rose-50 via-pink-50 to-slate-50 px-5 pt-1">
           {/* <p className="text-[0.8rem] font-semibold uppercase tracking-widest text-rose-400">
             {eyebrow}
           </p> */}
-          <h3 className="text-sm font-medium leading-snug text-slate-700">
+          <h3 className="text-sm font-medium text-slate-700 !mt-[1rem]">
             {title}
           </h3>
         </div>
