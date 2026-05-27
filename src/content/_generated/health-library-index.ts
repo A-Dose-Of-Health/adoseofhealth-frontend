@@ -317,8 +317,33 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 3
         },
         {
-          "id": "kenya-myth-busting--vaginal-health",
-          "text": "Kenya Myth-Busting: Vaginal Health",
+          "id": "4-common-conditions-and-symptoms--infections",
+          "text": "4. Common Conditions and Symptoms (Infections)",
+          "level": 2
+        },
+        {
+          "id": "vaginitis--inflammation-of-the-vagina",
+          "text": "Vaginitis (Inflammation of the Vagina)",
+          "level": 3
+        },
+        {
+          "id": "other-vaginal-conditions",
+          "text": "Other Vaginal Conditions",
+          "level": 3
+        },
+        {
+          "id": "tests-and-diagnosis",
+          "text": "Tests and Diagnosis",
+          "level": 3
+        },
+        {
+          "id": "how-to-keep-your-vagina-healthy",
+          "text": "How to Keep Your Vagina Healthy",
+          "level": 3
+        },
+        {
+          "id": "5-myth-busting--vaginal-health",
+          "text": "5. Myth-Busting: Vaginal Health",
           "level": 2
         },
         {

@@ -15,7 +15,7 @@ type ListProps = {
    *
    * @default "bullet"
    */
-  variant?: "bullet" | "numbered" | "check" | "none" | "glossary";
+  variant?: "bullet" | "numbered" | "check" | "cross" | "none" | "glossary";
   /** Optional title rendered above the list. */
   title?: string;
   /** Optional footer note. */
@@ -57,16 +57,14 @@ export function MdxList({
 
   return (
     <div className="not-prose my-8 w-full">
-
       {/* ── Title ────────────────────────────────────────────────────── */}
       {title && (
         <div className="mb-3 flex items-center gap-3">
           {/* Decorative rule */}
-          <span className="h-px flex-1 bg-slate/10-200" />
           <p className="text-[0.7rem] font-bold uppercase tracking-widest text-slate-400">
             {title}
           </p>
-          <span className="h-px flex-1 bg-slate/10-200" />
+          <span className="h-px flex-1 bg-slate-200" />
         </div>
       )}
 
@@ -83,19 +81,18 @@ export function MdxList({
           {note}
         </p>
       )}
-
     </div>
   );
 }
 
 /* ─────────────────────────────────────────────────────────────────────────── */
-/*  MdxItem — one row inside bullet / numbered / check / none lists           */
+/*  MdxItem — one row inside bullet / numbered / check / cross / none lists           */
 /* ─────────────────────────────────────────────────────────────────────────── */
 
 type ItemProps = {
   children: ReactNode;
   /** Should match the parent <MdxList> variant. @default "bullet" */
-  variant?: "bullet" | "numbered" | "check" | "none";
+  variant?: "bullet" | "numbered" | "check" | "cross" | "none";
   /** Required for "numbered" variant to display the correct number. @default 0 */
   index?: number;
 };
@@ -116,7 +113,7 @@ export function MdxItem({
   index = 0,
 }: ItemProps) {
   return (
-    <li className="flex items-start gap-3 rounded-xl bg-slate/10-50 px-4 py-3 text-sm leading-relaxed text-slate-700 transition-colors hover:bg-orange-50/60">
+    <li className="flex items-start gap-3 rounded-xl bg-slate-50/10 px-4 py-3 text-sm leading-relaxed text-slate-700 transition-colors hover:bg-orange-50/60">
       <ItemMarker variant={variant} index={index} />
       <span>{children}</span>
     </li>
@@ -149,7 +146,7 @@ type TermProps = {
  */
 export function MdxTerm({ term, children }: TermProps) {
   return (
-    <div className="flex flex-col gap-2 rounded-xl bg-slate/10-50/10 px-4 py-3 transition-colors hover:bg-orange-50/60 sm:flex-row sm:items-baseline sm:gap-4">
+    <div className="flex flex-col gap-2 rounded-xl bg-slate-50/10 px-4 py-3 transition-colors hover:bg-orange-50/60 sm:flex-row sm:items-baseline sm:gap-4">
       {/* Term pill */}
       <dt className="shrink-0">
         <span className="inline-block rounded-full bg-orange-100 px-2.5 py-0.5 text-[0.7rem] font-bold uppercase tracking-wider text-orange-600">
@@ -171,7 +168,7 @@ function ItemMarker({
   variant,
   index,
 }: {
-  variant: "bullet" | "numbered" | "check" | "none";
+  variant: "bullet" | "numbered" | "check" | "cross" | "none";
   index: number;
 }) {
   const base = "mt-0.5 shrink-0";
@@ -194,9 +191,29 @@ function ItemMarker({
         fill="none"
         aria-hidden="true"
       >
-        <circle cx="8" cy="8" r="7.5" fill="#fce7f3" />
+        <circle cx="8" cy="8" r="7.5" fill="#D2F1E3" />
         <path
           d="M4.5 8.5l2.5 2.5 4.5-5"
+          stroke="#2ea88a"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+
+  if (variant === "cross") {
+    return (
+      <svg
+        className={`${base} h-4 w-4`}
+        viewBox="0 0 16 16"
+        fill="none"
+        aria-hidden="true"
+      >
+        <circle cx="8" cy="8" r="7.5" fill="#fce7f3" />
+        <path
+          d="M5 5l6 6M11 5l-6 6"
           stroke="#e11d48"
           strokeWidth="1.5"
           strokeLinecap="round"
