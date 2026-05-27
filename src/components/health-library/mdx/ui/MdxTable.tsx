@@ -67,11 +67,11 @@ export function MdxTable({
   });
 
   return (
-    <figure className="not-prose my-8 w-full overflow-hidden rounded-2xl border border-slate-100 shadow-sm custom-mdx-table">
+    <figure className="not-prose my-8 w-full overflow-hidden rounded-2xl border border-pink-200/10 shadow-sm custom-mdx-table">
       
       {/* ── Header bar ──────── */}
       {title && (
-        <div className="border-b border-slate-100 bg-gradient-to-r from-rose-50 via-pink-50 to-slate-50 px-5 pt-1">
+        <div className="border-b border-pink-100 bg-pink-200/10 px-5 pt-1">
           {/* <p className="text-[0.8rem] font-semibold uppercase tracking-widest text-rose-400">
             {eyebrow}
           </p> */}
@@ -85,7 +85,7 @@ export function MdxTable({
       <div className="overflow-x-auto">
         <div className={`[&_table]:w-full [&_table]:border-collapse [&_table]:text-sm
           [&_thead_tr]:${accentClass}
-          [&_th]:px-5 [&_th]:py-3 [&_th]:text-left [&_th]:text-[0.7rem] [&_th]:font-bold [&_th]:uppercase [&_th]:tracking-widest [&_th]:text-rose-500
+          [&_th]:px-5 [&_th]:py-3 [&_th]:text-left [&_th]:text-[0.7rem] [&_th]:font-bold [&_th]:uppercase [&_th]:tracking-widest [&_th]:text-pink-500
           [&_tbody_tr]:border-b [&_tbody_tr]:border-slate-50 [&_tbody_tr:nth-child(even)]:bg-slate-50/60 [&_tbody_tr]:hover:bg-rose-50/40
           [&_td]:px-5 [&_td]:py-3.5 [&_td]:align-top [&_td]:leading-relaxed [&_td]:text-slate-600
           [&_td:first-child]:font-semibold [&_td:first-child]:text-slate-800`}>

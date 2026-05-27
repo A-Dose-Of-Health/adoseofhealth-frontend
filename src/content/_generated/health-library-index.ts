@@ -265,7 +265,7 @@ export const HEALTH_LIBRARY_INDEX = {
       "route": "/health-library/womens-health/body-anatomy/internal-organs",
       "frontmatter": {
         "title": "Internal Organs",
-        "summary": "A comprehensive guide to the female internal anatomy — the vagina, cervix, uterus, fallopian tubes, ovaries and urethra — covering structure, function, common conditions and Kenya-specific health context.",
+        "summary": "The vulva is the collective name for all the female external genitalia. While many people use the word \"Vagina\" to describe this area, the vagina is actually the internal canal. The vulva is what you can see on the outside.",
         "topic": "womens-health",
         "subtopic": "body-anatomy",
         "slug": "internal-organs",
@@ -282,38 +282,38 @@ export const HEALTH_LIBRARY_INDEX = {
       },
       "toc": [
         {
-          "id": "the-vagina--internal-canal",
-          "text": "The Vagina — Internal Canal",
-          "level": 1
+          "id": "1-what-is-the-vagina",
+          "text": "1. What Is the Vagina?",
+          "level": 2
+        },
+        {
+          "id": "2-functions",
+          "text": "2. Functions",
+          "level": 2
+        },
+        {
+          "id": "3-anatomy",
+          "text": "3. Anatomy",
+          "level": 2
         },
         {
           "id": "the-three-layers-of-the-vaginal-wall",
           "text": "The Three Layers of the Vaginal Wall",
-          "level": 2
-        },
-        {
-          "id": "1-mucosal-layer--inner",
-          "text": "1. Mucosal Layer (Inner)",
           "level": 3
         },
         {
-          "id": "2-muscular-layer--middle",
-          "text": "2. Muscular Layer (Middle)",
+          "id": "the-vaginal-opening--introitus",
+          "text": "The Vaginal Opening (Introitus)",
           "level": 3
         },
         {
-          "id": "3-adventitia-layer--outer",
-          "text": "3. Adventitia Layer (Outer)",
+          "id": "the-hymen",
+          "text": "The Hymen",
           "level": 3
         },
         {
-          "id": "vaginal-infections",
-          "text": "Vaginal Infections",
-          "level": 2
-        },
-        {
-          "id": "the-three-main-types",
-          "text": "The Three Main Types",
+          "id": "bartholin-s-glands",
+          "text": "Bartholin's Glands",
           "level": 3
         },
         {

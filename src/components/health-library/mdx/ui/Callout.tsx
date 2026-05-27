@@ -12,7 +12,7 @@ import {
 // Variants
 // ---------------------------------------------------------------------------
 
-type Variant = "info" | "tip" | "warning" | "danger" | "urgent" | "kenya";
+type Variant = "info" | "tip" | "warning" | "danger" | "urgent" | "neutral";
 
 type VariantConfig = {
   container: string;
@@ -24,9 +24,9 @@ type VariantConfig = {
 
 const VARIANTS: Record<Variant, VariantConfig> = {
   info: {
-    container: "bg-primary/5 border-primary/15",
-    iconWrapper: "bg-primary/10 text-primary",
-    titleColor: "text-primary",
+    container: "bg-secondary/5 border-secondary/20",
+    iconWrapper: "bg-secondary/10 text-secondary",
+    titleColor: "text-secondary",
     Icon: Lightbulb,
     defaultTitle: "Key Point",
   },
@@ -58,12 +58,12 @@ const VARIANTS: Record<Variant, VariantConfig> = {
     Icon: Siren,
     defaultTitle: "Seek Urgent Care",
   },
-  kenya: {
-    container: "bg-primary/5 border-primary/20",
-    iconWrapper: "bg-primary/10 text-primary",
-    titleColor: "text-primary",
+  neutral: {
+    container: "bg-orange-100/10 border-orange-300/50",
+    iconWrapper: "bg-orange-300/30 text-orange-600",
+    titleColor: "text-orange-700",
     Icon: Heart,
-    defaultTitle: "Kenya Context",
+    defaultTitle: "Neutral Context",
   },
 };
 
@@ -108,7 +108,7 @@ export function Callout({ variant = "info", title, children }: Props) {
   const displayTitle = title ?? defaultTitle;
 
   // Kenya variant gets a flag emoji prefix instead of a lucide icon
-  const isKenya = variant === "kenya";
+  const isKenya = variant === "neutral";
 
   return (
     <div
@@ -119,13 +119,7 @@ export function Callout({ variant = "info", title, children }: Props) {
         <span
           className={`flex size-7 shrink-0 items-center justify-center rounded-full ${iconWrapper}`}
         >
-          {isKenya ? (
-            <span className="text-sm leading-none" aria-hidden>
-              🇰🇪
-            </span>
-          ) : (
-            <Icon className="size-3.5" strokeWidth={2.5} />
-          )}
+          <Icon className="size-3.5" strokeWidth={2.5} />
         </span>
         <p className={`text-sm font-bold uppercase tracking-wider ${titleColor}`}>
           {displayTitle}

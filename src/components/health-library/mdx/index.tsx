@@ -18,6 +18,7 @@ import { MdxImage } from "./ui/MdxImage";
 import { Callout } from "./ui/Callout";
 import { TlDr } from "./ui/TlDr";
 import { MdxTable } from "./ui/MdxTable";          
+import { MdxItem, MdxList, MdxTerm } from "./ui/MdxList";
 
 
 // ---------------------------------------------------------------------------
@@ -45,6 +46,9 @@ export const mdxComponents = {
   Callout,
   TlDr,
   MdxTable,
+  MdxList,
+  MdxItem,
+  MdxTerm
   // MythFact,
   // StatCard,
   // ExpandableSection,
