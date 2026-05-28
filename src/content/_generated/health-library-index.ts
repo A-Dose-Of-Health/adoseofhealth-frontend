@@ -347,23 +347,23 @@ export const HEALTH_LIBRARY_INDEX = {
           "level": 2
         },
         {
-          "id": "the-cervix--the-gatekeeper",
-          "text": "The Cervix — The Gatekeeper",
-          "level": 1
+          "id": "when-to-seek-urgent-care",
+          "text": "When to Seek Urgent Care",
+          "level": 3
         },
         {
-          "id": "four-critical-functions",
-          "text": "Four Critical Functions",
+          "id": "about-medication-overall",
+          "text": "About Medication Overall",
+          "level": 3
+        },
+        {
+          "id": "6-interactive-tool",
+          "text": "6. Interactive Tool",
           "level": 2
         },
         {
-          "id": "the-transformation-zone--why-it-matters",
-          "text": "The Transformation Zone — Why It Matters",
-          "level": 2
-        },
-        {
-          "id": "cervical-screening--kenya-guidelines",
-          "text": "Cervical Screening — Kenya Guidelines",
+          "id": "7-references",
+          "text": "7. References",
           "level": 2
         },
         {

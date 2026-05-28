@@ -18,7 +18,10 @@ import { MdxImage } from "./ui/MdxImage";
 import { Callout } from "./ui/Callout";
 import { TlDr } from "./ui/TlDr";
 import { MdxTable } from "./ui/MdxTable";          
-import { MdxItem, MdxList, MdxTerm } from "./ui/MdxList";
+import { MdxItem, MdxList, MdxTermDefinition, MdxTermFact, MdxTermFunction, MdxCompareGroup, MdxCompareMyth, MdxCompareReality } from "./ui/MdxList";
+import { MdxSymptomChecker } from "./tools/MdxSymptomChecker";
+import { MdxBrandLogo } from "./ui/MdxBrandLogo";
+import { MdxReference, MdxReferences } from "./ui/MdxReferences";
 
 
 // ---------------------------------------------------------------------------
@@ -48,7 +51,16 @@ export const mdxComponents = {
   MdxTable,
   MdxList,
   MdxItem,
-  MdxTerm
+  MdxTermDefinition,
+  MdxTermFunction,
+  MdxTermFact,
+  MdxCompareGroup, 
+  MdxCompareMyth, 
+  MdxCompareReality,
+  MdxSymptomChecker,
+  MdxBrandLogo,
+  MdxReferences,
+  MdxReference
   // MythFact,
   // StatCard,
   // ExpandableSection,
