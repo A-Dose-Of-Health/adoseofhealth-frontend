@@ -182,20 +182,15 @@ export function MdxTermDefinition({ term, children }: TermProps) {
 
 export function MdxTermFunction({ term, children }: TermProps) {
   return (
-    <div className="flex items-start gap-3 rounded-2xl bg-slate-50/10 px-4 py-3.5 transition-colors hover:bg-orange-50/60">
-      <dt className="shrink-0 pt-0.5">
-        <span className="inline-block rounded-full bg-orange-100 px-2.5 py-0.5 text-[0.7rem] font-bold uppercase tracking-wider text-orange-600 shadow-sm">
+    <div className="flex flex-col gap-2 rounded-xl bg-slate-50/10 px-4 py-3 transition-colors hover:bg-orange-50/60 sm:flex-row sm:items-baseline sm:gap-4">
+      {/* Term pill */}
+      <dt className="shrink-0">
+        <span className="inline-block rounded-full bg-orange-100 px-2.5 py-0.5 text-[0.7rem] font-bold uppercase tracking-wider text-orange-600">
           {term}
         </span>
       </dt>
 
-      {/* Arrow */}
-      <span className="mt-2 shrink-0 text-orange-300" aria-hidden="true">
-        <svg viewBox="0 0 16 10" className="h-2.5 w-4 fill-none stroke-current stroke-2">
-          <path d="M0 5h14M10 1l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </span>
-
+      {/* Definition */}
       <dd className="text-sm leading-relaxed text-slate-600">{children}</dd>
     </div>
   );
